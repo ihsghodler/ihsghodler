@@ -124,6 +124,7 @@ padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(
 .ix-alok-kas { display: grid; gap: 2px; justify-items: start; padding: 10px 16px 12px; border-left: 4px solid var(--al-kas); border-radius: 4px; background: color-mix(in srgb, var(--al-kas) 9%, transparent); }
 .ix-alok-kas-lbl { font-size: var(--cds-font-size-caption); letter-spacing: .04em; text-transform: uppercase; color: var(--color-fg-muted); }
 .ix-alok-kas-val { font-family: var(--font-anthropic-serif); font-size: clamp(36px, 9cqi, 48px); font-weight: 700; line-height: 1.05; color: var(--al-kas-teks); }
+.ix-alok-kas-rinci { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-bottom: 4px; }
 .ix-alok-chip { padding: 1px 8px; border: 1px solid currentColor; border-radius: 999px; font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); white-space: nowrap; }
 .ix-alok-chip.is-naik { color: var(--al-kas-teks); } .ix-alok-chip.is-turun { color: var(--color-fg); }
 .ix-alok-legend { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 6px 18px; }
@@ -146,7 +147,7 @@ padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(
   font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); color: #fff; }
 .ix-alok-baris.is-geser .ix-alok-seg { font-size: 11px; }
 .ix-alok-seg.is-kas, .ix-alok-sw.is-kas { background: var(--al-kas); } .ix-alok-seg.is-kas { font-weight: 800; }
-.ix-alok-seg.is-pendek, .ix-alok-sw.is-pendek { background: var(--al-pendek); } .ix-alok-seg.is-pendek { color: #032a1f; }
+.ix-alok-seg.is-pendek, .ix-alok-sw.is-pendek { background: var(--al-pendek); } .ix-alok-seg.is-pendek { color: #032a1f; font-weight: 800; }
 .ix-alok-seg.is-panjang, .ix-alok-sw.is-panjang { background: var(--al-panjang); } .ix-alok-seg.is-panjang { color: #1d2e0b; }
 .ix-alok-seg.is-saham, .ix-alok-sw.is-saham { background: var(--al-saham); } .ix-alok-seg.is-saham { color: #2b1700; }
 .ix-alok-seg.is-alts, .ix-alok-sw.is-alts { background: var(--al-alts); }
@@ -199,18 +200,6 @@ padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(
       </div>
     </div>
 
-    <div class="ix-card" id="kartu-alokasi">
-      <div class="ix-alok-head">
-        <div>
-          <h2 class="ix-h2" id="h-alokasi">Komposisi portofolio model</h2>
-          <p class="ix-sub">Porsi digeser mekanis dari proyeksi IHSG dan ditetapkan setiap Minggu dari skor awal pekan. Tiap kelas bergeser paling banyak 10 poin per pekan.</p>
-        </div>
-        <p class="ix-alok-pilih"><label for="pilih-profil">Profil risiko</label><select class="dash-select" id="pilih-profil" aria-label="Pilih profil risiko"><option value="konservatif">Konservatif</option><option value="moderat" selected>Moderat</option><option value="agresif">Agresif</option></select></p>
-      </div>
-      <div class="ix-alok" id="isi-alokasi" data-draw="c-alokasi" data-source="alokasi ringkasan" aria-labelledby="h-alokasi">—</div>
-      <p class="ix-note">Portofolio model umum per profil risiko, bukan saran investasi pribadi dan tidak mempertimbangkan kondisi keuangan siapa pun.</p>
-    </div>
-
     <div class="ix-card" id="kartu-grafik">
       <h2 class="ix-h2" id="h-grafik">IHSG, rata-rata bergerak, dan rentang proyeksi</h2>
       <ul class="ix-legend" aria-label="Keterangan grafik IHSG">
@@ -221,6 +210,18 @@ padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(
       </ul>
       <div class="ix-chart is-tall" id="grafik-ihsg" data-draw="c-ihsg" data-source="ihsg_harian ringkasan">—</div>
       <p class="ix-note">Pada penutupan Jumat, IHSG berada <b data-draw="fig" data-source="ringkasan" data-field="vs_ma20" data-row="0" data-tone="sign">—</b> dari MA20 (<span data-draw="fig" data-source="ringkasan" data-field="ma20" data-row="0">—</span>), <b data-draw="fig" data-source="ringkasan" data-field="vs_ma50" data-row="0" data-tone="sign">—</b> dari MA50 (<span data-draw="fig" data-source="ringkasan" data-field="ma50" data-row="0">—</span>), dan <b data-draw="fig" data-source="ringkasan" data-field="vs_ma200" data-row="0" data-tone="sign">—</b> dari MA200 (<span data-draw="fig" data-source="ringkasan" data-field="ma200" data-row="0">—</span>).</p>
+    </div>
+
+    <div class="ix-card" id="kartu-alokasi">
+      <div class="ix-alok-head">
+        <div>
+          <h2 class="ix-h2" id="h-alokasi">Komposisi portofolio model</h2>
+          <p class="ix-sub">Porsi digeser mekanis dari proyeksi IHSG dan ditetapkan setiap Minggu dari skor awal pekan. Tiap kelas bergeser paling banyak 10 poin per pekan.</p>
+        </div>
+        <p class="ix-alok-pilih"><label for="pilih-profil">Profil risiko</label><select class="dash-select" id="pilih-profil" aria-label="Pilih profil risiko"><option value="konservatif">Konservatif</option><option value="moderat" selected>Moderat</option><option value="agresif">Agresif</option></select></p>
+      </div>
+      <div class="ix-alok" id="isi-alokasi" data-draw="c-alokasi" data-source="alokasi ringkasan" aria-labelledby="h-alokasi">—</div>
+      <p class="ix-note">Portofolio model umum per profil risiko, bukan saran investasi pribadi dan tidak mempertimbangkan kondisi keuangan siapa pun.</p>
     </div>
 
     <div class="ix-two">
@@ -813,14 +814,18 @@ dash.draw('c-alokasi', (el) => {
   const p = profilAktif(), rows = A.filter((r) => r.profil === p).sort((a, b) => a.urut - b.urut);
   if (!rows.length) return dashMark(el);
   const kas = rows.find((r) => r.kelas === 'kas'), geser = rows.some((r) => r.hari_ini != null), nama = rows[0].profil_nama;
+  // sorotan: kas + obligasi pendek (bagian paling aman dan likuid)
+  const aman = rows.filter((r) => r.kelas === 'kas' || r.kelas === 'pendek'), jml = (k) => aman.reduce((s, r) => s + (+r[k] || 0), 0);
+  const tot = jml('pekan_ini'), totUbah = jml('ubah'), totAcuan = jml('acuan');
   const hero = h('div', 'ix-alok-hero');
   const kasBlok = h('div', 'ix-alok-kas');
-  kasBlok.append(h('span', 'ix-alok-kas-lbl', 'Porsi kas'), h('b', 'ix-alok-kas-val', kas.pekan_ini + '%'),
-    h('span', 'ix-alok-chip ' + (kas.ubah > 0 ? 'is-naik' : kas.ubah < 0 ? 'is-turun' : ''), ubahPoin(kas.ubah) + ' poin dari acuan ' + kas.acuan + '%'));
+  kasBlok.append(h('span', 'ix-alok-kas-lbl', 'Kas + obligasi pendek'), h('b', 'ix-alok-kas-val', tot + '%'),
+    h('span', 'ix-alok-kas-rinci', 'kas ' + kas.pekan_ini + '% + obligasi pendek ' + (tot - kas.pekan_ini) + '%'),
+    h('span', 'ix-alok-chip ' + (totUbah > 0 ? 'is-naik' : totUbah < 0 ? 'is-turun' : ''), ubahPoin(totUbah) + ' poin dari acuan ' + totAcuan + '%'));
   hero.append(kasBlok);
   const daftar = h('ul', 'ix-alok-legend');
   for (const r of rows) {
-    const li = h('li', r.kelas === 'kas' ? 'is-kas' : '');
+    const li = h('li', r.kelas === 'kas' || r.kelas === 'pendek' ? 'is-kas' : '');
     li.append(h('i', 'ix-alok-sw is-' + r.kelas));
     const t = h('span', 'ix-alok-teks');
     t.append(h('span', 'ix-alok-nama', r.nama), h('b', '', ' ' + r.pekan_ini + '%'), h('span', 'ix-alok-ubah ' + tone(r.ubah), ' ' + ubahPoin(r.ubah)));
@@ -836,7 +841,7 @@ dash.draw('c-alokasi', (el) => {
   if (geser) {
     const ub = rows.filter((r) => r.geser).map((r) => r.nama.toLowerCase() + ' ' + r.hari_ini + '% (' + ubahPoin(r.geser) + ')' + (r.kelas === 'alts' && r.rincian_hari_ini ? ' [' + r.rincian_hari_ini + ']' : ''));
     const g = h('p', 'ix-alok-geser');
-    g.append(h('b', '', 'Arah geser: '), document.createTextNode('skor terbaru ' + sgn(R && R.skor_kini, 2, '') + ' sudah menjauh lebih dari 0,5 dari skor awal ' + sgn(R && R.skor, 2, '') + '. Bila dihitung ulang hari ini: ' + (ub.length ? ub.join(', ') : 'porsi tidak berubah') + '. Komposisi resmi tetap sampai Minggu.'));
+    g.append(h('b', '', 'Arah geser: '), document.createTextNode('skor terbaru ' + sgn(R && R.skor_kini, 2, '') + ' sudah menjauh lebih dari 0,5 dari skor awal ' + sgn(R && R.skor, 2, '') + '. Bila dihitung ulang hari ini kas + obligasi pendek menjadi ' + jml('hari_ini') + '% (' + ubahPoin(jml('hari_ini') - tot) + '): ' + (ub.length ? ub.join(', ') : 'porsi tidak berubah') + '. Komposisi resmi tetap sampai Minggu.'));
     out.push(g);
   }
   el.replaceChildren(...out);
