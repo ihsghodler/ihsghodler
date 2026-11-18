@@ -49,6 +49,7 @@
     const TrashIcon = (p) => <Icon className="w-5 h-5" {...p} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />;
     const CloseIcon = (p) => <Icon {...p} d="M6 18L18 6M6 6l12 12" />;
     const ResetIcon = (p) => <Icon {...p} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />;
+    const ChevronIcon = (p) => <Icon className="w-4 h-4" {...p} d="M19 9l-7 7-7-7" />;
     const BackIcon = (p) => <Icon className="w-4 h-4" {...p} d="M15 19l-7-7 7-7" />;
     const WhatsappIcon = (p) => <Icon className="w-5 h-5" {...p} d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />;
 
@@ -410,6 +411,8 @@
       const [quizResult, setQuizResult] = useState(null);
       const [showRuleModal, setShowRuleModal] = useState(false);
       const [showResetModal, setShowResetModal] = useState(false);
+      // Panduan singkat: terbuka otomatis untuk pengunjung yang belum pernah mengisi data.
+      const [showGuide, setShowGuide] = useState(!SAVED || Object.keys(SAVED).length === 0);
 
       const riskProfile = RISK_PROFILES[riskKey];
 
@@ -573,6 +576,50 @@
                       <p className="font-bold tabular text-sm sm:text-base">{formatShort(finalProjectedWealth)}</p>
                     </div>
                   </div>
+
+                  {/* Panduan singkat cara pakai */}
+                  <div className="mt-4 bg-slate-800/70 border border-slate-700 rounded-xl">
+                    <button onClick={() => setShowGuide(!showGuide)} aria-expanded={showGuide} aria-controls="panduan-isi"
+                      className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left rounded-xl hover:bg-slate-800">
+                      <span className="flex items-center gap-2 text-sm font-bold text-white"><span aria-hidden="true">📘</span>Cara pakai: 5 langkah singkat</span>
+                      <span className={`shrink-0 text-slate-400 transition-transform ${showGuide ? 'rotate-180' : ''}`}><ChevronIcon /></span>
+                    </button>
+                    {showGuide && (
+                      <div id="panduan-isi" className="px-4 pb-4">
+                        <ol className="space-y-3">
+                          {[
+                            { title: 'Isi Aset & Hutang', cta: 'Buka Aset & Hutang', go: () => { setBalanceView('neraca'); goTab('balance'); },
+                              text: 'Di menu Neraca → Aset & Hutang, ganti angka contoh dengan kas, tabungan, investasi, dana darurat, dan semua hutang Anda. Ketuk nama pos untuk mengganti namanya, tombol "Tambah" untuk pos baru, dan ikon tempat sampah untuk menghapus.' },
+                            { title: 'Isi Cashflow Bulanan', cta: 'Buka Cashflow Bulanan', go: () => { setBalanceView('cashflow'); goTab('balance'); },
+                              text: 'Di Neraca → Cashflow Bulanan, masukkan pemasukan dan pengeluaran per bulan, termasuk cicilan dan bunga hutang. Selisihnya menjadi tabungan bulanan yang dipakai dalam proyeksi.' },
+                            { title: 'Tentukan target', cta: 'Buka Target', go: () => goTab('targets'),
+                              text: 'Di menu Target, isi nilai tiap tujuan (dana pensiun, pendidikan anak, dan lainnya) serta tahun target. Tombol "Aturan 4%" menghitung dana pensiun dari pengeluaran Anda.' },
+                            { title: 'Cek profil risiko', cta: 'Buka kuis Risiko', go: () => goTab('quiz'),
+                              text: 'Jawab 5 pertanyaan di menu Risiko untuk menentukan asumsi imbal hasil per tahun, atau geser sendiri slider Imbal Hasil di halaman Proyeksi.' },
+                            { title: 'Baca hasilnya',
+                              text: 'Kembali ke Proyeksi: kartu ini menunjukkan apakah target tercapai dan di tahun berapa. Sentuh atau geser grafik untuk melihat nilai tiap tahun, lalu kirim laporan lewat WhatsApp bila perlu.' },
+                          ].map((s, i) => (
+                            <li key={s.title} className="flex gap-3">
+                              <span className="shrink-0 w-6 h-6 mt-0.5 rounded-full bg-emerald-500 text-slate-900 text-xs font-bold flex items-center justify-center">{i + 1}</span>
+                              <div className="min-w-0 flex-1">
+                                <p className="text-sm font-semibold text-white">{s.title}</p>
+                                <p className="text-xs text-slate-300 leading-relaxed mt-0.5">{s.text}</p>
+                                {s.go && (
+                                  <button onClick={s.go} className="mt-1 min-h-[32px] text-xs font-semibold text-emerald-400 hover:text-emerald-300 underline underline-offset-2">
+                                    {s.cta} →
+                                  </button>
+                                )}
+                              </div>
+                            </li>
+                          ))}
+                        </ol>
+                        <p className="text-[11px] text-slate-400 leading-relaxed mt-4 pt-3 border-t border-slate-700">
+                          Semua angka tersimpan otomatis di perangkat ini dan baru terkirim bila Anda menekan "Kirim Laporan via WhatsApp". Tombol ↻ di kanan atas mengembalikan angka ke contoh awal. Hasil ini simulasi, bukan saran investasi.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+
                   <button onClick={handleSendWhatsApp}
                     className="mt-4 w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white text-sm font-bold px-5 py-3 rounded-xl flex items-center justify-center gap-2 transition-colors">
                     <WhatsappIcon /><span>Kirim Laporan via WhatsApp</span>
