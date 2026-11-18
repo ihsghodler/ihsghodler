@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="id" data-halaman="cek-keuangan">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <!-- Judul halaman dan nama menu diatur di pengaturan.js (id "cek-keuangan"); judul di bawah hanya cadangan. -->
+  <title>Cek Kesehatan Keuangan · IHSGHodler</title>
+  <meta name="description" content="Cek kesehatan keuanganmu: hitung kekayaan bersih, cashflow bulanan, target finansial, profil risiko, dan proyeksi kekayaan 25 tahun. Data tersimpan di perangkatmu sendiri.">
+  <link rel="stylesheet" href="assets/menu-situs.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Samakan lebar maksimum menu situs dengan isi halaman ini (max-w-6xl). */
+    :root { --ms-lebar: 72rem; }
+    body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+    input[type=number] { -moz-appearance: textfield; }
+    input[type=range] { height: 32px; }
+    .tabular { font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Menu situs (nama & tautan di pengaturan.js) -->
+  <script src="pengaturan.js"></script>
+  <script src="assets/menu-situs.js"></script>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useMemo, useEffect, useRef } = React;
+
+    /* ---------- Ikon ---------- */
+    const Icon = ({ d, className = 'w-5 h-5' }) => (
+      <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={d} />
+      </svg>
+    );
+    const WalletIcon = (p) => <Icon {...p} d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />;
+    const ChartIcon = (p) => <Icon {...p} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />;
+    const TargetIcon = (p) => <Icon {...p} d="M13 10V3L4 14h7v7l9-11h-7z" />;
+    const QuizIcon = (p) => <Icon {...p} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />;
+    const HelpIcon = (p) => <Icon className="w-4 h-4" {...p} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />;
+    const PlusIcon = (p) => <Icon className="w-4 h-4" {...p} d="M12 4v16m8-8H4" />;
+    const MinusIcon = (p) => <Icon className="w-4 h-4" {...p} d="M20 12H4" />;
+    const TrashIcon = (p) => <Icon className="w-5 h-5" {...p} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />;
+    const CloseIcon = (p) => <Icon {...p} d="M6 18L18 6M6 6l12 12" />;
+    const ResetIcon = (p) => <Icon {...p} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />;
+    const BackIcon = (p) => <Icon className="w-4 h-4" {...p} d="M15 19l-7-7 7-7" />;
+    const WhatsappIcon = (p) => <Icon className="w-5 h-5" {...p} d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />;
+
+    /* ---------- Data & util ---------- */
+    const RISK_PROFILES = {
+      KONSERVATIF: { name: 'Konservatif', return: 0.05, desc: 'Fokus pada keamanan modal (5% per tahun)' },
+      MODERAT: { name: 'Moderat', return: 0.08, desc: 'Keseimbangan antara risiko dan pertumbuhan (8% per tahun)' },
+      AGRESIF: { name: 'Agresif', return: 0.20, desc: 'Fokus pada pertumbuhan maksimal hingga 20% per tahun' }
+    };
+
+    const QUESTIONNAIRE = [
+      { id: 1, question: "Berapa lama Anda berencana menginvestasikan dana Anda untuk mencapai target ini?",
+        options: [ { text: "Kurang dari 2 tahun", score: 1 }, { text: "2 - 5 tahun", score: 2 }, { text: "Lebih dari 5 tahun", score: 3 } ] },
+      { id: 2, question: "Jika nilai investasi Anda tiba-tiba turun 20% dalam sebulan, apa langkah yang Anda ambil?",
+        options: [
+          { text: "Panik dan menjual semua portofolio untuk mencegah kerugian lebih lanjut", score: 1 },
+          { text: "Khawatir, namun tetap menahan investasi dan menunggu pulih kembali", score: 2 },
+          { text: "Tenang dan melihatnya sebagai peluang untuk menambah posisi (diskon)", score: 3 } ] },
+      { id: 3, question: "Apa prioritas utama Anda dalam berinvestasi?",
+        options: [
+          { text: "Keamanan modal utama agar nilai uang tidak berkurang sama sekali", score: 1 },
+          { text: "Mendapatkan imbal hasil yang terukur dengan fluktuasi yang wajar", score: 2 },
+          { text: "Mencapai pertumbuhan modal setinggi-tingginya dalam jangka panjang", score: 3 } ] },
+      { id: 4, question: "Sejauh mana pemahaman dan pengalaman Anda tentang instrumen investasi?",
+        options: [
+          { text: "Sangat awam / Hanya familiar dengan produk simpanan bank (seperti Deposito)", score: 1 },
+          { text: "Paham dasar investasi & berpengalaman di instrumen moderat (Reksadana/Obligasi)", score: 2 },
+          { text: "Sangat berpengalaman mengelola portofolio tinggi risiko (Saham, Kripto, dll)", score: 3 } ] },
+      { id: 5, question: "Bagaimana Anda menilai kestabilan pendapatan & ketersediaan dana darurat Anda saat ini?",
+        options: [
+          { text: "Pendapatan tidak menentu dan belum memiliki dana darurat yang memadai", score: 1 },
+          { text: "Pendapatan stabil dan dana darurat mencukupi untuk 3-6 bulan pengeluaran", score: 2 },
+          { text: "Pendapatan sangat stabil/beragam dan dana darurat terisi lebih dari 6 bulan", score: 3 } ] }
+    ];
+
+    const formatCurrency = (val) => {
+      const num = Number(val) || 0;
+      return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(num);
+    };
+    const formatNumber = (val) => new Intl.NumberFormat('id-ID').format(Number(val) || 0);
+    const formatShort = (val) => {
+      const n = Number(val) || 0, a = Math.abs(n), s = n < 0 ? '-' : '';
+      const f = (x) => parseFloat(x.toFixed(1)).toLocaleString('id-ID');
+      if (a >= 1e12) return `${s}${f(a / 1e12)} T`;
+      if (a >= 1e9) return `${s}${f(a / 1e9)} M`;
+      if (a >= 1e6) return `${s}${Math.round(a / 1e6)} Jt`;
+      if (a >= 1e3) return `${s}${Math.round(a / 1e3)} Rb`;
+      return `${s}${a}`;
+    };
+    const niceTicks = (max, count) => {
+      const raw = max / count;
+      const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+      const norm = raw / mag;
+      const stepN = norm <= 1 ? 1 : norm <= 2 ? 2 : norm <= 2.5 ? 2.5 : norm <= 5 ? 5 : 10;
+      const step = stepN * mag;
+      const top = Math.ceil(max / step) * step;
+      const t = [];
+      for (let v = 0; v <= top + step / 2; v += step) t.push(v);
+      return t;
+    };
+
+    /* ---------- Penyimpanan lokal (auto-save) ---------- */
+    const WA_TARGET_NUMBER = String((window.IHSG_SITUS && window.IHSG_SITUS.kontak && window.IHSG_SITUS.kontak.whatsapp) || '6285122345992').replace(/\D/g, '');
+
+    /* Penghitung berapa kali aplikasi dibuka (per perangkat/browser) */
+    const OPEN_COUNT_KEY = 'ihsghodler-open-count';
+    const OPEN_COUNT = (() => {
+      try {
+        const n = (parseInt(localStorage.getItem(OPEN_COUNT_KEY), 10) || 0) + 1;
+        localStorage.setItem(OPEN_COUNT_KEY, String(n));
+        return n;
+      } catch (e) { return null; }
+    })();
+
+    const STORAGE_KEY = 'ihsghodler-planner-v1';
+    const DEFAULTS = {
+      assets: [ { id: 1, name: 'Kas', value: 10000000 }, { id: 2, name: 'Investasi', value: 10000000 }, { id: 3, name: 'Dana Darurat', value: 10000000 } ],
+      liabilities: [ { id: 1, name: 'Hutang', value: 10000000 } ],
+      incomes: [ { id: 1, name: 'Gaji Utama', value: 15000000 }, { id: 2, name: 'Pendapatan Sampingan', value: 3000000 } ],
+      expenses: [ { id: 1, name: 'Pengeluaran Rutin', value: 8000000 }, { id: 2, name: 'Pembayaran Bunga Hutang', value: 500000 } ],
+      targetYear: 2030,
+      targets: [ { id: 1, name: 'Dana pensiun', value: 1000000000, isRetirement: true }, { id: 2, name: 'Dana Pendidikan Anak', value: 100000000, isRetirement: false } ],
+      riskKey: 'MODERAT',
+      customReturnRate: 8
+    };
+    const loadSaved = () => {
+      try { const raw = localStorage.getItem(STORAGE_KEY); return raw ? JSON.parse(raw) : {}; } catch (e) { return {}; }
+    };
+    const SAVED = loadSaved();
+    const initial = (k) => (SAVED && SAVED[k] !== undefined ? SAVED[k] : DEFAULTS[k]);
+
+    /* ---------- Komponen UI ---------- */
+    function MoneyInput({ value, onChange, ariaLabel, large }) {
+      return (
+        <div className="relative w-full">
+          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm font-medium pointer-events-none">Rp</span>
+          <input
+            type="text"
+            inputMode="numeric"
+            aria-label={ariaLabel}
+            placeholder="0"
+            value={value ? formatNumber(value) : ''}
+            onChange={(e) => {
+              const digits = e.target.value.replace(/\D/g, '').slice(0, 15);
+              onChange(digits ? parseInt(digits, 10) : 0);
+            }}
+            onFocus={(e) => e.target.select()}
+            className={`w-full pl-10 pr-3 ${large ? 'py-3 text-lg' : 'py-2.5 text-base'} font-semibold tabular text-right text-slate-900 bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500`}
+          />
+        </div>
+      );
+    }
+
+    function ItemRow({ item, onChange, onRemove, canRemove, badge, sub }) {
+      return (
+        <div className="py-3 grid grid-cols-[minmax(0,1fr)_auto] sm:grid-cols-[minmax(0,1fr)_15rem_auto] gap-x-2 gap-y-2 items-center">
+          <div className="flex items-center gap-2 min-w-0">
+            <input
+              type="text"
+              value={item.name}
+              aria-label="Nama pos"
+              onChange={(e) => onChange({ name: e.target.value })}
+              className="flex-1 min-w-0 text-base font-medium text-slate-800 bg-transparent border-b border-dashed border-slate-300 focus:border-solid focus:border-emerald-500 focus:outline-none py-1"
+            />
+            {badge}
+          </div>
+          <div className="col-span-2 sm:col-span-1 order-last sm:order-none">
+            <MoneyInput value={item.value} onChange={(v) => onChange({ value: v })} ariaLabel={`Nominal ${item.name}`} />
+            {sub && <p className="text-xs text-slate-500 mt-1 text-right">{sub}</p>}
+          </div>
+          <div className="w-10 flex justify-center">
+            {canRemove && (
+              <button
+                onClick={onRemove}
+                aria-label={`Hapus ${item.name}`}
+                className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 active:bg-rose-100"
+              >
+                <TrashIcon />
+              </button>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    const ACCENTS = {
+      blue: { head: 'bg-blue-600 text-white', add: 'border-blue-200 text-blue-700 bg-blue-50 hover:bg-blue-100' },
+      amber: { head: 'bg-amber-600 text-white', add: 'border-amber-200 text-amber-700 bg-amber-50 hover:bg-amber-100' },
+      emerald: { head: 'bg-emerald-600 text-white', add: 'border-emerald-200 text-emerald-700 bg-emerald-50 hover:bg-emerald-100' },
+      rose: { head: 'bg-rose-600 text-white', add: 'border-rose-200 text-rose-700 bg-rose-50 hover:bg-rose-100' },
+    };
+
+    function ListSection({ title, accent, items, setItems, newName, addLabel, total, renderBadge, renderSub }) {
+      const c = ACCENTS[accent];
+      const update = (id, patch) => setItems(items.map(it => it.id === id ? { ...it, ...patch } : it));
+      const remove = (id) => { if (items.length > 1) setItems(items.filter(it => it.id !== id)); };
+      const add = () => setItems([...items, { id: Date.now(), name: newName, value: 0 }]);
+      return (
+        <section className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <header className={`px-4 py-3 flex items-center justify-between gap-3 ${c.head}`}>
+            <h3 className="font-bold">{title}</h3>
+            <span className="font-bold tabular text-sm sm:text-base">{formatCurrency(total)}</span>
+          </header>
+          <div className="px-4 divide-y divide-slate-100">
+            {items.map(item => (
+              <ItemRow
+                key={item.id}
+                item={item}
+                onChange={(patch) => update(item.id, patch)}
+                onRemove={() => remove(item.id)}
+                canRemove={items.length > 1}
+                badge={renderBadge && renderBadge(item)}
+                sub={renderSub && renderSub(item)}
+              />
+            ))}
+          </div>
+          <div className="px-4 pb-4 pt-1">
+            <button
+              onClick={add}
+              className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed font-semibold text-sm transition-colors ${c.add}`}
+            >
+              <PlusIcon /> <span>{addLabel}</span>
+            </button>
+          </div>
+        </section>
+      );
+    }
+
+    function Sheet({ open, onClose, title, children }) {
+      useEffect(() => {
+        if (!open) return;
+        const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+        window.addEventListener('keydown', onKey);
+        const prev = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        return () => { window.removeEventListener('keydown', onKey); document.body.style.overflow = prev; };
+      }, [open]);
+      if (!open) return null;
+      return (
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-slate-900/60 backdrop-blur-sm sm:p-4" onClick={onClose}>
+          <div
+            role="dialog"
+            aria-modal="true"
+            className="bg-white w-full sm:max-w-md rounded-t-3xl sm:rounded-2xl shadow-2xl px-5 pt-3 sm:pt-5 max-h-[90vh] overflow-y-auto"
+            style={{ paddingBottom: 'calc(1.25rem + env(safe-area-inset-bottom))' }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sm:hidden mx-auto w-10 h-1.5 rounded-full bg-slate-300 mb-3"></div>
+            <div className="flex items-start justify-between gap-3 mb-4">
+              <h3 className="font-bold text-lg text-slate-900">{title}</h3>
+              <button onClick={onClose} aria-label="Tutup" className="-mr-2 -mt-1 w-10 h-10 flex items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 hover:text-slate-700">
+                <CloseIcon />
+              </button>
+            </div>
+            {children}
+          </div>
+        </div>
+      );
+    }
+
+    function ProjectionChart({ data, target, targetYear }) {
+      const wrapRef = useRef(null);
+      const [w, setW] = useState(340);
+      const [sel, setSel] = useState(null);
+
+      useEffect(() => {
+        const el = wrapRef.current;
+        if (!el) return;
+        const update = () => setW(el.clientWidth || 340);
+        update();
+        if (typeof ResizeObserver !== 'undefined') {
+          const ro = new ResizeObserver(update);
+          ro.observe(el);
+          return () => ro.disconnect();
+        }
+        window.addEventListener('resize', update);
+        return () => window.removeEventListener('resize', update);
+      }, []);
+
+      const n = data.length;
+      const compact = w < 520;
+      const h = compact ? 230 : 300;
+      const pad = { l: compact ? 44 : 58, r: 14, t: 14, b: 26 };
+      const ticks = niceTicks(Math.max(target, ...data.map(d => d.projectedWealth), 1), 4);
+      const maxVal = ticks[ticks.length - 1];
+      const iw = Math.max(10, w - pad.l - pad.r), ih = h - pad.t - pad.b;
+      const x = (i) => pad.l + (n > 1 ? i / (n - 1) : 0) * iw;
+      const y = (v) => pad.t + (1 - Math.max(0, v) / maxVal) * ih;
+      const pts = data.map((d, i) => `${x(i)},${y(d.projectedWealth)}`);
+      const areaPath = `M${x(0)},${y(0)} L${pts.join(' L')} L${x(n - 1)},${y(0)} Z`;
+      const step = compact ? 5 : 2;
+      const targetIdx = data.findIndex(d => d.year === targetYear);
+      const active = sel !== null ? Math.min(sel, n - 1) : (targetIdx >= 0 ? targetIdx : n - 1);
+      const ad = data[active];
+      const diff = ad.projectedWealth - target;
+
+      const pick = (e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        const i = Math.round(((e.clientX - rect.left - pad.l) / iw) * (n - 1));
+        setSel(Math.max(0, Math.min(n - 1, i)));
+      };
+
+      return (
+        <div>
+          <div className="flex items-end justify-between gap-3 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 mb-3">
+            <div className="min-w-0">
+              <p className="text-xs text-slate-500 font-semibold">Tahun {ad.year}{ad.year === targetYear ? ' · tahun target' : ''}</p>
+              <p className="text-lg sm:text-xl font-extrabold text-emerald-700 tabular truncate">{formatCurrency(ad.projectedWealth)}</p>
+            </div>
+            <span className={`shrink-0 text-xs font-bold px-2.5 py-1 rounded-full ${diff >= 0 ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-700'}`}>
+              {diff >= 0 ? '✓ Target tercapai' : `Kurang ${formatShort(-diff)}`}
+            </span>
+          </div>
+
+          <div ref={wrapRef} className="w-full select-none">
+            <svg
+              width={w}
+              height={h}
+              className="block cursor-crosshair"
+              style={{ touchAction: 'pan-y' }}
+              onPointerDown={pick}
+              onPointerMove={pick}
+              role="img"
+              aria-label="Grafik proyeksi kekayaan per tahun"
+            >
+              <defs>
+                <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#10b981" stopOpacity="0.25" />
+                  <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+
+              {ticks.map(t => (
+                <g key={t}>
+                  <line x1={pad.l} x2={w - pad.r} y1={y(t)} y2={y(t)} stroke="#e2e8f0" strokeWidth="1" />
+                  <text x={pad.l - 6} y={y(t) + 4} textAnchor="end" fontSize="10" fill="#64748b">{formatShort(t)}</text>
+                </g>
+              ))}
+
+              {data.map((d, i) => (i % step === 0 || i === n - 1) && (
+                <text key={d.year} x={x(i)} y={h - 8} textAnchor={i === 0 ? 'start' : i === n - 1 ? 'end' : 'middle'} fontSize="10" fill="#64748b">{d.year}</text>
+              ))}
+
+              {targetIdx >= 0 && (
+                <line x1={x(targetIdx)} x2={x(targetIdx)} y1={pad.t} y2={y(0)} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="3,4" />
+              )}
+
+              <path d={areaPath} fill="url(#areaFill)" />
+              <line x1={pad.l} x2={w - pad.r} y1={y(target)} y2={y(target)} stroke="#3b82f6" strokeWidth="2" strokeDasharray="6,5" />
+              <polyline fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" points={pts.join(' ')} />
+
+              <line x1={x(active)} x2={x(active)} y1={pad.t} y2={y(0)} stroke="#0f172a" strokeOpacity="0.25" strokeWidth="1" />
+              <circle cx={x(active)} cy={y(ad.projectedWealth)} r="6" fill="#059669" stroke="#fff" strokeWidth="2.5" />
+            </svg>
+          </div>
+
+          <input
+            type="range"
+            min="0"
+            max={n - 1}
+            value={active}
+            onChange={(e) => setSel(parseInt(e.target.value, 10))}
+            aria-label="Pilih tahun"
+            className="w-full accent-emerald-600 mt-1"
+          />
+
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-slate-600 mt-1">
+            <span className="flex items-center gap-2"><span className="w-4 h-1 bg-emerald-500 rounded"></span>Proyeksi Aset</span>
+            <span className="flex items-center gap-2"><span className="w-4 border-t-2 border-dashed border-blue-500"></span>Garis Target</span>
+            {targetIdx >= 0 && <span className="flex items-center gap-2"><span className="h-3 border-l-2 border-dotted border-amber-500"></span>Tahun Target</span>}
+          </div>
+        </div>
+      );
+    }
+
+    const TABS = [
+      { id: 'dashboard', label: 'Proyeksi & Dashboard', short: 'Proyeksi', icon: ChartIcon },
+      { id: 'balance', label: 'Kekayaan & Neraca', short: 'Neraca', icon: WalletIcon },
+      { id: 'targets', label: 'Set Target', short: 'Target', icon: TargetIcon },
+      { id: 'quiz', label: 'Profil Risiko', short: 'Risiko', icon: QuizIcon },
+    ];
+
+    /* ---------- Aplikasi ---------- */
+    function App() {
+      const [activeTab, setActiveTab] = useState('dashboard');
+      const [balanceView, setBalanceView] = useState('neraca');
+
+      const [assets, setAssets] = useState(initial('assets'));
+      const [liabilities, setLiabilities] = useState(initial('liabilities'));
+      const [incomes, setIncomes] = useState(initial('incomes'));
+      const [expenses, setExpenses] = useState(initial('expenses'));
+      const [targetYear, setTargetYear] = useState(initial('targetYear'));
+      const [targets, setTargets] = useState(initial('targets'));
+      const [riskKey, setRiskKey] = useState(RISK_PROFILES[initial('riskKey')] ? initial('riskKey') : 'MODERAT');
+      const [customReturnRate, setCustomReturnRate] = useState(initial('customReturnRate'));
+
+      const [quizStep, setQuizStep] = useState(0);
+      const [quizAnswers, setQuizAnswers] = useState({});
+      const [quizResult, setQuizResult] = useState(null);
+      const [showRuleModal, setShowRuleModal] = useState(false);
+      const [showResetModal, setShowResetModal] = useState(false);
+
+      const riskProfile = RISK_PROFILES[riskKey];
+
+      useEffect(() => {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({ assets, liabilities, incomes, expenses, targetYear, targets, riskKey, customReturnRate }));
+        } catch (e) { /* penyimpanan tidak tersedia */ }
+      }, [assets, liabilities, incomes, expenses, targetYear, targets, riskKey, customReturnRate]);
+
+      const sum = (list) => list.reduce((s, it) => s + (Number(it.value) || 0), 0);
+      const totalAssets = useMemo(() => sum(assets), [assets]);
+      const totalLiabilities = useMemo(() => sum(liabilities), [liabilities]);
+      const netWorth = totalAssets - totalLiabilities;
+      const totalMonthlyIncome = useMemo(() => sum(incomes), [incomes]);
+      const totalMonthlyExpense = useMemo(() => sum(expenses), [expenses]);
+      const netMonthlyIncome = totalMonthlyIncome - totalMonthlyExpense;
+      const totalTargetWealth = useMemo(() => sum(targets), [targets]);
+
+      const currentYear = new Date().getFullYear();
+      const projectionYearsCount = 25;
+      const effTargetYear = Math.max(currentYear + 1, Number(targetYear) || currentYear + 1);
+
+      const { projectionData, targetReachedYear, finalProjectedWealth, isTargetAchieved } = useMemo(() => {
+        const data = [];
+        let currentWealth = netWorth;
+        const annualSavings = netMonthlyIncome * 12;
+        const returnRate = customReturnRate / 100;
+        let reachedYear = null;
+        for (let year = 0; year <= projectionYearsCount; year++) {
+          const displayYear = currentYear + year;
+          if (year > 0) currentWealth = currentWealth * (1 + returnRate) + (annualSavings > 0 ? annualSavings : 0);
+          const rounded = Math.max(0, Math.round(currentWealth));
+          data.push({ year: displayYear, projectedWealth: rounded, targetWealth: totalTargetWealth });
+          if (rounded >= totalTargetWealth && reachedYear === null) reachedYear = displayYear;
+        }
+        const finalVal = data[data.length - 1]?.projectedWealth || 0;
+        return { projectionData: data, targetReachedYear: reachedYear, finalProjectedWealth: finalVal, isTargetAchieved: finalVal >= totalTargetWealth };
+      }, [netWorth, netMonthlyIncome, customReturnRate, totalTargetWealth, currentYear]);
+
+      const gap = totalTargetWealth - finalProjectedWealth;
+      const atTargetYear = projectionData.find(d => d.year === effTargetYear);
+
+      const goTab = (id) => { setActiveTab(id); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+
+      const apply4PercentRule = () => {
+        const calculated = totalMonthlyExpense * 12 * 25;
+        setTargets(targets.map(t => t.isRetirement ? { ...t, value: calculated } : t));
+        setShowRuleModal(false);
+      };
+
+      const applyProfile = (key) => { setRiskKey(key); setCustomReturnRate(RISK_PROFILES[key].return * 100); };
+
+      const handleQuizAnswer = (questionId, score) => {
+        const newAnswers = { ...quizAnswers, [questionId]: score };
+        setQuizAnswers(newAnswers);
+        if (quizStep < QUESTIONNAIRE.length - 1) {
+          setQuizStep(quizStep + 1);
+        } else {
+          const totalScore = Object.values(newAnswers).reduce((a, b) => a + b, 0);
+          const key = totalScore <= 8 ? 'KONSERVATIF' : totalScore <= 12 ? 'MODERAT' : 'AGRESIF';
+          applyProfile(key);
+          setQuizResult(key);
+        }
+      };
+      const restartQuiz = () => { setQuizStep(0); setQuizAnswers({}); setQuizResult(null); };
+
+      const resetAll = () => {
+        setAssets(DEFAULTS.assets); setLiabilities(DEFAULTS.liabilities);
+        setIncomes(DEFAULTS.incomes); setExpenses(DEFAULTS.expenses);
+        setTargetYear(DEFAULTS.targetYear); setTargets(DEFAULTS.targets);
+        setRiskKey(DEFAULTS.riskKey); setCustomReturnRate(DEFAULTS.customReturnRate);
+        restartQuiz(); setShowResetModal(false); goTab('dashboard');
+      };
+
+      const handleSendWhatsApp = () => {
+        const message = `📊 *LAPORAN DASHBOARD IHSGHODLER* 📊\n\n` +
+          `• Kekayaan Bersih: ${formatCurrency(netWorth)}\n` +
+          `• Tabungan Bersih/Bulan: ${formatCurrency(netMonthlyIncome)}\n` +
+          `• Target Finansial: ${formatCurrency(totalTargetWealth)} (tahun ${effTargetYear})\n` +
+          `• Imbal Hasil Digunakan: ${customReturnRate}% p.a.\n` +
+          (atTargetYear ? `• Proyeksi di ${effTargetYear}: ${formatCurrency(atTargetYear.projectedWealth)}\n` : '') +
+          `• Proyeksi 25 Tahun (${currentYear + 25}): ${formatCurrency(finalProjectedWealth)}\n` +
+          `• Status Target: ${isTargetAchieved ? 'CUKUP / TERCAPAI' : 'KURANG / DEFISIT'}\n\n` +
+          `💡 *REKOMENDASI UTAMA IHSGHODLER*:\n` +
+          `1. Kurangi Biaya: Pangkas pengeluaran non-esensial.\n` +
+          `2. Tingkatkan Pendapatan: Cari side-hustle atau sumber cuan baru.\n` +
+          `3. Berinvestasi: Konsisten alokasikan dana ke instrumen ber-return optimal.\n` +
+          `4. Punya Asuransi: Lindungi aset & cashflow dengan proteksi kesehatan/jiwa.\n\n` +
+          `Dikirim via IHSGHodler Financial Planner.`;
+        window.open(`https://wa.me/${WA_TARGET_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
+      };
+
+      const card = "bg-white rounded-2xl border border-slate-200 shadow-sm";
+
+      return (
+        <div className="min-h-screen flex flex-col">
+          {/* Header */}
+          <header className="sticky top-0 z-40 bg-slate-900 text-white shadow-md" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+            <div className="max-w-6xl mx-auto px-4 lg:px-8 h-14 md:h-16 flex items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5">
+                <div className="bg-emerald-500 p-1.5 rounded-lg text-slate-900"><WalletIcon /></div>
+                <span className="font-bold text-lg tracking-wide">IHSGHodler</span>
+              </div>
+              <nav className="hidden md:flex gap-1" aria-label="Navigasi utama">
+                {TABS.map(tab => {
+                  const I = tab.icon, on = activeTab === tab.id;
+                  return (
+                    <button key={tab.id} onClick={() => goTab(tab.id)} aria-current={on ? 'page' : undefined}
+                      className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${on ? 'bg-emerald-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
+                      <I /><span>{tab.label}</span>
+                    </button>
+                  );
+                })}
+              </nav>
+              <div className="flex items-center gap-1 md:ml-2">
+              {OPEN_COUNT !== null && (
+                <span className="text-[11px] font-semibold bg-slate-800 text-slate-300 px-2.5 py-1 rounded-full whitespace-nowrap" title="Berapa kali aplikasi dibuka di perangkat ini">
+                  👁 Dibuka {formatNumber(OPEN_COUNT)}×
+                </span>
+              )}
+              <button onClick={() => setShowResetModal(true)} aria-label="Reset data"
+                className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white">
+                <ResetIcon />
+              </button>
+              </div>
+            </div>
+          </header>
+
+          <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-4 sm:py-6 lg:px-8 pb-28 md:pb-10">
+
+            {/* ===== DASHBOARD ===== */}
+            {activeTab === 'dashboard' && (
+              <div className="space-y-4 sm:space-y-6">
+                <section className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-md">
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-semibold">Status Target Kekayaan</p>
+                  {isTargetAchieved ? (
+                    <>
+                      <p className="text-2xl sm:text-3xl font-extrabold text-emerald-400 mt-1">🎉 Tercapai di {targetReachedYear}</p>
+                      <p className="text-sm text-slate-300 mt-2">
+                        Target <strong className="text-white">{formatCurrency(totalTargetWealth)}</strong> dinyatakan <strong className="text-emerald-400">CUKUP</strong>
+                        {targetReachedYear <= effTargetYear
+                          ? <> — sesuai/lebih cepat dari tahun target {effTargetYear}.</>
+                          : <> — namun {targetReachedYear - effTargetYear} tahun setelah tahun target {effTargetYear}.</>}
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-2xl sm:text-3xl font-extrabold text-rose-400 mt-1">⚠️ Defisit {formatCurrency(Math.abs(gap))}</p>
+                      <p className="text-sm text-slate-300 mt-2">
+                        Dalam 25 tahun proyeksi baru mencapai <strong className="text-white">{formatCurrency(finalProjectedWealth)}</strong> dari target <strong className="text-white">{formatCurrency(totalTargetWealth)}</strong>.
+                      </p>
+                    </>
+                  )}
+                  <div className="grid grid-cols-2 gap-3 mt-4">
+                    <div className="bg-slate-800 rounded-xl p-3">
+                      <p className="text-[11px] text-slate-400 font-semibold">Proyeksi {effTargetYear}</p>
+                      <p className="font-bold tabular text-sm sm:text-base">{atTargetYear ? formatShort(atTargetYear.projectedWealth) : '-'}</p>
+                    </div>
+                    <div className="bg-slate-800 rounded-xl p-3">
+                      <p className="text-[11px] text-slate-400 font-semibold">Proyeksi {currentYear + 25}</p>
+                      <p className="font-bold tabular text-sm sm:text-base">{formatShort(finalProjectedWealth)}</p>
+                    </div>
+                  </div>
+                  <button onClick={handleSendWhatsApp}
+                    className="mt-4 w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white text-sm font-bold px-5 py-3 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                    <WhatsappIcon /><span>Kirim Laporan via WhatsApp</span>
+                  </button>
+                </section>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                  <button onClick={() => goTab('balance')} className={`${card} p-4 text-left hover:border-slate-300`}>
+                    <p className="text-xs font-semibold text-slate-500 uppercase">Kekayaan Bersih</p>
+                    <p className="text-xl sm:text-2xl font-bold text-slate-900 mt-1 tabular">{formatCurrency(netWorth)}</p>
+                    <p className="text-xs text-slate-500 mt-1">Aset {formatShort(totalAssets)} · Hutang {formatShort(totalLiabilities)}</p>
+                  </button>
+                  <button onClick={() => { setBalanceView('cashflow'); goTab('balance'); }} className={`${card} p-4 text-left hover:border-slate-300`}>
+                    <p className="text-xs font-semibold text-slate-500 uppercase">Tabungan Bersih / Bulan</p>
+                    <p className={`text-xl sm:text-2xl font-bold mt-1 tabular ${netMonthlyIncome >= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>{formatCurrency(netMonthlyIncome)}</p>
+                    <p className="text-xs text-slate-500 mt-1">Setahun: {formatCurrency(netMonthlyIncome * 12)}</p>
+                  </button>
+                  <button onClick={() => goTab('targets')} className={`${card} p-4 text-left hover:border-slate-300`}>
+                    <p className="text-xs font-semibold text-slate-500 uppercase">Target Kekayaan</p>
+                    <p className="text-xl sm:text-2xl font-bold text-blue-600 mt-1 tabular">{formatCurrency(totalTargetWealth)}</p>
+                    <p className="text-xs text-slate-500 mt-1">Tahun target {effTargetYear}</p>
+                  </button>
+                  <div className={`${card} p-4`}>
+                    <div className="flex justify-between items-center">
+                      <p className="text-xs font-semibold text-slate-500 uppercase">Imbal Hasil</p>
+                      <span className="text-sm font-bold bg-purple-100 text-purple-700 px-2 py-0.5 rounded">{customReturnRate}% p.a.</span>
+                    </div>
+                    <input type="range" min="0" max="30" step="0.5" value={customReturnRate}
+                      onChange={(e) => setCustomReturnRate(parseFloat(e.target.value) || 0)}
+                      aria-label="Asumsi imbal hasil per tahun"
+                      className="w-full accent-purple-600 cursor-pointer mt-1" />
+                    <div className="grid grid-cols-3 gap-1.5 mt-1">
+                      {Object.entries(RISK_PROFILES).map(([k, p]) => {
+                        const on = customReturnRate === p.return * 100;
+                        return (
+                          <button key={k} onClick={() => applyProfile(k)}
+                            className={`text-[11px] font-semibold py-2 rounded-lg border transition-colors ${on ? 'bg-purple-600 border-purple-600 text-white' : 'border-slate-200 text-slate-600 hover:bg-purple-50'}`}>
+                            {p.name}<br />{p.return * 100}%
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                <section className={`${card} p-4 sm:p-6`}>
+                  <h2 className="text-base sm:text-lg font-bold text-slate-900">Proyeksi Kekayaan {currentYear}–{currentYear + projectionYearsCount}</h2>
+                  <p className="text-xs sm:text-sm text-slate-500 mb-3">Sentuh atau geser grafik untuk melihat nilai tiap tahun.</p>
+                  <ProjectionChart data={projectionData} target={totalTargetWealth} targetYear={effTargetYear} />
+                </section>
+
+                <section className="bg-slate-900 text-white p-5 sm:p-6 rounded-2xl shadow-md">
+                  <h3 className="text-base sm:text-lg font-bold text-emerald-400 mb-1">💡 4 Pilar Rekomendasi IHSGHodler</h3>
+                  <p className="text-xs text-slate-300 mb-4">Empat pilar finansial utama untuk keamanan dan pencapaian target Anda.</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                    {[
+                      { icon: '📉', title: '1. Kurangi Biaya', color: 'text-rose-400', text: 'Evaluasi dan pangkas pengeluaran non-esensial (gaya hidup, langganan tidak terpakai) untuk mendongkrak surplus tabungan bulanan.' },
+                      { icon: '📈', title: '2. Tingkatkan Pendapatan', color: 'text-emerald-400', text: 'Kembangkan sumber pemasukan aktif maupun pasif melalui karier utama, bisnis sampingan (side hustle), atau monetisasi keahlian.' },
+                      { icon: '📊', title: '3. Berinvestasi', color: 'text-blue-400', text: `Konsisten alokasikan surplus dana ke instrumen investasi sesuai profil risiko (${riskProfile.name} di return ${customReturnRate}% p.a.) untuk melawan inflasi.` },
+                      { icon: '🛡️', title: '4. Punya Asuransi', color: 'text-purple-400', text: 'Lindungi aset akumulasi dan cashflow dari risiko musibah tidak terduga dengan proteksi asuransi kesehatan serta jiwa yang memadai.' },
+                    ].map(p => (
+                      <div key={p.title} className="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                        <p className={`font-bold text-sm ${p.color}`}>{p.icon} {p.title}</p>
+                        <p className="text-xs text-slate-300 leading-relaxed mt-1.5">{p.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              </div>
+            )}
+
+            {/* ===== NERACA & CASHFLOW ===== */}
+            {activeTab === 'balance' && (
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 bg-slate-200 p-1 rounded-xl max-w-md" role="tablist">
+                  {[['neraca', 'Aset & Hutang'], ['cashflow', 'Cashflow Bulanan']].map(([id, label]) => (
+                    <button key={id} role="tab" aria-selected={balanceView === id} onClick={() => setBalanceView(id)}
+                      className={`py-2.5 rounded-lg text-sm font-semibold transition-colors ${balanceView === id ? 'bg-white text-slate-900 shadow' : 'text-slate-600'}`}>
+                      {label}
+                    </button>
+                  ))}
+                </div>
+
+                {balanceView === 'neraca' && (
+                  <>
+                    <div className="bg-emerald-600 text-white rounded-2xl p-5 shadow-sm">
+                      <p className="text-xs uppercase tracking-wider font-semibold text-emerald-100">Kekayaan Bersih (Aset − Kewajiban)</p>
+                      <p className="text-3xl font-black tabular mt-1">{formatCurrency(netWorth)}</p>
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+                      <ListSection title="Aset" accent="blue" items={assets} setItems={setAssets}
+                        newName="Aset Baru" addLabel="Tambah Aset" total={totalAssets} />
+                      <ListSection title="Kewajiban / Hutang" accent="amber" items={liabilities} setItems={setLiabilities}
+                        newName="Hutang Baru" addLabel="Tambah Hutang" total={totalLiabilities} />
+                    </div>
+                  </>
+                )}
+
+                {balanceView === 'cashflow' && (
+                  <>
+                    <div className="bg-slate-900 text-white rounded-2xl p-5 shadow-sm grid grid-cols-2 gap-4">
+                      <div>
+                        <p className="text-xs uppercase tracking-wider font-semibold text-slate-400">Laba Bersih / Bulan</p>
+                        <p className={`text-lg sm:text-3xl font-black tabular mt-1 break-words ${netMonthlyIncome >= 0 ? 'text-emerald-400' : 'text-rose-400'}`}>{formatCurrency(netMonthlyIncome)}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-wider font-semibold text-slate-400">Disetahunkan</p>
+                        <p className={`text-lg sm:text-3xl font-black tabular mt-1 break-words ${netMonthlyIncome >= 0 ? 'text-emerald-300' : 'text-rose-300'}`}>{formatCurrency(netMonthlyIncome * 12)}</p>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+                      <ListSection title="Pemasukan / Bulan" accent="emerald" items={incomes} setItems={setIncomes}
+                        newName="Pemasukan Baru" addLabel="Tambah Pemasukan" total={totalMonthlyIncome}
+                        renderSub={(it) => `Setahun: ${formatCurrency((Number(it.value) || 0) * 12)}`} />
+                      <ListSection title="Pengeluaran & Bunga / Bulan" accent="rose" items={expenses} setItems={setExpenses}
+                        newName="Pengeluaran Baru" addLabel="Tambah Pengeluaran" total={totalMonthlyExpense}
+                        renderSub={(it) => `Setahun: ${formatCurrency((Number(it.value) || 0) * 12)}`} />
+                    </div>
+                  </>
+                )}
+              </div>
+            )}
+
+            {/* ===== TARGET ===== */}
+            {activeTab === 'targets' && (
+              <div className="space-y-4 max-w-3xl">
+                <div className="bg-amber-100 border border-amber-300 rounded-2xl p-5 space-y-4">
+                  <div>
+                    <p className="text-xs uppercase tracking-wider font-semibold text-amber-800">Total Target Kekayaan</p>
+                    <p className="text-3xl sm:text-4xl font-black tabular text-slate-900 mt-1 break-words">{formatCurrency(totalTargetWealth)}</p>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="font-semibold text-slate-700 text-sm">Tahun Target</span>
+                    <div className="flex items-center bg-white rounded-xl border border-amber-300 overflow-hidden">
+                      <button onClick={() => setTargetYear(Math.max(currentYear + 1, effTargetYear - 1))} aria-label="Kurangi tahun"
+                        className="w-11 h-11 flex items-center justify-center text-amber-700 hover:bg-amber-50 active:bg-amber-100"><MinusIcon /></button>
+                      <span className="w-16 text-center font-bold text-lg tabular" aria-live="polite">{effTargetYear}</span>
+                      <button onClick={() => setTargetYear(Math.min(currentYear + projectionYearsCount, effTargetYear + 1))} aria-label="Tambah tahun"
+                        className="w-11 h-11 flex items-center justify-center text-amber-700 hover:bg-amber-50 active:bg-amber-100"><PlusIcon /></button>
+                    </div>
+                    <span className="text-xs bg-amber-600 text-white font-bold px-2.5 py-1 rounded-full">{effTargetYear - currentYear} tahun lagi</span>
+                  </div>
+                  {atTargetYear && (
+                    <p className="text-sm text-slate-700 bg-white/70 rounded-xl p-3">
+                      Proyeksi di {effTargetYear}: <strong className="tabular">{formatCurrency(atTargetYear.projectedWealth)}</strong>{' '}
+                      {atTargetYear.projectedWealth >= totalTargetWealth
+                        ? <span className="text-emerald-700 font-semibold">✓ cukup</span>
+                        : <span className="text-rose-700 font-semibold">(kurang {formatCurrency(totalTargetWealth - atTargetYear.projectedWealth)})</span>}
+                    </p>
+                  )}
+                </div>
+
+                <ListSection
+                  title="Pos Target Finansial" accent="amber" items={targets} setItems={setTargets}
+                  newName="Target Finansial Baru" addLabel="Tambah Target" total={totalTargetWealth}
+                  renderBadge={(it) => it.isRetirement && (
+                    <button onClick={() => setShowRuleModal(true)}
+                      className="shrink-0 flex items-center gap-1 text-xs font-semibold bg-amber-100 text-amber-800 hover:bg-amber-200 rounded-full px-2.5 py-1.5">
+                      <HelpIcon /><span>Aturan 4%</span>
+                    </button>
+                  )}
+                />
+              </div>
+            )}
+
+            {/* ===== KUIS PROFIL RISIKO ===== */}
+            {activeTab === 'quiz' && (
+              <div className="max-w-2xl mx-auto space-y-4">
+                {quizResult ? (
+                  <div className={`${card} p-6 text-center space-y-3`}>
+                    <p className="text-xs uppercase tracking-wider font-semibold text-slate-500">Hasil Profil Risiko Anda</p>
+                    <p className="text-3xl font-black text-purple-600">{RISK_PROFILES[quizResult].name}</p>
+                    <p className="text-sm text-slate-600">{RISK_PROFILES[quizResult].desc}</p>
+                    <p className="text-sm text-slate-500">Asumsi return proyeksi diatur ke <strong>{RISK_PROFILES[quizResult].return * 100}% p.a.</strong></p>
+                    <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                      <button onClick={() => goTab('dashboard')} className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl">Lihat Proyeksi</button>
+                      <button onClick={restartQuiz} className="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 rounded-xl">Ulangi Kuis</button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className={`${card} p-5 sm:p-6`}>
+                    <div className="flex items-center justify-between gap-3 mb-2">
+                      <h2 className="text-lg font-bold text-slate-900">Kuesioner Profil Risiko</h2>
+                      <span className="shrink-0 text-xs font-bold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">{quizStep + 1} / {QUESTIONNAIRE.length}</span>
+                    </div>
+                    <div className="h-2 bg-slate-100 rounded-full overflow-hidden mb-5">
+                      <div className="h-full bg-purple-500 transition-all" style={{ width: `${(quizStep / QUESTIONNAIRE.length) * 100}%` }}></div>
+                    </div>
+                    <p className="text-base sm:text-lg font-semibold text-slate-800 mb-4">{QUESTIONNAIRE[quizStep].question}</p>
+                    <div className="space-y-3">
+                      {QUESTIONNAIRE[quizStep].options.map((opt, idx) => {
+                        const chosen = quizAnswers[QUESTIONNAIRE[quizStep].id] === opt.score;
+                        return (
+                          <button key={idx} onClick={() => handleQuizAnswer(QUESTIONNAIRE[quizStep].id, opt.score)}
+                            className={`w-full text-left p-4 rounded-xl border-2 text-sm sm:text-base font-medium transition-colors flex items-center gap-3 ${chosen ? 'border-purple-500 bg-purple-50 text-purple-900' : 'border-slate-200 text-slate-700 hover:border-purple-400 active:bg-purple-50'}`}>
+                            <span className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${chosen ? 'bg-purple-600 text-white' : 'bg-slate-100 text-slate-500'}`}>{String.fromCharCode(65 + idx)}</span>
+                            <span>{opt.text}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                    {quizStep > 0 && (
+                      <button onClick={() => setQuizStep(quizStep - 1)} className="mt-4 flex items-center gap-1 text-sm font-semibold text-slate-600 hover:text-slate-900 py-2">
+                        <BackIcon /> Pertanyaan sebelumnya
+                      </button>
+                    )}
+                  </div>
+                )}
+
+                <div className="bg-slate-900 text-white rounded-2xl p-5 flex items-center justify-between gap-4">
+                  <div className="min-w-0">
+                    <p className="text-xs text-slate-400 font-semibold uppercase">Profil Aktif</p>
+                    <p className="text-xl font-bold text-purple-400">{riskProfile.name}</p>
+                    <p className="text-xs text-slate-300 mt-0.5">{riskProfile.desc}</p>
+                  </div>
+                  <div className="shrink-0 text-right text-2xl font-black text-emerald-400 tabular">
+                    {customReturnRate}%<span className="block text-xs font-normal text-slate-300">p.a.</span>
+                  </div>
+                </div>
+              </div>
+            )}
+          </main>
+
+          <footer className="hidden md:block bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
+            IHSGHodler &copy; {currentYear} &bull; Perencanaan Finansial & Akumulasi Portofolio Jangka Panjang &bull; Data tersimpan otomatis di perangkat ini{OPEN_COUNT !== null && <> &bull; Aplikasi dibuka {formatNumber(OPEN_COUNT)} kali</>}
+          </footer>
+
+          {/* Navigasi bawah (mobile) */}
+          <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]"
+            style={{ paddingBottom: 'env(safe-area-inset-bottom)' }} aria-label="Navigasi utama">
+            <div className="grid grid-cols-4">
+              {TABS.map(tab => {
+                const I = tab.icon, on = activeTab === tab.id;
+                return (
+                  <button key={tab.id} onClick={() => goTab(tab.id)} aria-current={on ? 'page' : undefined}
+                    className={`flex flex-col items-center justify-center gap-0.5 py-2 min-h-[58px] text-[11px] font-semibold transition-colors ${on ? 'text-emerald-600' : 'text-slate-500'}`}>
+                    <span className={`px-4 py-1 rounded-full ${on ? 'bg-emerald-100' : ''}`}><I /></span>
+                    <span>{tab.short}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </nav>
+
+          {/* Modal */}
+
+          <Sheet open={showRuleModal} onClose={() => setShowRuleModal(false)} title={'🎯 Apa itu "Aturan 4%" Dana Pensiun?'}>
+            <div className="text-sm text-slate-600 space-y-3">
+              <p><strong>Aturan 4% (Trinity Study)</strong> menyatakan bahwa Anda dapat menarik 4% dari total portofolio investasi setiap tahun saat pensiun tanpa kehabisan uang selama minimal 30 tahun.</p>
+              <div className="bg-amber-50 p-3 rounded-xl border border-amber-200 font-mono text-slate-800 text-xs">Target Dana Pensiun = Pengeluaran Tahunan × 25</div>
+              <p className="text-xl font-bold tabular text-emerald-700 bg-emerald-50 p-3 rounded-xl text-center border border-emerald-200">{formatCurrency(totalMonthlyExpense * 12 * 25)}</p>
+            </div>
+            <button onClick={apply4PercentRule} className="mt-4 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl">Gunakan Angka Ini</button>
+          </Sheet>
+
+          <Sheet open={showResetModal} onClose={() => setShowResetModal(false)} title="Reset semua data?">
+            <p className="text-sm text-slate-600">Semua angka yang Anda isi akan dikembalikan ke contoh awal. Tindakan ini tidak bisa dibatalkan.</p>
+            <div className="flex gap-2 mt-4">
+              <button onClick={resetAll} className="flex-1 bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3 rounded-xl">Ya, Reset</button>
+              <button onClick={() => setShowResetModal(false)} className="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 rounded-xl">Batal</button>
+            </div>
+          </Sheet>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="id" data-halaman="sekuritas-asuransi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Judul halaman dan nama menu diatur di pengaturan.js (id "sekuritas-asuransi"); judul di bawah hanya cadangan.
+       Daftar sekuritas, link afiliasi, dan nomor WhatsApp juga diatur di pengaturan.js. -->
+  <title>Daftar Sekuritas &amp; Asuransi · IHSGHodler</title>
+  <meta name="description" content="Daftar sekuritas pilihan IHSGHodler, cara memilih sekuritas, pentingnya asuransi, konsultasi asuransi via WhatsApp, dan disclaimer lengkap.">
+  <meta name="theme-color" content="#0e6b52">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/menu-situs.css">
+  <style>
+    :root {
+      --bg: #f3f6f4; --panel: #ffffff; --fg: #10201b; --muted: #5f706a; --line: #dbe3df;
+      --accent: #0e6b52; --accent-fg: #ffffff; --soft: #e6f2ed; --step: #f3f6f4;
+      --note-bg: #fff7e6; --note-line: #efd7a1; --note-fg: #6b4500;
+      --cta-bg: #0d3a2f; --cta-fg: #eef5f2; --cta-muted: #b9cec6; --cta-line: rgba(255, 255, 255, .16);
+      --wa: #25d366; --wa-fg: #06260f;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1f1a; --panel: #12302a; --fg: #eef5f2; --muted: #9db3ab; --line: #24493f;
+        --accent: #6fe3a5; --accent-fg: #06261c; --soft: rgba(111, 227, 165, .13); --step: #0f2722;
+        --note-bg: #2b2412; --note-line: #5a4a1b; --note-fg: #f2d48c;
+        --cta-bg: #14473a; --cta-fg: #eef5f2; --cta-muted: #acc8bd; --cta-line: rgba(255, 255, 255, .14);
+        color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .hal { max-width: 1180px; margin: 0 auto; padding: 32px max(16px, env(safe-area-inset-right, 0px)) 56px max(16px, env(safe-area-inset-left, 0px)); }
+
+    .hero { display: grid; gap: 10px; max-width: 780px; }
+    .eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    h1 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 42px); line-height: 1.12; text-wrap: balance; }
+    .lead { margin: 0; max-width: 64ch; font-size: 17px; line-height: 1.55; color: var(--muted); }
+    .loncat { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+    .loncat a { display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--fg); text-decoration: none; font-weight: 650; font-size: 14px; }
+    .loncat a:hover { border-color: var(--accent); color: var(--accent); }
+
+    .ungkap { display: flex; gap: 12px; align-items: flex-start; margin-top: 24px; padding: 14px 16px; border: 1px solid var(--note-line); border-radius: 12px; background: var(--note-bg); color: var(--note-fg); font-size: 14px; line-height: 1.55; }
+    .ungkap svg { flex: none; width: 20px; height: 20px; margin-top: 1px; }
+    .ungkap p { margin: 0; }
+    .ungkap a { color: inherit; font-weight: 700; }
+
+    .bagian { margin-top: 56px; scroll-margin-top: 16px; }
+    .bagian__kepala { max-width: 780px; margin-bottom: 18px; }
+    .bagian__kepala h2 { margin: 0 0 6px; font-family: var(--serif); font-weight: 400; font-size: clamp(25px, 3.6vw, 32px); line-height: 1.2; text-wrap: balance; }
+    .bagian__kepala p { margin: 0; color: var(--muted); }
+    .subjudul { margin: 32px 0 12px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+    .kartu { min-width: 0; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+    .kartu h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.35; }
+    .kartu p { margin: 0; color: var(--muted); font-size: 14.5px; }
+    .panduan { margin-top: 16px; }
+
+    .tombol { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 1px solid transparent; border-radius: 12px; background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 750; font-size: 15px; white-space: nowrap; }
+    .tombol:hover { filter: brightness(1.08); }
+    .tombol svg { flex: none; width: 17px; height: 17px; }
+    .tombol--garis { background: var(--panel); color: var(--fg); border-color: var(--line); }
+    .tombol--garis:hover { filter: none; border-color: var(--accent); color: var(--accent); }
+
+    /* sekuritas */
+    .grid-sek { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 12px; }
+    .grid-sek[hidden], .kosong[hidden] { display: none; }
+    .sek { display: flex; flex-direction: column; gap: 14px; }
+    .sek__atas { display: flex; gap: 12px; align-items: flex-start; }
+    .sek__logo { flex: none; width: 46px; height: 46px; display: grid; place-items: center; overflow: hidden; border-radius: 12px; font-weight: 800; font-size: 19px; background: hsl(var(--h) 42% 90%); color: hsl(var(--h) 55% 26%); }
+    .sek__logo img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+    @media (prefers-color-scheme: dark) { .sek__logo { background: hsl(var(--h) 30% 24%); color: hsl(var(--h) 70% 84%); } }
+    .sek__nama { margin: 0; font-size: 16px; line-height: 1.3; }
+    .sek__ket { margin: 3px 0 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .lencana { display: inline-block; margin-top: 6px; padding: 1px 8px; border: 1px solid var(--note-line); border-radius: 999px; background: var(--note-bg); color: var(--note-fg); font-size: 11.5px; font-weight: 700; letter-spacing: .02em; }
+    .sek__kode { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 8px 10px; border: 1px dashed var(--line); border-radius: 10px; font-size: 13.5px; color: var(--muted); }
+    .sek__kode code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 14px; font-weight: 700; letter-spacing: .04em; color: var(--fg); }
+    .salin { margin-left: auto; min-height: 32px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--fg); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+    .salin:hover { border-color: var(--accent); color: var(--accent); }
+    .sek .tombol { margin-top: auto; }
+    .kosong { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 18px; border: 1px dashed var(--line); border-radius: 14px; background: var(--panel); }
+    .kosong p { margin: 0; max-width: 64ch; color: var(--muted); }
+    .kosong b { color: var(--fg); }
+
+    .cek { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 10px; }
+    .cek li { position: relative; padding-left: 34px; font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+    .cek li b { color: var(--fg); }
+    .cek li::before { content: ""; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; background: var(--soft); }
+    .cek li::after { content: ""; position: absolute; left: 8px; top: 6px; width: 6px; height: 10px; border: solid var(--accent); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+
+    /* asuransi */
+    .grid-alasan { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 12px; }
+    .alasan__ikon { width: 42px; height: 42px; display: grid; place-items: center; margin-bottom: 12px; border-radius: 12px; background: var(--soft); color: var(--accent); }
+    .alasan__ikon svg { width: 22px; height: 22px; }
+    .fondasi { margin-top: 16px; }
+    .langkah { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .langkah li { display: flex; gap: 12px; align-items: flex-start; padding: 14px; border-radius: 12px; background: var(--step); }
+    .langkah__no { flex: none; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: var(--accent); color: var(--accent-fg); font-weight: 800; font-size: 14px; }
+    .langkah b { display: block; font-size: 15px; }
+    .langkah p { margin: 2px 0 0; font-size: 14px; }
+    @media (max-width: 760px) { .langkah { grid-template-columns: minmax(0, 1fr); } }
+    .grid-jenis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; }
+    .jenis h4 { margin: 0 0 4px; font-size: 15px; line-height: 1.35; }
+
+    .cta { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 16px 32px; padding: 26px; border-radius: 18px; background: var(--cta-bg); color: var(--cta-fg); }
+    .cta h3 { margin: 0 0 6px; font-family: var(--serif); font-weight: 400; font-size: clamp(23px, 3vw, 28px); line-height: 1.2; }
+    .cta p { margin: 0; color: var(--cta-muted); }
+    .cta__aksi { display: grid; justify-items: center; gap: 8px; }
+    .tombol--wa { min-height: 50px; padding: 0 22px; background: var(--wa); color: var(--wa-fg); font-size: 16px; }
+    .tombol--wa svg { width: 21px; height: 21px; }
+    .cta__nomor { font-size: 13px; color: var(--cta-muted); }
+    .cta__nomor b { color: var(--cta-fg); font-weight: 700; letter-spacing: .02em; white-space: nowrap; }
+    .cta__privasi { grid-column: 1 / -1; padding-top: 12px; border-top: 1px solid var(--cta-line); font-size: 12.5px; }
+    @media (max-width: 680px) { .cta { grid-template-columns: minmax(0, 1fr); padding: 20px; } .cta__aksi { justify-items: stretch; text-align: center; } }
+
+    /* disclaimer */
+    .disclaimer ol { list-style: none; margin: 0; padding: 0; counter-reset: d; }
+    .disclaimer li { counter-increment: d; position: relative; padding: 14px 0 14px 42px; border-bottom: 1px solid var(--line); font-size: 14.5px; line-height: 1.6; color: var(--muted); }
+    .disclaimer li:first-child { padding-top: 2px; }
+    .disclaimer li:first-child::before { top: 2px; }
+    .disclaimer li:last-child { border-bottom: 0; padding-bottom: 2px; }
+    .disclaimer li::before { content: counter(d); position: absolute; left: 0; top: 14px; width: 28px; height: 28px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; font-size: 12.5px; font-weight: 700; color: var(--fg); }
+    .disclaimer li b { color: var(--fg); }
+    .diperbarui { margin: 12px 0 0; font-size: 12.5px; color: var(--muted); }
+
+    .kaki { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+    .kaki p { margin: 0; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <!-- Menu situs (nama & tautan di pengaturan.js) -->
+  <script src="pengaturan.js"></script>
+  <script src="assets/menu-situs.js"></script>
+
+  <main class="hal" id="isi">
+    <header class="hero">
+      <p class="eyebrow" data-merek>IHSGHodler</p>
+      <h1 data-judul-halaman>Daftar Sekuritas &amp; Asuransi</h1>
+      <p class="lead">Mulai investasi saham lewat sekuritas yang berizin dan diawasi OJK, lalu lindungi hasilnya dengan asuransi yang sesuai kebutuhan.</p>
+      <nav class="loncat" aria-label="Bagian halaman">
+        <a href="#sekuritas">Sekuritas</a>
+        <a href="#asuransi">Asuransi</a>
+        <a href="#disclaimer">Disclaimer</a>
+      </nav>
+    </header>
+
+    <aside class="ungkap" aria-label="Pengungkapan afiliasi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      <p><b>Pengungkapan afiliasi:</b> tautan dan kode bertanda <b>Afiliasi</b> di halaman ini adalah tautan afiliasi atau referral. IHSGHodler dapat menerima komisi bila Anda membuka akun lewat tautan tersebut, tanpa biaya tambahan bagi Anda. <a href="#disclaimer">Baca disclaimer lengkap</a>.</p>
+    </aside>
+
+    <!-- ============================== SEKURITAS ============================== -->
+    <section class="bagian" id="sekuritas" aria-labelledby="judul-sekuritas">
+      <div class="bagian__kepala">
+        <h2 id="judul-sekuritas">Daftar sekuritas</h2>
+        <p>Untuk membeli saham di Bursa Efek Indonesia, Anda perlu rekening efek di perusahaan sekuritas. Pembukaan rekening umumnya bisa dilakukan secara online lewat aplikasi.</p>
+      </div>
+
+      <div class="grid-sek" id="daftar-sekuritas"></div>
+      <div class="kosong" id="sekuritas-kosong" hidden>
+        <p><b>Daftar sekuritas mitra sedang disiapkan.</b> Sementara itu, pakai panduan di bawah untuk memilih sekuritas, atau tanya langsung ke komunitas di Discord.</p>
+        <a class="tombol tombol--garis" data-menu="discord" href="https://discord.gg/3V3pH9ETeM" target="_blank" rel="noopener">Tanya di Discord</a>
+      </div>
+      <noscript><div class="kosong"><p>Aktifkan JavaScript untuk melihat daftar sekuritas.</p></div></noscript>
+
+      <div class="kartu panduan">
+        <h3>Cara memilih sekuritas</h3>
+        <ul class="cek">
+          <li><b>Berizin dan diawasi OJK</b>, serta tercatat sebagai Anggota Bursa di Bursa Efek Indonesia (daftarnya ada di situs idx.co.id).</li>
+          <li><b>Dana di RDN atas nama Anda.</b> Uang untuk membeli saham disimpan di Rekening Dana Nasabah (RDN) di bank, atas nama Anda sendiri, bukan di rekening perusahaan.</li>
+          <li><b>Saham tercatat atas nama Anda di KSEI.</b> Kepemilikan bisa dicek sendiri lewat fasilitas AKSes KSEI.</li>
+          <li><b>Bandingkan biaya</b> transaksi beli dan jual, biaya lain, serta setoran awal minimum.</li>
+          <li><b>Aplikasi dan layanan:</b> pilih yang stabil, fiturnya sesuai gaya investasi Anda, dan layanan nasabahnya mudah dihubungi.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== ASURANSI ============================== -->
+    <section class="bagian" id="asuransi" aria-labelledby="judul-asuransi">
+      <div class="bagian__kepala">
+        <h2 id="judul-asuransi">Mengapa asuransi penting?</h2>
+        <p>Investasi membantu uang Anda tumbuh. Asuransi menjaga agar hasilnya tidak habis karena satu kejadian tak terduga.</p>
+      </div>
+
+      <div class="grid-alasan">
+        <article class="kartu">
+          <span class="alasan__ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v5.6c0 4.6-3.1 8.1-7.5 9.4-4.4-1.3-7.5-4.8-7.5-9.4V6L12 3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>Melindungi tabungan dan investasi</h3>
+          <p>Biaya rawat inap atau operasi bisa menguras dana darurat dalam sekejap, bahkan memaksa Anda menjual saham saat harganya sedang turun.</p>
+        </article>
+        <article class="kartu">
+          <span class="alasan__ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+          <h3>Menjaga penghasilan keluarga</h3>
+          <p>Bila pencari nafkah sakit keras atau meninggal dunia, asuransi jiwa membantu keluarga tetap memenuhi kebutuhan, cicilan, dan biaya pendidikan.</p>
+        </article>
+        <article class="kartu">
+          <span class="alasan__ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.4-4.5-9.1-9.1C1.7 8.1 4 4.8 7.2 4.8c2 0 3.6 1.1 4.8 2.7 1.2-1.6 2.8-2.7 4.8-2.7 3.2 0 5.5 3.3 4.3 6.6-1.7 4.6-9.1 9.1-9.1 9.1z"/><path d="M6.5 12h2.8l1.4-2.4 2.2 4.8 1.4-2.4h3.2"/></svg></span>
+          <h3>Biaya kesehatan terus naik</h3>
+          <p>Kenaikan biaya medis cenderung lebih cepat daripada inflasi umum, sehingga mengandalkan tabungan saja sering tidak cukup.</p>
+        </article>
+        <article class="kartu">
+          <span class="alasan__ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5h16"/><path d="M5 15l4.2-4.2 3.3 3.3L19 7.6"/><path d="M14.5 7.5H19V12"/></svg></span>
+          <h3>Investasi tetap berjalan</h3>
+          <p>Dengan proteksi yang memadai, portofolio tidak perlu dicairkan di tengah jalan dan bunga majemuk tetap bekerja untuk Anda.</p>
+        </article>
+      </div>
+
+      <div class="kartu fondasi">
+        <h3>Urutan fondasi keuangan</h3>
+        <ol class="langkah">
+          <li><span class="langkah__no">1</span><div><b>Dana darurat</b><p>3–6 kali pengeluaran bulanan; lebih besar bila penghasilan tidak tetap.</p></div></li>
+          <li><span class="langkah__no">2</span><div><b>Asuransi</b><p>Kesehatan lebih dulu (termasuk BPJS Kesehatan), lalu asuransi jiwa bila ada yang bergantung pada penghasilan Anda.</p></div></li>
+          <li><span class="langkah__no">3</span><div><b>Investasi rutin</b><p>Sisihkan surplus secara konsisten sesuai profil risiko. <a data-menu="cek-keuangan" href="cek-keuangan.html">Hitung lewat Cek kesehatan keuanganmu</a>.</p></div></li>
+        </ol>
+      </div>
+
+      <h3 class="subjudul">Jenis asuransi yang umum</h3>
+      <div class="grid-jenis">
+        <article class="kartu jenis"><h4>Kesehatan</h4><p>Menanggung biaya rawat inap, operasi, dan perawatan. BPJS Kesehatan adalah fondasinya; asuransi swasta bisa melengkapi.</p></article>
+        <article class="kartu jenis"><h4>Jiwa berjangka (term life)</h4><p>Memberikan uang pertanggungan kepada keluarga bila tertanggung meninggal dalam masa perlindungan. Penting bila Anda punya tanggungan.</p></article>
+        <article class="kartu jenis"><h4>Penyakit kritis</h4><p>Memberikan santunan sekaligus saat didiagnosis penyakit kritis tertentu, untuk menggantikan penghasilan selama masa pemulihan.</p></article>
+        <article class="kartu jenis"><h4>Kecelakaan diri</h4><p>Memberikan santunan bila kecelakaan menyebabkan cacat atau meninggal dunia.</p></article>
+        <article class="kartu jenis"><h4>Kendaraan &amp; properti</h4><p>Melindungi aset dari kerusakan, kehilangan, kebakaran, atau bencana.</p></article>
+      </div>
+
+      <div class="kartu panduan">
+        <h3>Sebelum membeli polis, cek hal ini</h3>
+        <ul class="cek">
+          <li><b>Hitung kebutuhan uang pertanggungan</b>, jangan hanya membandingkan besar premi.</li>
+          <li><b>Pastikan premi terjangkau</b> dan sanggup dibayar rutin dalam jangka panjang.</li>
+          <li><b>Baca RIPLAY dan polis:</b> manfaat, pengecualian, masa tunggu, dan batas usia.</li>
+          <li><b>Pahami cara klaim</b> (cashless atau reimburse) dan daftar rumah sakit rekanan.</li>
+          <li><b>Isi formulir pengajuan dengan jujur</b>, termasuk riwayat kesehatan, agar klaim tidak ditolak di kemudian hari.</li>
+          <li><b>Pastikan perusahaan asuransi berizin dan diawasi OJK</b>, dan manfaatkan masa pelajari polis (free look) bila ada yang belum sesuai.</li>
+        </ul>
+      </div>
+
+      <div class="cta" id="konsultasi">
+        <div>
+          <h3>Bingung memilih proteksi yang pas?</h3>
+          <p>Ceritakan kondisi Anda, misalnya usia, jumlah tanggungan, penghasilan, dan asuransi yang sudah dimiliki, lalu diskusikan pilihannya lewat WhatsApp.</p>
+        </div>
+        <div class="cta__aksi">
+          <a class="tombol tombol--wa" data-wa href="https://wa.me/6285122345992?text=Halo%20IHSGHodler%2C%20saya%20ingin%20konsultasi%20soal%20asuransi." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 01-12.4 7.6L3.5 20.5l1.4-4.3a8.5 8.5 0 1115.6-4.6z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 01-2.8-2.8l.9-1-1-2-1.6 1z" fill="currentColor" stroke="none"/></svg>
+            Chat via WhatsApp
+          </a>
+          <span class="cta__nomor">WhatsApp <b data-wa-nomor>+62 851-2234-5992</b></span>
+        </div>
+        <p class="cta__privasi">Jangan kirim data sensitif seperti nomor kartu, password, PIN, atau kode OTP lewat chat.</p>
+      </div>
+    </section>
+
+    <!-- ============================== DISCLAIMER ============================== -->
+    <section class="bagian" id="disclaimer" aria-labelledby="judul-disclaimer">
+      <div class="bagian__kepala">
+        <h2 id="judul-disclaimer">Disclaimer</h2>
+        <p>Harap dibaca sebelum memakai tautan, kode referral, atau layanan konsultasi di halaman ini.</p>
+      </div>
+      <div class="kartu disclaimer">
+        <ol>
+          <li><b>Pengungkapan afiliasi.</b> Tautan atau kode yang bertanda "Afiliasi" adalah tautan afiliasi atau referral. IHSGHodler dapat menerima komisi, bonus, atau imbalan lain dari penyedia bila Anda mendaftar atau bertransaksi lewat tautan atau kode tersebut. Imbalan ini tidak menambah biaya apa pun bagi Anda.</li>
+          <li><b>Bukan saran investasi.</b> Seluruh konten IHSGHodler, termasuk daftar ini, proyeksi IHSG, dan alat cek kesehatan keuangan, disediakan untuk edukasi dan informasi. Konten ini bukan ajakan atau rekomendasi untuk membeli, menjual, atau menahan efek maupun produk keuangan tertentu.</li>
+          <li><b>Tidak ada jaminan keuntungan.</b> Investasi saham dan produk pasar modal mengandung risiko, termasuk kemungkinan kehilangan sebagian atau seluruh modal. Kinerja masa lalu, proyeksi, dan hasil simulasi tidak menjamin hasil di masa depan.</li>
+          <li><b>Promo dan biaya dari pihak ketiga.</b> Promo, bonus, cashback, hadiah, maupun biaya yang disebut adalah milik masing-masing penyedia, dapat berubah sewaktu-waktu, dan tunduk pada syarat dan ketentuan mereka. Selalu cek kembali di situs atau aplikasi resminya.</li>
+          <li><b>Produk asuransi.</b> Manfaat, premi, pengecualian, dan klaim sepenuhnya mengikuti polis serta ketentuan perusahaan asuransi. Penjelasan di halaman ini bersifat umum dan tidak menggantikan RIPLAY, polis, atau penjelasan resmi perusahaan asuransi.</li>
+          <li><b>Periksa legalitas.</b> Pastikan sekuritas dan perusahaan asuransi berizin dan diawasi Otoritas Jasa Keuangan (OJK). Anda bisa mengeceknya di situs resmi OJK atau melalui Kontak OJK 157.</li>
+          <li><b>Keputusan di tangan Anda.</b> Keputusan keuangan sepenuhnya menjadi tanggung jawab Anda. IHSGHodler tidak bertanggung jawab atas kerugian yang timbul dari penggunaan informasi di situs ini. Bila perlu, konsultasikan dengan perencana atau penasihat keuangan berlisensi.</li>
+          <li><b>Waspada penipuan.</b> Jangan pernah memberikan password, PIN, atau kode OTP kepada siapa pun, termasuk pihak yang mengatasnamakan IHSGHodler. Setoran investasi hanya ke RDN atas nama Anda sendiri, dan pembayaran premi hanya ke rekening resmi perusahaan asuransi.</li>
+          <li><b>Komunikasi lewat WhatsApp.</b> Pesan yang Anda kirim akan diterima oleh pemilik nomor tujuan. Informasi dalam percakapan bersifat umum dan bukan bagian dari polis atau perjanjian apa pun.</li>
+        </ol>
+        <p class="diperbarui">Disclaimer terakhir diperbarui 18 November 2026.</p>
+      </div>
+    </section>
+
+    <footer class="kaki">
+      <p>&copy; <span data-tahun>2026</span> <span data-merek>IHSGHodler</span>. Konten untuk edukasi, bukan saran investasi.</p>
+    </footer>
+  </main>
+
+  <script>
+  /* Isi halaman dari pengaturan.js: daftar sekuritas, nomor WhatsApp, dan tautan menu. */
+  (function () {
+    'use strict';
+    var S = window.IHSG_SITUS || {};
+    var IKON_LUAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M19 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h5"/></svg>';
+
+    function esc(t) {
+      return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+    function semua(sel, fn) { Array.prototype.forEach.call(document.querySelectorAll(sel), fn); }
+    function amanUrl(u) { return /^https?:\/\//i.test(String(u || '').trim()); }
+
+    // Tautan yang mengikuti pengaturan menu: <a data-menu="id-menu">
+    var menu = Array.isArray(S.menu) ? S.menu : [];
+    semua('[data-menu]', function (a) {
+      var id = a.getAttribute('data-menu');
+      for (var i = 0; i < menu.length; i++) {
+        if (menu[i] && menu[i].id === id && menu[i].url) { a.href = menu[i].url; break; }
+      }
+    });
+
+    // WhatsApp
+    var K = S.kontak || {};
+    var nomor = String(K.whatsapp || '').replace(/\D/g, '');
+    if (nomor) {
+      var href = 'https://wa.me/' + nomor + (K.pesanAsuransi ? '?text=' + encodeURIComponent(K.pesanAsuransi) : '');
+      semua('[data-wa]', function (a) { a.href = href; });
+      semua('[data-wa-nomor]', function (el) { el.textContent = formatNomor(nomor); });
+    }
+    function formatNomor(n) {
+      if (n.indexOf('62') !== 0) return '+' + n;
+      var r = n.slice(2);
+      return '+62 ' + [r.slice(0, 3), r.slice(3, 7), r.slice(7)].filter(Boolean).join('-');
+    }
+
+    semua('[data-tahun]', function (el) { el.textContent = new Date().getFullYear(); });
+
+    // Daftar sekuritas: hanya yang link-nya sudah diisi.
+    var daftar = (Array.isArray(S.sekuritas) ? S.sekuritas : []).filter(function (s) { return s && s.nama && amanUrl(s.link); });
+    var wadah = document.getElementById('daftar-sekuritas');
+    var kosong = document.getElementById('sekuritas-kosong');
+
+    function rona(nama) {
+      var h = 0;
+      for (var i = 0; i < nama.length; i++) h = (h * 31 + nama.charCodeAt(i)) % 360;
+      return h;
+    }
+    function kartu(s) {
+      var logo = amanUrl(s.logo) ? '<img src="' + esc(s.logo) + '" alt="" loading="lazy">' : esc(String(s.nama).trim().charAt(0).toUpperCase());
+      return '<article class="kartu sek">' +
+        '<div class="sek__atas"><span class="sek__logo" style="--h:' + rona(String(s.nama)) + '">' + logo + '</span>' +
+        '<div><h3 class="sek__nama">' + esc(s.nama) + '</h3>' +
+        (s.ket ? '<p class="sek__ket">' + esc(s.ket) + '</p>' : '') +
+        (s.afiliasi ? '<span class="lencana">Afiliasi</span>' : '') + '</div></div>' +
+        (s.kodeReferral ? '<div class="sek__kode">Kode referral <code>' + esc(s.kodeReferral) + '</code>' +
+          '<button type="button" class="salin" data-salin="' + esc(s.kodeReferral) + '" aria-label="Salin kode referral ' + esc(s.nama) + '">Salin</button></div>' : '') +
+        '<a class="tombol" href="' + esc(String(s.link).trim()) + '" target="_blank" rel="noopener' + (s.afiliasi ? ' sponsored' : '') + '">' +
+        esc(s.tombol || 'Buka akun') + IKON_LUAR + '</a>' +
+        '</article>';
+    }
+
+    if (!daftar.length) {
+      wadah.hidden = true;
+      kosong.hidden = false;
+    } else {
+      wadah.innerHTML = daftar.map(kartu).join('');
+    }
+
+    function salinLama(teks) {
+      return new Promise(function (ok, gagal) {
+        var t = document.createElement('textarea');
+        t.value = teks;
+        t.setAttribute('readonly', '');
+        t.style.position = 'fixed';
+        t.style.top = '0';
+        t.style.opacity = '0';
+        document.body.appendChild(t);
+        t.select();
+        try { if (document.execCommand('copy')) ok(); else gagal(); } catch (e) { gagal(e); }
+        document.body.removeChild(t);
+      });
+    }
+    function salin(teks) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(teks).catch(function () { return salinLama(teks); });
+      }
+      return salinLama(teks);
+    }
+    wadah.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-salin]') : null;
+      if (!b) return;
+      salin(b.getAttribute('data-salin')).then(function () {
+        b.textContent = 'Tersalin ✓';
+        setTimeout(function () { b.textContent = 'Salin'; }, 1800);
+      }, function () {
+        // Peramban menolak akses papan klip: sorot kodenya agar bisa disalin manual.
+        var kode = b.parentNode && b.parentNode.querySelector('code');
+        if (kode && window.getSelection) {
+          var r = document.createRange();
+          r.selectNodeContents(kode);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(r);
+        }
+        b.textContent = 'Salin manual';
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
