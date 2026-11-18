@@ -1,0 +1,58 @@
+/* Dashboard di layar HP dan tablet (hanya salinan publik GitHub Pages). Dipasang setelah ix.css. */
+@media (max-width: 900px) {
+  /* Tab dashboard: semua tab terlihat (bertumpuk), tidak tersembunyi di kanan. */
+  .ix-tabs { flex-wrap: wrap; gap: 6px; overflow: visible; border-bottom: 0; }
+  .ix-tab {
+    min-height: 36px; margin: 0; padding: 6px 12px;
+    border: 1px solid var(--color-border-line); border-radius: 999px;
+    background: var(--color-panel); font-size: 13px;
+  }
+  .ix-tab[aria-selected="true"] { background: var(--color-fg); border-color: var(--color-fg); color: var(--color-bg); }
+}
+
+@media (max-width: 760px) {
+  /* Lebar minimum kolom tidak berlaku di layar sempit. */
+  .ix-table .is-wide, .ix-table .is-mid, .ix-table .is-sm { min-width: 0; }
+
+  /* Tabel lebar menjadi kartu per baris. */
+  .ix-table.hp-kartu, .ix-table.hp-kartu tbody, .ix-table.hp-kartu tr, .ix-table.hp-kartu td { display: block; width: auto; }
+  .ix-table.hp-kartu thead { display: none; }
+  .ix-table.hp-kartu tbody tr {
+    margin: 0 0 10px; padding: 10px 12px;
+    border: 1px solid var(--color-border-line); border-radius: 10px; background: var(--color-panel);
+  }
+  /* Label di kolom kiri (posisi absolut) supaya isi sel yang bertingkat tetap utuh di kolom kanan. */
+  .ix-table.hp-kartu td {
+    position: relative; min-height: 1.6em; padding: 5px 0 5px calc(38% + 10px);
+    border: 0; text-align: left; white-space: normal; overflow-wrap: anywhere;
+  }
+  .ix-table.hp-kartu td::before {
+    content: attr(data-label); position: absolute; left: 0; top: 6px; width: 38%;
+    font-size: 12px; line-height: 1.4; color: var(--color-fg-muted); font-weight: 400;
+  }
+  .ix-table.hp-kartu td:not([data-label]) { padding-left: 0; }
+  .ix-table.hp-kartu td:not([data-label])::before { content: none; }
+
+  /* Sel pertama = judul kartu. */
+  .ix-table.hp-kartu td:first-child {
+    display: block; min-height: 0; margin-bottom: 4px; padding: 0 0 8px; border-bottom: 1px solid var(--color-border-line);
+    font-size: 15px; font-weight: var(--cds-font-weight-medium);
+  }
+  .ix-table.hp-kartu td:first-child::before { content: none; }
+
+  /* Tabel bernomor (mis. peringkat sektor): nomor dan nama jadi satu judul. */
+  .ix-table.hp-nomor td:first-child { display: inline-block; margin: 0 6px 0 0; padding: 0; border: 0; font-size: 13px; color: var(--color-fg-muted); }
+  .ix-table.hp-nomor td:first-child::before { content: "#"; display: inline; }
+  .ix-table.hp-nomor td:nth-child(2) { display: inline-block; min-height: 0; padding: 0 0 8px; font-size: 15px; font-weight: var(--cds-font-weight-medium); }
+  .ix-table.hp-nomor td:nth-child(2)::before { content: none; }
+  .ix-table.hp-nomor td:nth-child(3) { margin-top: 4px; border-top: 1px solid var(--color-border-line); padding-top: 8px; }
+
+  /* Baris kelompok (mis. "Indonesia" di tab Pasar) jadi subjudul. */
+  .ix-table.hp-kartu tr.is-group { margin: 14px 0 6px; padding: 0; border: 0; background: none; }
+  .ix-table.hp-kartu tr.is-group td { padding: 0; border: 0; }
+
+  /* Baris catatan menempel di bawah kartu sebelumnya. */
+  .ix-table.hp-kartu tr.has-note { margin-bottom: 0; border-bottom: 0; border-radius: 10px 10px 0 0; }
+  .ix-table.hp-kartu tr.is-note { margin-top: 0; padding-top: 0; border-top: 0; border-radius: 0 0 10px 10px; }
+  .ix-table.hp-kartu tr.is-note td { padding-top: 0; border: 0; margin: 0; font-size: 12.5px; font-weight: 400; }
+}

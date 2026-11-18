@@ -344,12 +344,12 @@
               {ticks.map(t => (
                 <g key={t}>
                   <line x1={pad.l} x2={w - pad.r} y1={y(t)} y2={y(t)} stroke="#e2e8f0" strokeWidth="1" />
-                  <text x={pad.l - 6} y={y(t) + 4} textAnchor="end" fontSize="10" fill="#64748b">{formatShort(t)}</text>
+                  <text x={pad.l - 6} y={y(t) + 4} textAnchor="end" fontSize="11" fill="#64748b">{formatShort(t)}</text>
                 </g>
               ))}
 
               {data.map((d, i) => (i % step === 0 || i === n - 1) && (
-                <text key={d.year} x={x(i)} y={h - 8} textAnchor={i === 0 ? 'start' : i === n - 1 ? 'end' : 'middle'} fontSize="10" fill="#64748b">{d.year}</text>
+                <text key={d.year} x={x(i)} y={h - 8} textAnchor={i === 0 ? 'start' : i === n - 1 ? 'end' : 'middle'} fontSize="11" fill="#64748b">{d.year}</text>
               ))}
 
               {targetIdx >= 0 && (
@@ -730,7 +730,7 @@
                   newName="Target Finansial Baru" addLabel="Tambah Target" total={totalTargetWealth}
                   renderBadge={(it) => it.isRetirement && (
                     <button onClick={() => setShowRuleModal(true)}
-                      className="shrink-0 flex items-center gap-1 text-xs font-semibold bg-amber-100 text-amber-800 hover:bg-amber-200 rounded-full px-2.5 py-1.5">
+                      className="shrink-0 flex items-center gap-1 text-xs font-semibold bg-amber-100 text-amber-800 hover:bg-amber-200 rounded-full px-3 py-2 min-h-[36px]">
                       <HelpIcon /><span>Aturan 4%</span>
                     </button>
                   )}

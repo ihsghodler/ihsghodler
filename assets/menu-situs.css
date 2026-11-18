@@ -140,9 +140,19 @@
   .ms-merek { display: none; }
   .ms-li:not(.is-luar) + .is-luar { margin-left: 4px; padding-left: 5px; border-left: 1px solid var(--ms-line); }
 }
+/* HP: menu bersusun sehingga ketujuh menu langsung terlihat tanpa perlu digeser. */
 @media (max-width: 640px) {
-  .ms-bar__isi { padding-left: max(10px, env(safe-area-inset-left, 0px)); padding-right: 0; }
-  .ms-item { padding: 0 10px; }
+  .ms-bar__isi {
+    min-height: 0;
+    padding: 8px max(10px, env(safe-area-inset-right, 0px)) 8px max(10px, env(safe-area-inset-left, 0px));
+  }
+  .ms-daftar, .ms-daftar.is-kiri, .ms-daftar.is-kanan, .ms-daftar.is-kiri.is-kanan {
+    flex-wrap: wrap; gap: 5px 4px; overflow: visible; -webkit-mask-image: none; mask-image: none;
+  }
+  .ms-li:not(.is-luar) + .is-luar { margin-left: 0; padding-left: 0; border-left: 0; }
+  .ms-item { min-height: 34px; padding: 0 8px; border: 1px solid var(--ms-line); font-size: 12.5px; gap: 5px; }
+  .ms-item.is-aktif { border-color: transparent; }
+  .ms-ikon { width: 15px; height: 15px; }
 }
 
 /* ---------------------------------------------------------------- pop-up */
