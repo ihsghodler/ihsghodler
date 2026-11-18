@@ -25,7 +25,7 @@
    "label_pekan": "16–20 Nov 2026",
    "data_per": "2026-11-13",
    "dibuat": "2026-11-16T19:29:02+07:00",
-   "diperbarui": "2026-11-18T15:07:07+07:00",
+   "diperbarui": "2026-11-18T15:08:03+07:00",
    "ihsg_dasar": 5344.41,
    "ihsg_w1": 5.82,
    "skor": 0.36,
@@ -69,8 +69,8 @@
    "narasi": "IHSG memantul 5,8% pekan lalu dari level terendah 52 minggu (4.824 pada 4 November), tetapi masih jauh di bawah MA50 dan MA200. Arah pekan ini ditentukan keputusan BI pada Rabu di tengah rupiah yang berada di rekor terlemah, serta data ritel AS dan risalah The Fed yang dapat mempertebal ekspektasi kenaikan suku bunga Desember.",
    "skor_kini": -0.74,
    "bias_kini": "Cenderung melemah",
-   "vonis": "Sudah priced in: yang meleset belum menggoyahkan IHSG",
-   "vonis_rincian": "Dari 11 butir yang meleset: 4 sudah priced in, 2 belum direspons pasar, 5 dampak terbatas. IHSG −0,34% sejak Jumat, support terdekat 5.300.",
+   "vonis": "Perbaikan: kenaikan BI Rate di luar konsensus disambut positif dan support 5.300 bertahan, tetapi tekanan global belum reda.",
+   "vonis_rincian": "Dari 11 butir yang meleset: 4 sudah priced in, 2 perbaikan, 5 dampak terbatas. IHSG −0,34% sejak Jumat, support terdekat 5.300.",
    "vonis_nada": "tetap",
    "kalibrasi": "Baru 0 pekan selesai; bobot dan rentang belum disesuaikan (butuh minimal 4 pekan).",
    "pelajaran": "Belum ada catatan pembelajaran untuk pekan ini.",
@@ -2781,7 +2781,7 @@
    "wtd_pct": -0.34,
    "posisi": "di dalam rentang",
    "sementara": 1,
-   "catatan": ""
+   "catatan": "IHSG naik ±0,40% ke ±5.326 (data sementara) setelah BI menaikkan BI Rate ke 6% di luar konsensus; saham bank besar memimpin (BBCA +5,9% intraday) dan rupiah stabil di sekitar Rp18.247."
   },
   {
    "tanggal": "2026-11-19",
@@ -2976,8 +2976,8 @@
    "status": "menyimpang",
    "catatan": "Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours.",
    "urut": 14,
-   "dampak": "belum direspons",
-   "dampak_alasan": "IHSG baru −0,34% sejak Jumat."
+   "dampak": "perbaikan",
+   "dampak_alasan": "Kejutan positif bagi saham teknologi; IHSG memantul Rabu meski Wall Street Selasa melemah."
   },
   {
    "id": "k-id-bi",
@@ -2988,8 +2988,8 @@
    "status": "menyimpang",
    "catatan": "Di luar konsensus tahan; IHSG, rupiah, dan saham bank besar justru menguat intraday.",
    "urut": 15,
-   "dampak": "belum direspons",
-   "dampak_alasan": "IHSG baru −0,34% sejak Jumat."
+   "dampak": "perbaikan",
+   "dampak_alasan": "Kenaikan di luar konsensus disambut positif: IHSG, rupiah, dan saham bank besar menguat setelah pengumuman."
   },
   {
    "id": "k-us-apec",
@@ -3370,8 +3370,8 @@
    "id": "e02",
    "tanggal": "2026-11-18",
    "jenis": "Penilaian",
-   "butir": "Sudah priced in: yang meleset belum menggoyahkan IHSG",
-   "rincian": "Dari 11 butir yang meleset: 4 sudah priced in, 2 belum direspons pasar, 5 dampak terbatas. IHSG −0,34% sejak Jumat, support terdekat 5.300.",
+   "butir": "Perbaikan: kenaikan BI Rate di luar konsensus disambut positif dan support 5.300 bertahan, tetapi tekanan global belum reda.",
+   "rincian": "Dari 11 butir yang meleset: 4 sudah priced in, 2 perbaikan, 5 dampak terbatas. IHSG −0,34% sejak Jumat, support terdekat 5.300.",
    "nada": "tetap",
    "urut": 2
   },
@@ -3533,7 +3533,7 @@
    "tanggal": "2026-11-18",
    "jenis": "Salah",
    "butir": "Kalender: Laporan keuangan Nvidia kuartal III",
-   "rincian": "Proyeksi Konsensus Pendapatan ±US$109 miliar; EPS ±US$2,47. Aktual Pendapatan US$115,8 miliar; EPS US$2,68 (di atas konsensus). Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours. Belum direspons pasar: IHSG baru −0,34% sejak Jumat.",
+   "rincian": "Proyeksi Konsensus Pendapatan ±US$109 miliar; EPS ±US$2,47. Aktual Pendapatan US$115,8 miliar; EPS US$2,68 (di atas konsensus). Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours. Perbaikan: Kejutan positif bagi saham teknologi; IHSG memantul Rabu meski Wall Street Selasa melemah.",
    "nada": "turun",
    "urut": 20
   },
@@ -3542,7 +3542,7 @@
    "tanggal": "2026-11-18",
    "jenis": "Salah",
    "butir": "Kalender: Keputusan BI Rate (RDG BI)",
-   "rincian": "Proyeksi Konsensus 5,75% (tahan). Aktual 6,00% (naik 25 bps) (di atas konsensus). Di luar konsensus tahan; IHSG, rupiah, dan saham bank besar justru menguat intraday. Belum direspons pasar: IHSG baru −0,34% sejak Jumat.",
+   "rincian": "Proyeksi Konsensus 5,75% (tahan). Aktual 6,00% (naik 25 bps) (di atas konsensus). Di luar konsensus tahan; IHSG, rupiah, dan saham bank besar justru menguat intraday. Perbaikan: Kenaikan di luar konsensus disambut positif: IHSG, rupiah, dan saham bank besar menguat setelah pengumuman.",
    "nada": "turun",
    "urut": 21
   },
@@ -3630,27 +3630,27 @@
   {
    "id": "e31",
    "tanggal": "2026-11-18",
-   "jenis": "Waspada baru",
-   "butir": "BUMI – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (140 pada 16 Nov di bawah 146 pada 22 Okt) sementara RSI membuat higher high (34 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 140.",
-   "nada": "turun",
+   "jenis": "Kaitan",
+   "butir": "Mengapa proyeksi bergeser",
+   "rincian": "Skor berjalan −0,74 (awal +0,36) (bias cenderung melemah) karena Wall Street dan Asia masih turun. Kenaikan BI Rate ke 6% di luar konsensus disambut positif: IHSG +0,4%, bank besar menguat, support 5.300 bertahan, resistance 5.362–5.382 belum tembus; tanpa sinyal pembalikan. Benar: rentang, DXY, FTSE Indonesia, bank. Salah: faktor global/regional, energi, transportasi; UNTR, TINS, TPIA gugur.",
+   "nada": "tetap",
    "urut": 31
   },
   {
    "id": "e32",
    "tanggal": "2026-11-18",
-   "jenis": "Waspada baru",
-   "butir": "ANTM – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (2.830 pada 13 Nov di bawah 2.890 pada 23 Okt) sementara RSI membuat higher high (44 ke 51): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 2.830.",
-   "nada": "turun",
+   "jenis": "Berita",
+   "butir": "Berita yang memengaruhi IHSG",
+   "rincian": "BI Rate naik 25 bps ke 6,00% (kenaikan ketiga 2026) demi rupiah. Wall Street Selasa turun lagi (S&P 500 −1%, terendah sejak Juli) meski Nvidia di atas konsensus. Risalah FOMC rilis Kamis dini hari WIB; Trump–Xi bertemu di APEC 18–19 Nov.",
+   "nada": "tetap",
    "urut": 32
   },
   {
    "id": "e33",
    "tanggal": "2026-11-18",
    "jenis": "Waspada baru",
-   "butir": "TPIA – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (1.345 pada 13 Nov di bawah 1.570 pada 27 Okt) sementara RSI membuat higher high (39 ke 44): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 1.345. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
+   "butir": "BUMI – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (140 pada 16 Nov di bawah 146 pada 22 Okt) sementara RSI membuat higher high (34 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 140.",
    "nada": "turun",
    "urut": 33
   },
@@ -3658,8 +3658,8 @@
    "id": "e34",
    "tanggal": "2026-11-18",
    "jenis": "Waspada baru",
-   "butir": "TINS – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (3.690 pada 13 Nov di bawah 3.960 pada 27 Okt) sementara RSI membuat higher high (38 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 3.690. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
+   "butir": "ANTM – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (2.830 pada 13 Nov di bawah 2.890 pada 23 Okt) sementara RSI membuat higher high (44 ke 51): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 2.830.",
    "nada": "turun",
    "urut": 34
   },
@@ -3667,35 +3667,35 @@
    "id": "e35",
    "tanggal": "2026-11-18",
    "jenis": "Waspada baru",
-   "butir": "CUAN – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (420 pada 16 Nov di bawah 540 pada 26 Okt) sementara RSI membuat higher high (18 ke 33): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 420.",
+   "butir": "TPIA – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (1.345 pada 13 Nov di bawah 1.570 pada 27 Okt) sementara RSI membuat higher high (39 ke 44): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 1.345. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
    "nada": "turun",
    "urut": 35
   },
   {
    "id": "e36",
    "tanggal": "2026-11-18",
-   "jenis": "Ide baru",
-   "butir": "BMRI – Tembus ke atas MA50",
-   "rincian": "Harga baru ditutup di atas MA50 (3.949). Batal bila ditutup di bawah 3.900. Area pantau 3.950–3.970, target 4.200.",
-   "nada": "naik",
+   "jenis": "Waspada baru",
+   "butir": "TINS – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (3.690 pada 13 Nov di bawah 3.960 pada 27 Okt) sementara RSI membuat higher high (38 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 3.690. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
+   "nada": "turun",
    "urut": 36
   },
   {
    "id": "e37",
    "tanggal": "2026-11-18",
-   "jenis": "Ide baru",
-   "butir": "BBCA – Tembus ke atas MA50",
-   "rincian": "Harga baru ditutup di atas MA50 (5.710). Batal bila ditutup di bawah 5.600. Area pantau 5.700–5.825, target 6.300.",
-   "nada": "naik",
+   "jenis": "Waspada baru",
+   "butir": "CUAN – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (420 pada 16 Nov di bawah 540 pada 26 Okt) sementara RSI membuat higher high (18 ke 33): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 420.",
+   "nada": "turun",
    "urut": 37
   },
   {
    "id": "e38",
    "tanggal": "2026-11-18",
    "jenis": "Ide baru",
-   "butir": "UNVR – Tembus ke atas MA50",
-   "rincian": "Harga baru ditutup di atas MA50 (1.534). Batal bila ditutup di bawah 1.510. Area pantau 1.535–1.565, target 1.675.",
+   "butir": "BMRI – Tembus ke atas MA50",
+   "rincian": "Harga baru ditutup di atas MA50 (3.949). Batal bila ditutup di bawah 3.900. Area pantau 3.950–3.970, target 4.200.",
    "nada": "naik",
    "urut": 38
   },
@@ -3703,8 +3703,8 @@
    "id": "e39",
    "tanggal": "2026-11-18",
    "jenis": "Ide baru",
-   "butir": "ITMG – Rebut kembali MA20 (pemulihan awal)",
-   "rincian": "Harga kembali di atas MA20 (24.634) setelah tren turun; MA50 (25.098) jadi hambatan berikutnya. Batal bila ditutup di bawah 24.275. Area pantau 24.625–24.800, target 26.150.",
+   "butir": "BBCA – Tembus ke atas MA50",
+   "rincian": "Harga baru ditutup di atas MA50 (5.710). Batal bila ditutup di bawah 5.600. Area pantau 5.700–5.825, target 6.300.",
    "nada": "naik",
    "urut": 39
   },
@@ -3712,10 +3712,28 @@
    "id": "e40",
    "tanggal": "2026-11-18",
    "jenis": "Ide baru",
+   "butir": "UNVR – Tembus ke atas MA50",
+   "rincian": "Harga baru ditutup di atas MA50 (1.534). Batal bila ditutup di bawah 1.510. Area pantau 1.535–1.565, target 1.675.",
+   "nada": "naik",
+   "urut": 40
+  },
+  {
+   "id": "e41",
+   "tanggal": "2026-11-18",
+   "jenis": "Ide baru",
+   "butir": "ITMG – Rebut kembali MA20 (pemulihan awal)",
+   "rincian": "Harga kembali di atas MA20 (24.634) setelah tren turun; MA50 (25.098) jadi hambatan berikutnya. Batal bila ditutup di bawah 24.275. Area pantau 24.625–24.800, target 26.150.",
+   "nada": "naik",
+   "urut": 41
+  },
+  {
+   "id": "e42",
+   "tanggal": "2026-11-18",
+   "jenis": "Ide baru",
    "butir": "ISAT – Rebut kembali MA20 (pemulihan awal)",
    "rincian": "Harga kembali di atas MA20 (1.503) setelah tren turun; MA50 (1.921) jadi hambatan berikutnya. Batal bila ditutup di bawah 1.465. Area pantau 1.505–1.525, target 1.750.",
    "nada": "naik",
-   "urut": 40
+   "urut": 42
   }
  ],
  "arsip_faktor": [
@@ -4256,7 +4274,7 @@
    "skor_awal": 0.36,
    "skor_kini": -0.74,
    "jml_simpang": 11,
-   "catatan": ""
+   "catatan": "IHSG naik ±0,40% ke ±5.326 (data sementara) setelah BI menaikkan BI Rate ke 6% di luar konsensus; saham bank besar memimpin (BBCA +5,9% intraday) dan rupiah stabil di sekitar Rp18.247."
   },
   {
    "tanggal": "2026-11-17",
