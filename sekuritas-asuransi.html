@@ -66,8 +66,6 @@
     .tombol { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 1px solid transparent; border-radius: 12px; background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 750; font-size: 15px; white-space: nowrap; }
     .tombol:hover { filter: brightness(1.08); }
     .tombol svg { flex: none; width: 17px; height: 17px; }
-    .tombol--garis { background: var(--panel); color: var(--fg); border-color: var(--line); }
-    .tombol--garis:hover { filter: none; border-color: var(--accent); color: var(--accent); }
 
     /* sekuritas */
     .grid-sek { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 12px; }
@@ -166,8 +164,7 @@
 
       <div class="grid-sek" id="daftar-sekuritas"></div>
       <div class="kosong" id="sekuritas-kosong" hidden>
-        <p><b>Daftar sekuritas mitra sedang disiapkan.</b> Sementara itu, pakai panduan di bawah untuk memilih sekuritas, atau tanya langsung ke komunitas di Discord.</p>
-        <a class="tombol tombol--garis" data-menu="discord" href="https://discord.gg/3V3pH9ETeM" target="_blank" rel="noopener">Tanya di Discord</a>
+        <p><b>Daftar sekuritas mitra sedang disiapkan.</b> Sementara itu, pakai panduan di bawah untuk memilih sekuritas.</p>
       </div>
       <noscript><div class="kosong"><p>Aktifkan JavaScript untuk melihat daftar sekuritas.</p></div></noscript>
 
