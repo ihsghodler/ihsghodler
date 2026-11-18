@@ -121,15 +121,28 @@
   /* ---------------------------------------------------------------- pop-up */
   function versi() { return String(P.versi == null ? '' : P.versi); }
 
+  // "kunjungan" (bawaan): muncul setiap kali situs dibuka di tab/sesi baru, tidak saat pindah halaman.
+  // Angka: setelah ditutup, baru muncul lagi setelah sekian hari.
+  function aturanMuncul() {
+    var m = P.munculSetiap != null ? P.munculSetiap : P.munculLagiSetelahHari;
+    if (m == null || m === 'kunjungan') return 'kunjungan';
+    var hari = Number(m);
+    return isFinite(hari) && hari >= 0 ? hari : 'kunjungan';
+  }
+
+  function gudang() {
+    try { return aturanMuncul() === 'kunjungan' ? window.sessionStorage : window.localStorage; } catch (e) { return null; }
+  }
+
   function bacaTutup() {
     try {
-      var v = JSON.parse(localStorage.getItem(KUNCI) || 'null');
+      var v = JSON.parse(gudang().getItem(KUNCI) || 'null');
       return v && typeof v === 'object' ? v : null;
     } catch (e) { return null; }
   }
 
   function simpanTutup() {
-    try { localStorage.setItem(KUNCI, JSON.stringify({ t: Date.now(), v: versi() })); } catch (e) { /* penyimpanan tidak tersedia */ }
+    try { gudang().setItem(KUNCI, JSON.stringify({ t: Date.now(), v: versi() })); } catch (e) { /* penyimpanan tidak tersedia */ }
   }
 
   function perluPopup() {
@@ -138,9 +151,9 @@
     var c = bacaTutup();
     if (!c || !c.t) return true;
     if (String(c.v) !== versi()) return true;
-    var hari = Number(P.munculLagiSetelahHari);
-    if (!isFinite(hari) || hari < 0) hari = 7;
-    return Date.now() - c.t >= hari * 864e5;
+    var aturan = aturanMuncul();
+    if (aturan === 'kunjungan') return false;   // sudah ditutup dalam kunjungan ini
+    return Date.now() - c.t >= aturan * 864e5;
   }
 
   function buatPopup() {

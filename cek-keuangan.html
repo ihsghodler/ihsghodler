@@ -7,7 +7,7 @@
   <!-- Judul halaman dan nama menu diatur di pengaturan.js (id "cek-keuangan"); judul di bawah hanya cadangan. -->
   <title>Cek Kesehatan Keuangan · IHSGHodler</title>
   <meta name="description" content="Cek kesehatan keuanganmu: hitung kekayaan bersih, cashflow bulanan, target finansial, profil risiko, dan proyeksi kekayaan 25 tahun. Data tersimpan di perangkatmu sendiri.">
-  <link rel="stylesheet" href="assets/menu-situs.css">
+  <link rel="stylesheet" href="assets/menu-situs.css?v=ecea01ea">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -16,6 +16,8 @@
   <style>
     /* Samakan lebar maksimum menu situs dengan isi halaman ini (max-w-6xl). */
     :root { --ms-lebar: 72rem; }
+    /* Halaman ini sudah punya logo IHSGHodler di kepala aplikasinya; logo di menu situs disembunyikan agar tidak ganda. */
+    .ms-merek { display: none !important; }
     body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
@@ -26,8 +28,8 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
   <!-- Menu situs (nama & tautan di pengaturan.js) -->
-  <script src="pengaturan.js"></script>
-  <script src="assets/menu-situs.js"></script>
+  <script src="pengaturan.js?v=609b9a6d"></script>
+  <script src="assets/menu-situs.js?v=0d80a92d"></script>
   <div id="root"></div>
 
   <script type="text/babel">

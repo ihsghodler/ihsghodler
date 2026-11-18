@@ -81,7 +81,8 @@ window.IHSG_SITUS = {
     judulSosial: 'Ikuti & gabung komunitas',
     tombol: 'Tutup & lihat proyeksi IHSG',
     catatan: 'Setelah ditutup, menu ini pindah ke bagian paling atas setiap halaman.',
-    munculLagiSetelahHari: 7,   // pengunjung yang sudah menutup baru melihatnya lagi setelah 7 hari; 0 = setiap kunjungan
+    munculSetiap: 'kunjungan',  // 'kunjungan' = muncul setiap kali link situs dibuka (tidak muncul lagi saat pindah halaman);
+                                // atau angka hari, misalnya 7 = setelah ditutup baru muncul lagi 7 hari kemudian
     versi: 1                    // naikkan angka ini agar pop-up langsung muncul lagi untuk semua pengunjung
   },
 
