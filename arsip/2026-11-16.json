@@ -25,10 +25,10 @@
    "label_pekan": "16–20 Nov 2026",
    "data_per": "2026-11-13",
    "dibuat": "2026-11-16T19:29:02+07:00",
-   "diperbarui": "2026-11-18T15:25:40+07:00",
+   "diperbarui": "2026-11-18T15:26:32+07:00",
    "ihsg_dasar": 5344.41,
    "ihsg_w1": 5.82,
-   "diperbarui_label": "Rabu, 18 Nov 2026, 15.25 WIB",
+   "diperbarui_label": "Rabu, 18 Nov 2026, 15.26 WIB",
    "skor": 0.36,
    "bias": "Cenderung menguat",
    "bias_kode": "naik",
@@ -70,8 +70,8 @@
    "narasi": "IHSG memantul 5,8% pekan lalu dari level terendah 52 minggu (4.824 pada 4 November), tetapi masih jauh di bawah MA50 dan MA200. Arah pekan ini ditentukan keputusan BI pada Rabu di tengah rupiah yang berada di rekor terlemah, serta data ritel AS dan risalah The Fed yang dapat mempertebal ekspektasi kenaikan suku bunga Desember.",
    "skor_kini": -0.74,
    "bias_kini": "Cenderung melemah",
-   "vonis": "Perbaikan: kenaikan BI Rate di luar konsensus disambut positif dan support 5.300 bertahan, tetapi tekanan global belum reda.",
-   "vonis_rincian": "Dari 12 butir yang meleset: 5 pemburukan, 2 perbaikan, 5 dampak terbatas. IHSG −1,59% sejak Jumat, support terdekat 5.300.",
+   "vonis": "Pemburukan: support 5.300 jebol (data sementara) meski BI Rate naik dan rupiah menguat; tekanan global dan jual asing mendominasi.",
+   "vonis_rincian": "Dari 12 butir yang meleset: 5 pemburukan, 1 sudah priced in, 1 belum direspons pasar, 5 dampak terbatas. IHSG −1,59% sejak Jumat, support terdekat 5.300.",
    "vonis_nada": "tetap",
    "kalibrasi": "Baru 0 pekan selesai; bobot dan rentang belum disesuaikan (butuh minimal 4 pekan).",
    "pelajaran": "Belum ada catatan pembelajaran untuk pekan ini.",
@@ -223,7 +223,7 @@
    "wtd": null,
    "poin_wtd": null,
    "status": "pantau",
-   "aktual": "BI menaikkan bunga ke 6% di luar konsensus, tetapi IHSG dan rupiah menguat; Wall Street masih melemah, Nvidia di atas konsensus."
+   "aktual": "BI menaikkan bunga ke 6% di luar konsensus; rupiah menguat, tetapi IHSG berbalik turun di bawah 5.300 sore hari. Wall Street masih melemah, Nvidia di atas konsensus."
   }
  ],
  "ihsg_harian": [
@@ -1734,7 +1734,7 @@
    "hasil": "di atas",
    "efek": "positif",
    "status": "menyimpang",
-   "catatan": "Di luar konsensus tahan; IHSG, rupiah, dan saham bank besar justru menguat intraday."
+   "catatan": "Di luar konsensus tahan; rupiah menguat, IHSG naik sesaat lalu berbalik turun sore."
   },
   {
    "id": "us-fomc-risalah",
@@ -2498,6 +2498,15 @@
   {
    "id": "b01",
    "tanggal": "2026-11-18",
+   "ringkasan": "IHSG ditutup naik 0,40% ke 5.325,90 pada sesi I Rabu, tetapi investor asing mencatat jual bersih sekitar Rp337,87 miliar menjelang keputusan BI.",
+   "sumber": "Media Keuangan",
+   "url": "https://mediakeuangan.id/detail/485205/ihsg-naik-040-ke-532590-asing-malah-jual-saham-rp33787-miliar",
+   "lingkup": "Domestik",
+   "dampak": "negatif"
+  },
+  {
+   "id": "b02",
+   "tanggal": "2026-11-18",
    "ringkasan": "BI menaikkan BI Rate 25 bps menjadi 6,00% (kenaikan ketiga 2026) demi stabilitas rupiah dan inflasi; konsensus memperkirakan tahan. IHSG dan saham bank besar menguat setelah pengumuman.",
    "sumber": "ANTARA News",
    "url": "https://www.antaranews.com/berita/5862031/bi-naikkan-bunga-acuan-25-bps-ke-level-6-persen-pada-rdg-november",
@@ -2505,7 +2514,7 @@
    "dampak": "positif"
   },
   {
-   "id": "b02",
+   "id": "b03",
    "tanggal": "2026-11-17",
    "ringkasan": "Wall Street kembali melemah Selasa: S&P 500 turun ±1% ke level terendah sejak Juli, Dow ±1,6%, Nasdaq ±0,7%; seluruh sektor merah dipimpin saham perangkat lunak.",
    "sumber": "The Washington Post",
@@ -2514,7 +2523,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b03",
+   "id": "b04",
    "tanggal": "2026-11-17",
    "ringkasan": "Pendapatan kuartal III Nvidia US$115,8 miliar (naik 103% setahun), di atas perkiraan ±US$109 miliar; panduan kuartal berikut US$130 miliar dan sahamnya naik setelah jam bursa.",
    "sumber": "TradingKey",
@@ -2523,7 +2532,7 @@
    "dampak": "positif"
   },
   {
-   "id": "b04",
+   "id": "b05",
    "tanggal": "2026-11-17",
    "ringkasan": "Penjualan ritel AS Oktober naik 0,2% sesuai perkiraan; tanpa mobil naik 0,6%. Imbal hasil obligasi AS melepas kenaikannya setelah rilis.",
    "sumber": "Anadolu (aNews)",
@@ -2532,7 +2541,7 @@
    "dampak": "netral"
   },
   {
-   "id": "b05",
+   "id": "b06",
    "tanggal": "2026-11-17",
    "ringkasan": "IHSG melemah 0,30% ke 5.304,76 pada Selasa; asing mencatat jual bersih sekitar Rp484 miliar dengan BBCA dan TLKM paling banyak dilepas.",
    "sumber": "Tutur.co.id",
@@ -2541,7 +2550,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b06",
+   "id": "b07",
    "tanggal": "2026-11-16",
    "ringkasan": "Wall Street ditutup melemah tajam Senin: S&P 500 turun ±1,9% dan Nasdaq ±2,5% dipimpin Nvidia dan saham AI menjelang laporan Nvidia; VIX naik ±19%.",
    "sumber": "CNN",
@@ -2550,7 +2559,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b07",
+   "id": "b08",
    "tanggal": "2026-11-16",
    "ringkasan": "IHSG terkoreksi 0,44% ke 5.320,98 pada Senin; asing jual bersih dengan ANTM, BRPT, dan BRMS paling banyak dilepas, sementara BBRI justru dibeli asing.",
    "sumber": "Kontan",
@@ -2559,7 +2568,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b08",
+   "id": "b09",
    "tanggal": "2026-11-16",
    "ringkasan": "FTSE Russell mengeluarkan 14 saham berkonsentrasi kepemilikan tinggi (antara lain BRIS, MTEL, TBIG, MAPI, TKIM) dari indeks globalnya mulai 21 Desember; IHSG turun lebih dari 1% pada sesi pagi Senin.",
    "sumber": "Kompas.com",
@@ -2568,7 +2577,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b09",
+   "id": "b10",
    "tanggal": "2026-11-16",
    "ringkasan": "Inflasi AS Oktober 0,4% bulanan (inti 0,3%) melampaui perkiraan; pasar hampir sepenuhnya memperhitungkan kenaikan suku bunga The Fed pada Desember.",
    "sumber": "IDX Channel",
@@ -2577,20 +2586,11 @@
    "dampak": "negatif"
   },
   {
-   "id": "b10",
+   "id": "b11",
    "tanggal": "2026-11-16",
    "ringkasan": "Data Oktober China meleset dari perkiraan: produksi industri tumbuh 4,8%, penjualan ritel 0,4%, dan investasi aset tetap turun 8,1% sepanjang tahun berjalan.",
    "sumber": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
-   "lingkup": "Global",
-   "dampak": "negatif"
-  },
-  {
-   "id": "b11",
-   "tanggal": "2026-11-16",
-   "ringkasan": "Ekonomi Jepang menyusut 0,1% (disetahunkan) pada kuartal III, di bawah perkiraan tumbuh tipis.",
-   "sumber": "Xinhua",
-   "url": "https://english.news.cn/20261116/0c28de96af58410caa740fd0f0001fe6/c.html",
    "lingkup": "Global",
    "dampak": "negatif"
   },
@@ -2692,7 +2692,7 @@
    "wtd_pct": -1.59,
    "posisi": "di dalam rentang",
    "sementara": 1,
-   "catatan": "IHSG naik ±0,40% ke ±5.326 (data sementara) setelah BI menaikkan BI Rate ke 6% di luar konsensus; saham bank besar memimpin (BBCA +5,9% intraday) dan rupiah stabil di sekitar Rp18.247."
+   "catatan": "IHSG sempat naik ke 5.374 dan ditutup sesi I +0,40% di 5.325,9, lalu berbalik turun ±0,9% ke ±5.259 (data sementara Yahoo jelang penutupan) meski BI menaikkan BI Rate ke 6%; asing jual bersih ±Rp338 miliar di sesi I, rupiah menguat ke ±Rp18.225."
   },
   {
    "tanggal": "2026-11-19",
@@ -2823,7 +2823,7 @@
    "kategori": "Faktor",
    "butir": "Berita & sentimen",
    "proyeksi": "menekan (skor −0,5)",
-   "aktual": "BI menaikkan bunga ke 6% di luar konsensus, tetapi IHSG dan rupiah menguat; Wall Street masih melemah, Nvidia di atas konsensus.",
+   "aktual": "BI menaikkan bunga ke 6% di luar konsensus; rupiah menguat, tetapi IHSG berbalik turun di bawah 5.300 sore hari. Wall Street masih melemah, Nvidia di atas konsensus.",
    "status": "pantau",
    "catatan": "",
    "urut": 9,
@@ -2887,8 +2887,8 @@
    "status": "menyimpang",
    "catatan": "Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours.",
    "urut": 14,
-   "dampak": "perbaikan",
-   "dampak_alasan": "Kejutan positif bagi saham teknologi; IHSG memantul Rabu meski Wall Street Selasa melemah."
+   "dampak": "priced in",
+   "dampak_alasan": "Kejutan positif Nvidia tidak menahan Wall Street maupun IHSG yang berbalik melemah."
   },
   {
    "id": "k-id-bi",
@@ -2897,10 +2897,10 @@
    "proyeksi": "Konsensus 5,75% (tahan)",
    "aktual": "6,00% (naik 25 bps) (di atas konsensus)",
    "status": "menyimpang",
-   "catatan": "Di luar konsensus tahan; IHSG, rupiah, dan saham bank besar justru menguat intraday.",
+   "catatan": "Di luar konsensus tahan; rupiah menguat, IHSG naik sesaat lalu berbalik turun sore.",
    "urut": 15,
-   "dampak": "perbaikan",
-   "dampak_alasan": "Kenaikan di luar konsensus disambut positif: IHSG, rupiah, dan saham bank besar menguat setelah pengumuman."
+   "dampak": "belum direspons",
+   "dampak_alasan": "Rupiah menguat dan IHSG sempat naik, tetapi berbalik turun sore; respons penuh baru terlihat setelah penutupan resmi."
   },
   {
    "id": "k-us-apec",
@@ -3281,8 +3281,8 @@
    "id": "e02",
    "tanggal": "2026-11-18",
    "jenis": "Penilaian",
-   "butir": "Perbaikan: kenaikan BI Rate di luar konsensus disambut positif dan support 5.300 bertahan, tetapi tekanan global belum reda.",
-   "rincian": "Dari 12 butir yang meleset: 5 pemburukan, 2 perbaikan, 5 dampak terbatas. IHSG −1,59% sejak Jumat, support terdekat 5.300.",
+   "butir": "Pemburukan: support 5.300 jebol (data sementara) meski BI Rate naik dan rupiah menguat; tekanan global dan jual asing mendominasi.",
+   "rincian": "Dari 12 butir yang meleset: 5 pemburukan, 1 sudah priced in, 1 belum direspons pasar, 5 dampak terbatas. IHSG −1,59% sejak Jumat, support terdekat 5.300.",
    "nada": "tetap",
    "urut": 2
   },
@@ -3399,7 +3399,7 @@
    "tanggal": "2026-11-18",
    "jenis": "Dipantau",
    "butir": "Faktor: Berita & sentimen",
-   "rincian": "Proyeksi menekan (skor −0,5). Aktual BI menaikkan bunga ke 6% di luar konsensus, tetapi IHSG dan rupiah menguat; Wall Street masih melemah, Nvidia di atas konsensus..",
+   "rincian": "Proyeksi menekan (skor −0,5). Aktual BI menaikkan bunga ke 6% di luar konsensus; rupiah menguat, tetapi IHSG berbalik turun di bawah 5.300 sore hari. Wall Street masih melemah, Nvidia di atas konsensus..",
    "nada": "tetap",
    "urut": 15
   },
@@ -3444,7 +3444,7 @@
    "tanggal": "2026-11-18",
    "jenis": "Salah",
    "butir": "Kalender: Laporan keuangan Nvidia kuartal III",
-   "rincian": "Proyeksi Konsensus Pendapatan ±US$109 miliar; EPS ±US$2,47. Aktual Pendapatan US$115,8 miliar; EPS US$2,68 (di atas konsensus). Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours. Perbaikan: Kejutan positif bagi saham teknologi; IHSG memantul Rabu meski Wall Street Selasa melemah.",
+   "rincian": "Proyeksi Konsensus Pendapatan ±US$109 miliar; EPS ±US$2,47. Aktual Pendapatan US$115,8 miliar; EPS US$2,68 (di atas konsensus). Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours. Sudah priced in: Kejutan positif Nvidia tidak menahan Wall Street maupun IHSG yang berbalik melemah.",
    "nada": "turun",
    "urut": 20
   },
@@ -3453,7 +3453,7 @@
    "tanggal": "2026-11-18",
    "jenis": "Salah",
    "butir": "Kalender: Keputusan BI Rate (RDG BI)",
-   "rincian": "Proyeksi Konsensus 5,75% (tahan). Aktual 6,00% (naik 25 bps) (di atas konsensus). Di luar konsensus tahan; IHSG, rupiah, dan saham bank besar justru menguat intraday. Perbaikan: Kenaikan di luar konsensus disambut positif: IHSG, rupiah, dan saham bank besar menguat setelah pengumuman.",
+   "rincian": "Proyeksi Konsensus 5,75% (tahan). Aktual 6,00% (naik 25 bps) (di atas konsensus). Di luar konsensus tahan; rupiah menguat, IHSG naik sesaat lalu berbalik turun sore. Belum direspons pasar: Rupiah menguat dan IHSG sempat naik, tetapi berbalik turun sore; respons penuh baru terlihat setelah penutupan resmi.",
    "nada": "turun",
    "urut": 21
   },
@@ -3543,7 +3543,7 @@
    "tanggal": "2026-11-18",
    "jenis": "Kaitan",
    "butir": "Mengapa proyeksi bergeser",
-   "rincian": "Skor berjalan −0,74 (awal +0,36) (bias cenderung melemah) karena Wall Street dan Asia masih turun. Kenaikan BI Rate ke 6% di luar konsensus disambut positif: IHSG +0,4%, bank besar menguat, support 5.300 bertahan, resistance 5.362–5.382 belum tembus; tanpa sinyal pembalikan. Benar: rentang, DXY, FTSE Indonesia, bank. Salah: faktor global/regional, energi, transportasi; UNTR, TINS, TPIA gugur.",
+   "rincian": "Skor −0,74 (awal +0,36), bias cenderung melemah akibat Wall Street dan Asia. Kenaikan BI Rate ke 6% sempat mengangkat IHSG ke 5.374 (resistance 5.362–5.382 diuji, gagal), lalu support 5.300 jebol (±5.259, sementara); belum ada sinyal pembalikan. Benar: rentang, DXY, EIDO, FTSE Indonesia. Salah: arah pekan, faktor global/regional, energi, perindustrian; UNTR, TINS, TPIA gugur.",
    "nada": "tetap",
    "urut": 31
   },
@@ -3552,7 +3552,7 @@
    "tanggal": "2026-11-18",
    "jenis": "Berita",
    "butir": "Berita yang memengaruhi IHSG",
-   "rincian": "BI Rate naik 25 bps ke 6,00% (kenaikan ketiga 2026) demi rupiah. Wall Street Selasa turun lagi (S&P 500 −1%, terendah sejak Juli) meski Nvidia di atas konsensus. Risalah FOMC rilis Kamis dini hari WIB; Trump–Xi bertemu di APEC 18–19 Nov.",
+   "rincian": "BI Rate naik 25 bps ke 6% (kenaikan ketiga 2026) demi rupiah; rupiah menguat ke ±Rp18.225. Asing jual bersih ±Rp338 miliar di sesi I. Risalah FOMC rilis Kamis dini hari WIB; Trump–Xi bertemu di APEC 18–19 Nov.",
    "nada": "tetap",
    "urut": 32
   },
@@ -3795,7 +3795,7 @@
    "kategori": "Faktor",
    "butir": "Berita & sentimen",
    "proyeksi": "menekan (skor −0,5)",
-   "aktual": "BI menaikkan bunga ke 6% di luar konsensus, tetapi IHSG dan rupiah menguat; Wall Street masih melemah, Nvidia di atas konsensus.",
+   "aktual": "BI menaikkan bunga ke 6% di luar konsensus; rupiah menguat, tetapi IHSG berbalik turun di bawah 5.300 sore hari. Wall Street masih melemah, Nvidia di atas konsensus.",
    "status": "pantau",
    "catatan": ""
   },
@@ -3863,7 +3863,7 @@
    "proyeksi": "Konsensus 5,75% (tahan)",
    "aktual": "6,00% (naik 25 bps) (di atas konsensus)",
    "status": "menyimpang",
-   "catatan": "Di luar konsensus tahan; IHSG, rupiah, dan saham bank besar justru menguat intraday."
+   "catatan": "Di luar konsensus tahan; rupiah menguat, IHSG naik sesaat lalu berbalik turun sore."
   },
   {
    "id": "2026-11-16-k-us-apec",
@@ -4158,7 +4158,7 @@
    "skor_awal": 0.36,
    "skor_kini": -0.74,
    "jml_simpang": 12,
-   "catatan": "IHSG naik ±0,40% ke ±5.326 (data sementara) setelah BI menaikkan BI Rate ke 6% di luar konsensus; saham bank besar memimpin (BBCA +5,9% intraday) dan rupiah stabil di sekitar Rp18.247."
+   "catatan": "IHSG sempat naik ke 5.374 dan ditutup sesi I +0,40% di 5.325,9, lalu berbalik turun ±0,9% ke ±5.259 (data sementara Yahoo jelang penutupan) meski BI menaikkan BI Rate ke 6%; asing jual bersih ±Rp338 miliar di sesi I, rupiah menguat ke ±Rp18.225."
   },
   {
    "tanggal": "2026-11-17",
