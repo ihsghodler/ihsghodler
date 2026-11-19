@@ -2697,7 +2697,9 @@
    "wtd_pct": -0.44,
    "posisi": "di dalam rentang",
    "sementara": 0,
-   "catatan": "IHSG turun 0,44% ke 5.320,98 tertekan pengeluaran 14 saham dari indeks FTSE dan data China yang lemah; asing jual bersih ±Rp303 miliar (ANTM, BRPT, BRMS)."
+   "catatan": "IHSG turun 0,44% ke 5.320,98 tertekan pengeluaran 14 saham dari indeks FTSE dan data China yang lemah; asing jual bersih ±Rp303 miliar (ANTM, BRPT, BRMS).",
+   "skor": -0.72,
+   "skor_ubah": -1.08
   },
   {
    "tanggal": "2026-11-17",
@@ -2710,7 +2712,9 @@
    "wtd_pct": -0.74,
    "posisi": "di dalam rentang",
    "sementara": 0,
-   "catatan": "IHSG turun 0,30% ke 5.304,76 setelah sempat menguat di sesi I, terseret Wall Street dan sikap menunggu RDG BI; asing jual bersih ±Rp484 miliar menurut CNBC Indonesia (BBCA, TLKM), sementara Kontan mencatat beli bersih."
+   "catatan": "IHSG turun 0,30% ke 5.304,76 setelah sempat menguat di sesi I, terseret Wall Street dan sikap menunggu RDG BI; asing jual bersih ±Rp484 miliar menurut CNBC Indonesia (BBCA, TLKM), sementara Kontan mencatat beli bersih.",
+   "skor": -0.74,
+   "skor_ubah": -0.02
   },
   {
    "tanggal": "2026-11-18",
@@ -2723,7 +2727,9 @@
    "wtd_pct": -1.81,
    "posisi": "di dalam rentang",
    "sementara": 0,
-   "catatan": "IHSG berbalik dari 5.374 dan ditutup turun 1,07% ke 5.247,88 (melemah tiga hari beruntun) meski BI menaikkan BI Rate ke 6% dan rupiah menguat ke ±Rp18.232; asing jual bersih ±Rp443 miliar menurut Kontan."
+   "catatan": "IHSG berbalik dari 5.374 dan ditutup turun 1,07% ke 5.247,88 (melemah tiga hari beruntun) meski BI menaikkan BI Rate ke 6% dan rupiah menguat ke ±Rp18.232; asing jual bersih ±Rp443 miliar menurut Kontan.",
+   "skor": -1.07,
+   "skor_ubah": -0.33
   },
   {
    "tanggal": "2026-11-19",
@@ -2736,7 +2742,9 @@
    "wtd_pct": null,
    "posisi": "",
    "sementara": 0,
-   "catatan": ""
+   "catatan": "",
+   "skor": null,
+   "skor_ubah": null
   },
   {
    "tanggal": "2026-11-20",
@@ -2749,7 +2757,9 @@
    "wtd_pct": null,
    "posisi": "",
    "sementara": 0,
-   "catatan": ""
+   "catatan": "",
+   "skor": null,
+   "skor_ubah": null
   }
  ],
  "kesesuaian": [
