@@ -25,10 +25,10 @@
    "label_pekan": "16–20 Nov 2026",
    "data_per": "2026-11-13",
    "dibuat": "2026-11-16T19:29:02+07:00",
-   "diperbarui": "2026-11-20T04:36:56+07:00",
+   "diperbarui": "2026-11-20T11:32:18+07:00",
    "ihsg_dasar": 5344.41,
    "ihsg_w1": 5.82,
-   "diperbarui_label": "Jumat, 20 Nov 2026, 04.36 WIB",
+   "diperbarui_label": "Jumat, 20 Nov 2026, 11.32 WIB",
    "skor": 0.36,
    "bias": "Cenderung menguat",
    "bias_kode": "naik",
@@ -1771,11 +1771,11 @@
    "tren_catatan": "Yahoo Finance mencatat perkiraan 197 ribu, sedikit di bawah angka pekan sebelumnya 200 ribu.",
    "penting": "sedang",
    "pantau": "Pasar tenaga kerja ketat memperkuat alasan kenaikan bunga.",
-   "aktual": "",
-   "hasil": "",
-   "efek": "",
-   "status": "menunggu",
-   "catatan": "Angka aktual belum ditemukan di sumber yang diperiksa."
+   "aktual": "203 ribu",
+   "hasil": "di atas",
+   "efek": "netral",
+   "status": "sesuai",
+   "catatan": "Naik tipis dari 202 ribu (revisi); klaim lanjutan 1,763 juta, tertinggi sejak Agustus."
   },
   {
    "id": "jp-ihk",
@@ -1785,17 +1785,17 @@
    "wilayah": "Jepang",
    "agenda": "Inflasi Jepang (IHK)",
    "periode": "Okt",
-   "sebelumnya": "",
-   "konsensus": "",
+   "sebelumnya": "2,1% (inti)",
+   "konsensus": "2,3% (inti)",
    "tren": "naik",
    "tren_catatan": "Pasar uang memperhitungkan peluang kenaikan BoJ Desember sekitar 84%.",
    "penting": "sedang",
    "pantau": "Inflasi tinggi memperkuat peluang kenaikan BoJ; yen menguat menekan bursa Jepang.",
-   "aktual": "",
-   "hasil": "",
-   "efek": "",
-   "status": "menunggu",
-   "catatan": ""
+   "aktual": "2,2% (inti); umum 2,3%",
+   "hasil": "di bawah",
+   "efek": "netral",
+   "status": "sesuai",
+   "catatan": "Inti tercepat tahun ini karena subsidi energi berakhir; peluang BoJ naik Desember tetap."
   },
   {
    "id": "cn-lpr",
@@ -1811,11 +1811,11 @@
    "tren_catatan": "Diperkirakan tetap untuk bulan ke-19, tetapi harapan pelonggaran naik setelah data Oktober meleset.",
    "penting": "sedang",
    "pantau": "Pemangkasan mengejutkan = positif untuk komoditas dan bursa regional.",
-   "aktual": "",
-   "hasil": "",
-   "efek": "",
-   "status": "menunggu",
-   "catatan": ""
+   "aktual": "3,00% / 3,50% (tetap)",
+   "hasil": "sesuai",
+   "efek": "netral",
+   "status": "sesuai",
+   "catatan": "Tetap 18 bulan; PBOC kini memakai suku bunga overnight sebagai acuan utama."
   },
   {
    "id": "id-msci",
@@ -2528,6 +2528,24 @@
  "berita": [
   {
    "id": "b01",
+   "tanggal": "2026-11-20",
+   "ringkasan": "Klaim pengangguran awal AS naik tipis ke 203 ribu (perkiraan 197 ribu); klaim lanjutan melonjak 70 ribu ke 1,763 juta. Pasar tenaga kerja masih kuat, ekspektasi kenaikan bunga The Fed Desember tetap tinggi.",
+   "sumber": "Reuters via KFGO",
+   "url": "https://kfgo.com/2026/11/19/us-weekly-jobless-claims-increase-slightly-3/",
+   "lingkup": "Global",
+   "dampak": "netral"
+  },
+  {
+   "id": "b02",
+   "tanggal": "2026-11-20",
+   "ringkasan": "Inflasi inti Jepang Oktober 2,2% (tercepat tahun ini, sedikit di bawah perkiraan 2,3%); LPR China tetap 3,00%/3,50% untuk bulan ke-18. Keduanya sesuai arah perkiraan, dampak ke IHSG terbatas.",
+   "sumber": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
+   "lingkup": "Regional",
+   "dampak": "netral"
+  },
+  {
+   "id": "b03",
    "tanggal": "2026-11-19",
    "ringkasan": "Wall Street anjlok Kamis: Dow −2,19% ke 49.097, S&P 500 −2,02%, Nasdaq −2,25%. Saham chip (Nvidia, AMD, Broadcom) berbalik turun saat dana berpindah ke IPO Anthropic yang ditutup naik ±17%.",
    "sumber": "Yahoo Finance",
@@ -2536,7 +2554,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b02",
+   "id": "b04",
    "tanggal": "2026-11-19",
    "ringkasan": "IHSG turun 1,02% ke 5.194,14 pada Kamis, melemah empat hari beruntun; asing jual bersih Rp563,56 miliar di seluruh pasar (reguler Rp662 miliar) dengan BBCA paling banyak dilepas.",
    "sumber": "Investortrust",
@@ -2545,7 +2563,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b03",
+   "id": "b05",
    "tanggal": "2026-11-19",
    "ringkasan": "Trump dan Xi bertemu sekitar satu jam di Shenzhen dengan nada bersahabat, tetapi belum ada pengumuman soal tarif, chip, logam tanah jarang, atau perpanjangan gencatan dagang; ekspektasi pertemuan tiga pihak dengan Putin rendah.",
    "sumber": "CNBC",
@@ -2554,7 +2572,7 @@
    "dampak": "netral"
   },
   {
-   "id": "b04",
+   "id": "b06",
    "tanggal": "2026-11-19",
    "ringkasan": "IHSG bergerak di zona merah sepanjang sesi I Kamis (low 5.168) dengan jual bersih asing sekitar Rp412 miliar hingga siang; tekanan berlanjut di sesi II.",
    "sumber": "CNBC Indonesia",
@@ -2563,7 +2581,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b05",
+   "id": "b07",
    "tanggal": "2026-11-18",
    "ringkasan": "Risalah FOMC Oktober: hampir semua pejabat menilai kenaikan bunga lanjutan perlu, beberapa membuka opsi kenaikan lebih besar pada Desember. Dow turun ±1,1%, S&P 500 melemah hari kelima, Nvidia berbalik turun.",
    "sumber": "CNBC",
@@ -2572,7 +2590,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b06",
+   "id": "b08",
    "tanggal": "2026-11-18",
    "ringkasan": "IHSG ditutup turun 1,07% ke 5.247,88 pada Rabu, melemah tiga hari beruntun; asing jual bersih ±Rp443 miliar di seluruh pasar, meski BBRI justru dibeli bersih.",
    "sumber": "Kontan",
@@ -2581,7 +2599,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b07",
+   "id": "b09",
    "tanggal": "2026-11-18",
    "ringkasan": "BI menaikkan BI Rate 25 bps menjadi 6,00% (kenaikan ketiga 2026) demi stabilitas rupiah dan inflasi; konsensus memperkirakan tahan. IHSG dan saham bank besar menguat setelah pengumuman.",
    "sumber": "ANTARA News",
@@ -2590,7 +2608,7 @@
    "dampak": "positif"
   },
   {
-   "id": "b08",
+   "id": "b10",
    "tanggal": "2026-11-17",
    "ringkasan": "Wall Street kembali melemah Selasa: S&P 500 turun ±1% ke level terendah sejak Juli, Dow ±1,6%, Nasdaq ±0,7%; seluruh sektor merah dipimpin saham perangkat lunak.",
    "sumber": "The Washington Post",
@@ -2599,7 +2617,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b09",
+   "id": "b11",
    "tanggal": "2026-11-17",
    "ringkasan": "Pendapatan kuartal III Nvidia US$115,8 miliar (naik 103% setahun), di atas perkiraan ±US$109 miliar; panduan kuartal berikut US$130 miliar dan sahamnya naik setelah jam bursa.",
    "sumber": "TradingKey",
@@ -2608,7 +2626,7 @@
    "dampak": "positif"
   },
   {
-   "id": "b10",
+   "id": "b12",
    "tanggal": "2026-11-17",
    "ringkasan": "Penjualan ritel AS Oktober naik 0,2% sesuai perkiraan; tanpa mobil naik 0,6%. Imbal hasil obligasi AS melepas kenaikannya setelah rilis.",
    "sumber": "Anadolu (aNews)",
@@ -2617,7 +2635,7 @@
    "dampak": "netral"
   },
   {
-   "id": "b11",
+   "id": "b13",
    "tanggal": "2026-11-17",
    "ringkasan": "IHSG melemah 0,30% ke 5.304,76 pada Selasa; asing mencatat jual bersih sekitar Rp484 miliar dengan BBCA dan TLKM paling banyak dilepas.",
    "sumber": "Tutur.co.id",
@@ -2626,7 +2644,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b12",
+   "id": "b14",
    "tanggal": "2026-11-16",
    "ringkasan": "FTSE Russell mengeluarkan 14 saham berkonsentrasi kepemilikan tinggi (antara lain BRIS, MTEL, TBIG, MAPI, TKIM) dari indeks globalnya mulai 21 Desember; IHSG turun lebih dari 1% pada sesi pagi Senin.",
    "sumber": "Kompas.com",
@@ -2972,9 +2990,9 @@
    "kategori": "Kalender",
    "butir": "Klaim pengangguran awal AS",
    "proyeksi": "Konsensus 197 ribu",
-   "aktual": "Dijadwalkan 19 Nov, 20:30 WIB",
-   "status": "menunggu",
-   "catatan": "",
+   "aktual": "203 ribu (di atas konsensus)",
+   "status": "sesuai",
+   "catatan": "Naik tipis dari 202 ribu (revisi); klaim lanjutan 1,763 juta, tertinggi sejak Agustus.",
    "urut": 18,
    "dampak": "",
    "dampak_alasan": ""
@@ -2983,10 +3001,10 @@
    "id": "k-jp-ihk",
    "kategori": "Kalender",
    "butir": "Inflasi Jepang (IHK)",
-   "proyeksi": "Tanpa konsensus angka",
-   "aktual": "Dijadwalkan 20 Nov, 06:30 WIB",
-   "status": "menunggu",
-   "catatan": "",
+   "proyeksi": "Konsensus 2,3% (inti)",
+   "aktual": "2,2% (inti); umum 2,3% (di bawah konsensus)",
+   "status": "sesuai",
+   "catatan": "Inti tercepat tahun ini karena subsidi energi berakhir; peluang BoJ naik Desember tetap.",
    "urut": 19,
    "dampak": "",
    "dampak_alasan": ""
@@ -2996,9 +3014,9 @@
    "kategori": "Kalender",
    "butir": "LPR China 1 tahun / 5 tahun",
    "proyeksi": "Konsensus 3,00% / 3,50% (tetap)",
-   "aktual": "Dijadwalkan 20 Nov, 08:00 WIB",
-   "status": "menunggu",
-   "catatan": "",
+   "aktual": "3,00% / 3,50% (tetap) (sesuai konsensus)",
+   "status": "sesuai",
+   "catatan": "Tetap 18 bulan; PBOC kini memakai suku bunga overnight sebagai acuan utama.",
    "urut": 20,
    "dampak": "",
    "dampak_alasan": ""
@@ -3537,135 +3555,135 @@
   {
    "id": "e26",
    "tanggal": "2026-11-19",
-   "jenis": "Salah",
-   "butir": "Sektor: Perindustrian",
-   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual −4,04% vs IHSG −2,81%. Tertinggal lebih dari 1 poin persentase dari IHSG. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
-   "nada": "turun",
+   "jenis": "Benar",
+   "butir": "Kalender: Klaim pengangguran awal AS",
+   "rincian": "Proyeksi Konsensus 197 ribu. Aktual 203 ribu (di atas konsensus). Naik tipis dari 202 ribu (revisi); klaim lanjutan 1,763 juta, tertinggi sejak Agustus.",
+   "nada": "naik",
    "urut": 26
   },
   {
    "id": "e27",
    "tanggal": "2026-11-19",
-   "jenis": "Salah",
-   "butir": "Sektor: Energi",
-   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual −7,49% vs IHSG −2,81%. Tertinggal lebih dari 1 poin persentase dari IHSG. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
-   "nada": "turun",
+   "jenis": "Benar",
+   "butir": "Kalender: Inflasi Jepang (IHK)",
+   "rincian": "Proyeksi Konsensus 2,3% (inti). Aktual 2,2% (inti); umum 2,3% (di bawah konsensus). Inti tercepat tahun ini karena subsidi energi berakhir; peluang BoJ naik Desember tetap.",
+   "nada": "naik",
    "urut": 27
   },
   {
    "id": "e28",
    "tanggal": "2026-11-19",
    "jenis": "Benar",
-   "butir": "Sektor: Transportasi & Logistik",
-   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual −1,75% vs IHSG −2,81%.",
+   "butir": "Kalender: LPR China 1 tahun / 5 tahun",
+   "rincian": "Proyeksi Konsensus 3,00% / 3,50% (tetap). Aktual 3,00% / 3,50% (tetap) (sesuai konsensus). Tetap 18 bulan; PBOC kini memakai suku bunga overnight sebagai acuan utama.",
    "nada": "naik",
    "urut": 28
   },
   {
    "id": "e29",
    "tanggal": "2026-11-19",
-   "jenis": "Benar",
-   "butir": "Ide trading: INDF – Tembus ke atas MA50",
-   "rincian": "Proyeksi Target 7.525, batal < 6.750. Aktual 7.175 (+2,50%), sesuai.",
-   "nada": "naik",
+   "jenis": "Salah",
+   "butir": "Sektor: Perindustrian",
+   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual −4,04% vs IHSG −2,81%. Tertinggal lebih dari 1 poin persentase dari IHSG. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
+   "nada": "turun",
    "urut": 29
   },
   {
    "id": "e30",
    "tanggal": "2026-11-19",
-   "jenis": "Benar",
-   "butir": "Ide trading: BBRI – Tembus ke atas MA50",
-   "rincian": "Proyeksi Target 3.210, batal < 2.980. Aktual 3.090 (+0,98%), sesuai.",
-   "nada": "naik",
+   "jenis": "Salah",
+   "butir": "Sektor: Energi",
+   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual −7,49% vs IHSG −2,81%. Tertinggal lebih dari 1 poin persentase dari IHSG. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
+   "nada": "turun",
    "urut": 30
   },
   {
    "id": "e31",
    "tanggal": "2026-11-19",
-   "jenis": "Salah",
-   "butir": "Ide trading: UNTR – Tembus ke atas MA50",
-   "rincian": "Proyeksi Target 26.225, batal < 24.400. Aktual 24.000 (−3,90%), batal. Ditutup di bawah level batal; setup gugur. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
-   "nada": "turun",
+   "jenis": "Benar",
+   "butir": "Sektor: Transportasi & Logistik",
+   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual −1,75% vs IHSG −2,81%.",
+   "nada": "naik",
    "urut": 31
   },
   {
    "id": "e32",
    "tanggal": "2026-11-19",
    "jenis": "Benar",
-   "butir": "Ide trading: BBNI – Tembus ke atas MA50",
-   "rincian": "Proyeksi Target 3.760, batal < 3.390. Aktual 3.580 (+1,42%), sesuai.",
+   "butir": "Ide trading: INDF – Tembus ke atas MA50",
+   "rincian": "Proyeksi Target 7.525, batal < 6.750. Aktual 7.175 (+2,50%), sesuai.",
    "nada": "naik",
    "urut": 32
   },
   {
    "id": "e33",
    "tanggal": "2026-11-19",
-   "jenis": "Salah",
-   "butir": "Ide trading: TINS – Rebut kembali MA20 (pemulihan awal)",
-   "rincian": "Proyeksi Target 4.180, batal < 3.510. Aktual 3.050 (−16,44%), batal. Ditutup di bawah level batal; setup gugur. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
-   "nada": "turun",
+   "jenis": "Benar",
+   "butir": "Ide trading: BBRI – Tembus ke atas MA50",
+   "rincian": "Proyeksi Target 3.210, batal < 2.980. Aktual 3.090 (+0,98%), sesuai.",
+   "nada": "naik",
    "urut": 33
   },
   {
    "id": "e34",
    "tanggal": "2026-11-19",
    "jenis": "Salah",
-   "butir": "Ide trading: TPIA – Rebut kembali MA20 (pemulihan awal)",
-   "rincian": "Proyeksi Target 1.510, batal < 1.240. Aktual 1.200 (−8,75%), batal. Ditutup di bawah level batal; setup gugur. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
+   "butir": "Ide trading: UNTR – Tembus ke atas MA50",
+   "rincian": "Proyeksi Target 26.225, batal < 24.400. Aktual 24.000 (−3,90%), batal. Ditutup di bawah level batal; setup gugur. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
    "nada": "turun",
    "urut": 34
   },
   {
    "id": "e35",
    "tanggal": "2026-11-19",
-   "jenis": "Kaitan",
-   "butir": "Mengapa proyeksi bergeser",
-   "rincian": "Skor turun dari +0,36 ke −1,41 (bias melemah) karena Wall Street jatuh ±2% Kamis malam, EIDO berbalik menekan. BI Rate 6% dan Nvidia tidak menahan jual asing Rp564 miliar. Support 5.300, 5.245, 5.200 jebol; tutup 5.194 di atas MA20 5.175 dan batas bawah 5.166, tanpa sinyal pembalikan. Benar: rentang, Bitcoin, DXY, FTSE Indonesia. Salah: arah, faktor global/regional, EIDO, energi; tiga ide gugur.",
-   "nada": "tetap",
+   "jenis": "Benar",
+   "butir": "Ide trading: BBNI – Tembus ke atas MA50",
+   "rincian": "Proyeksi Target 3.760, batal < 3.390. Aktual 3.580 (+1,42%), sesuai.",
+   "nada": "naik",
    "urut": 35
   },
   {
    "id": "e36",
    "tanggal": "2026-11-19",
-   "jenis": "Berita",
-   "butir": "Berita yang memengaruhi IHSG",
-   "rincian": "Wall Street anjlok Kamis (Dow −2,19%, S&P 500 −2,02%, Nasdaq −2,25%) saat dana berpindah ke IPO Anthropic dan saham chip jatuh; tekanan berpotensi menjalar ke bursa Asia hari ini. Inflasi Jepang dan LPR China rilis Jumat pagi.",
-   "nada": "tetap",
+   "jenis": "Salah",
+   "butir": "Ide trading: TINS – Rebut kembali MA20 (pemulihan awal)",
+   "rincian": "Proyeksi Target 4.180, batal < 3.510. Aktual 3.050 (−16,44%), batal. Ditutup di bawah level batal; setup gugur. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
+   "nada": "turun",
    "urut": 36
   },
   {
    "id": "e37",
    "tanggal": "2026-11-19",
-   "jenis": "Waspada baru",
-   "butir": "BMRI – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (4.000 pada 17 Nov di bawah 4.150 pada 6 Okt) sementara RSI membuat higher high (44 ke 58): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 4.000.",
+   "jenis": "Salah",
+   "butir": "Ide trading: TPIA – Rebut kembali MA20 (pemulihan awal)",
+   "rincian": "Proyeksi Target 1.510, batal < 1.240. Aktual 1.200 (−8,75%), batal. Ditutup di bawah level batal; setup gugur. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
    "nada": "turun",
    "urut": 37
   },
   {
    "id": "e38",
    "tanggal": "2026-11-19",
-   "jenis": "Waspada baru",
-   "butir": "BUMI – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (140 pada 16 Nov di bawah 146 pada 22 Okt) sementara RSI membuat higher high (34 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 140.",
-   "nada": "turun",
+   "jenis": "Kaitan",
+   "butir": "Mengapa proyeksi bergeser",
+   "rincian": "Skor turun dari +0,36 ke −1,41 (bias melemah) karena Wall Street jatuh ±2% Kamis malam, EIDO berbalik menekan. BI Rate 6% dan Nvidia tidak menahan jual asing Rp564 miliar. Support 5.300, 5.245, 5.200 jebol; tutup 5.194 di atas MA20 5.175 dan batas bawah 5.166, tanpa sinyal pembalikan. Benar: rentang, Bitcoin, DXY, FTSE Indonesia. Salah: arah, faktor global/regional, EIDO, energi; tiga ide gugur.",
+   "nada": "tetap",
    "urut": 38
   },
   {
    "id": "e39",
    "tanggal": "2026-11-19",
-   "jenis": "Waspada baru",
-   "butir": "ANTM – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (2.830 pada 13 Nov di bawah 2.890 pada 23 Okt) sementara RSI membuat higher high (44 ke 51): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 2.830.",
-   "nada": "turun",
+   "jenis": "Berita",
+   "butir": "Berita yang memengaruhi IHSG",
+   "rincian": "Wall Street anjlok Kamis (Dow −2,19%, S&P 500 −2,02%, Nasdaq −2,25%) saat dana berpindah ke IPO Anthropic dan saham chip jatuh; tekanan berpotensi menjalar ke bursa Asia hari ini. Inflasi Jepang dan LPR China rilis Jumat pagi.",
+   "nada": "tetap",
    "urut": 39
   },
   {
    "id": "e40",
    "tanggal": "2026-11-19",
    "jenis": "Waspada baru",
-   "butir": "TPIA – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (1.345 pada 13 Nov di bawah 1.570 pada 27 Okt) sementara RSI membuat higher high (39 ke 44): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 1.345. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
+   "butir": "BMRI – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (4.000 pada 17 Nov di bawah 4.150 pada 6 Okt) sementara RSI membuat higher high (44 ke 58): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 4.000.",
    "nada": "turun",
    "urut": 40
   },
@@ -3673,37 +3691,64 @@
    "id": "e41",
    "tanggal": "2026-11-19",
    "jenis": "Waspada baru",
-   "butir": "TINS – Hidden bearish divergence (RSI)",
-   "rincian": "Dalam tren turun, harga membuat lower high (3.690 pada 13 Nov di bawah 3.960 pada 27 Okt) sementara RSI membuat higher high (38 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 3.690. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
+   "butir": "BUMI – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (140 pada 16 Nov di bawah 146 pada 22 Okt) sementara RSI membuat higher high (34 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 140.",
    "nada": "turun",
    "urut": 41
   },
   {
    "id": "e42",
    "tanggal": "2026-11-19",
-   "jenis": "Ide baru",
-   "butir": "AALI – Koreksi ke MA20 dalam tren naik",
-   "rincian": "Tren naik (MA20 9.620 > MA50 8.824) dan harga sedang terkoreksi ke dekat MA20. Hidden bullish divergence: harga membentuk higher low (9.275 pada 9 Nov di atas 8.400 pada 15 Sep) sementara RSI membentuk lower low (65 ke 57), tanda tren naik berpeluang berlanjut. Batal bila ditutup di bawah 9.475. Area pantau 9.525–9.800, target 10.250.",
-   "nada": "naik",
+   "jenis": "Waspada baru",
+   "butir": "ANTM – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (2.830 pada 13 Nov di bawah 2.890 pada 23 Okt) sementara RSI membuat higher high (44 ke 51): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 2.830.",
+   "nada": "turun",
    "urut": 42
   },
   {
    "id": "e43",
    "tanggal": "2026-11-19",
-   "jenis": "Ide baru",
-   "butir": "UNVR – Tembus ke atas MA50",
-   "rincian": "Harga baru ditutup di atas MA50 (1.532). Batal bila ditutup di bawah 1.505. Area pantau 1.530–1.535, target 1.645.",
-   "nada": "naik",
+   "jenis": "Waspada baru",
+   "butir": "TPIA – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (1.345 pada 13 Nov di bawah 1.570 pada 27 Okt) sementara RSI membuat higher high (39 ke 44): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 1.345. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
+   "nada": "turun",
    "urut": 43
   },
   {
    "id": "e44",
    "tanggal": "2026-11-19",
+   "jenis": "Waspada baru",
+   "butir": "TINS – Hidden bearish divergence (RSI)",
+   "rincian": "Dalam tren turun, harga membuat lower high (3.690 pada 13 Nov di bawah 3.960 pada 27 Okt) sementara RSI membuat higher high (38 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 3.690. Saham ini ada di daftar ide awal pekan; sinyal ini memperlemah ide tersebut.",
+   "nada": "turun",
+   "urut": 44
+  },
+  {
+   "id": "e45",
+   "tanggal": "2026-11-19",
+   "jenis": "Ide baru",
+   "butir": "AALI – Koreksi ke MA20 dalam tren naik",
+   "rincian": "Tren naik (MA20 9.620 > MA50 8.824) dan harga sedang terkoreksi ke dekat MA20. Hidden bullish divergence: harga membentuk higher low (9.275 pada 9 Nov di atas 8.400 pada 15 Sep) sementara RSI membentuk lower low (65 ke 57), tanda tren naik berpeluang berlanjut. Batal bila ditutup di bawah 9.475. Area pantau 9.525–9.800, target 10.250.",
+   "nada": "naik",
+   "urut": 45
+  },
+  {
+   "id": "e46",
+   "tanggal": "2026-11-19",
+   "jenis": "Ide baru",
+   "butir": "UNVR – Tembus ke atas MA50",
+   "rincian": "Harga baru ditutup di atas MA50 (1.532). Batal bila ditutup di bawah 1.505. Area pantau 1.530–1.535, target 1.645.",
+   "nada": "naik",
+   "urut": 46
+  },
+  {
+   "id": "e47",
+   "tanggal": "2026-11-19",
    "jenis": "Ide baru",
    "butir": "EXCL – Rebut kembali MA20 (pemulihan awal)",
    "rincian": "Harga kembali di atas MA20 (1.607) setelah tren turun; MA50 (2.010) jadi hambatan berikutnya. Batal bila ditutup di bawah 1.555. Area pantau 1.605–1.655, target 1.900.",
    "nada": "naik",
-   "urut": 44
+   "urut": 47
   }
  ],
  "arsip_faktor": [
@@ -4237,9 +4282,9 @@
    "kategori": "Kalender",
    "butir": "Klaim pengangguran awal AS",
    "proyeksi": "Konsensus 197 ribu",
-   "aktual": "Dijadwalkan 19 Nov, 20:30 WIB",
-   "status": "menunggu",
-   "catatan": ""
+   "aktual": "203 ribu (di atas konsensus)",
+   "status": "sesuai",
+   "catatan": "Naik tipis dari 202 ribu (revisi); klaim lanjutan 1,763 juta, tertinggi sejak Agustus."
   },
   {
    "id": "2026-11-16-k-jp-ihk",
@@ -4247,10 +4292,10 @@
    "label": "16–20 Nov 2026",
    "kategori": "Kalender",
    "butir": "Inflasi Jepang (IHK)",
-   "proyeksi": "Tanpa konsensus angka",
-   "aktual": "Dijadwalkan 20 Nov, 06:30 WIB",
-   "status": "menunggu",
-   "catatan": ""
+   "proyeksi": "Konsensus 2,3% (inti)",
+   "aktual": "2,2% (inti); umum 2,3% (di bawah konsensus)",
+   "status": "sesuai",
+   "catatan": "Inti tercepat tahun ini karena subsidi energi berakhir; peluang BoJ naik Desember tetap."
   },
   {
    "id": "2026-11-16-k-cn-lpr",
@@ -4259,9 +4304,9 @@
    "kategori": "Kalender",
    "butir": "LPR China 1 tahun / 5 tahun",
    "proyeksi": "Konsensus 3,00% / 3,50% (tetap)",
-   "aktual": "Dijadwalkan 20 Nov, 08:00 WIB",
-   "status": "menunggu",
-   "catatan": ""
+   "aktual": "3,00% / 3,50% (tetap) (sesuai konsensus)",
+   "status": "sesuai",
+   "catatan": "Tetap 18 bulan; PBOC kini memakai suku bunga overnight sebagai acuan utama."
   },
   {
    "id": "2026-11-16-s-IDXINDUST",
@@ -4459,9 +4504,9 @@
    "tanggal": "2026-11-19",
    "agenda": "Klaim pengangguran awal AS",
    "konsensus": "197 ribu",
-   "aktual": "",
-   "hasil": "",
-   "status": "menunggu"
+   "aktual": "203 ribu",
+   "hasil": "di atas",
+   "status": "sesuai"
   },
   {
    "id": "2026-11-16-jp-ihk",
@@ -4469,10 +4514,10 @@
    "label": "16–20 Nov 2026",
    "tanggal": "2026-11-20",
    "agenda": "Inflasi Jepang (IHK)",
-   "konsensus": "",
-   "aktual": "",
-   "hasil": "",
-   "status": "menunggu"
+   "konsensus": "2,3% (inti)",
+   "aktual": "2,2% (inti); umum 2,3%",
+   "hasil": "di bawah",
+   "status": "sesuai"
   },
   {
    "id": "2026-11-16-cn-lpr",
@@ -4481,9 +4526,9 @@
    "tanggal": "2026-11-20",
    "agenda": "LPR China 1 tahun / 5 tahun",
    "konsensus": "3,00% / 3,50% (tetap)",
-   "aktual": "",
-   "hasil": "",
-   "status": "menunggu"
+   "aktual": "3,00% / 3,50% (tetap)",
+   "hasil": "sesuai",
+   "status": "sesuai"
   }
  ],
  "arsip_harian": [
