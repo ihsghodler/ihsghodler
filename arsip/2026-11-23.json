@@ -16,7 +16,7 @@
   },
   {
    "label": "Data ditarik",
-   "value": "2026-11-22T16:36:30+07:00"
+   "value": "2026-11-22T17:05:51+07:00"
   }
  ],
  "ringkasan": [
@@ -24,12 +24,12 @@
    "pekan": "2026-11-23",
    "label_pekan": "23–27 Nov 2026",
    "data_per": "2026-11-20",
-   "dibuat": "2026-11-22T16:37:38+07:00",
-   "diperbarui": "2026-11-22T16:37:38+07:00",
+   "dibuat": "2026-11-22T17:06:52+07:00",
+   "diperbarui": "2026-11-22T17:06:53+07:00",
    "ihsg_dasar": 5146.33,
    "ihsg_w1": -3.71,
-   "diperbarui_label": "Minggu, 22 Nov 2026, 16.37 WIB",
-   "skor": -1.67,
+   "diperbarui_label": "Minggu, 22 Nov 2026, 17.06 WIB",
+   "skor": -1.66,
    "bias": "Melemah",
    "bias_kode": "turun",
    "pusat": 5146,
@@ -193,11 +193,11 @@
    "faktor": "Bitcoin",
    "bobot": 10.9,
    "ukuran": "Perubahan 7 hari (termasuk akhir pekan)",
-   "nilai": -8.14,
+   "nilai": -6.69,
    "tren": "di bawah MA20, MA20 menurun",
-   "skor": -2.0,
-   "terakhir": 59988.68,
-   "kontribusi": -0.218,
+   "skor": -1.84,
+   "terakhir": 60935.94,
+   "kontribusi": -0.201,
    "arah": "menekan",
    "pantauan": 0,
    "wtd": null,
@@ -1554,17 +1554,17 @@
    "id": "btc",
    "nama": "Bitcoin",
    "kelompok": "Faktor",
-   "terakhir": 59989.0,
+   "terakhir": 60936.0,
    "tanggal": "2026-11-22",
-   "w1": -8.14,
-   "m1": -23.34,
+   "w1": -6.69,
+   "m1": -22.13,
    "satuan": "%",
-   "vs_ma20": -13.39,
+   "vs_ma20": -12.08,
    "tren": "di bawah MA20",
    "kini": null,
    "wtd": null,
    "urut": 25,
-   "harga_terakhir": 59989.0,
+   "harga_terakhir": 60936.0,
    "tgl_terakhir": "2026-11-22",
    "sementara": 1
   },
@@ -1685,9 +1685,9 @@
    "jenis": ""
   },
   {
-   "konsensus_lama": null,
+   "konsensus_lama": "(belum ada)",
    "tren_lama": null,
-   "berubah_tgl": null,
+   "berubah_tgl": "2026-11-22",
    "id": "us-pcons",
    "tanggal": "2026-11-24",
    "hari": "Selasa",
@@ -1695,10 +1695,10 @@
    "wilayah": "AS",
    "agenda": "Keyakinan konsumen AS (Conf. Board)",
    "periode": "Nov",
-   "sebelumnya": "",
-   "konsensus": "",
+   "sebelumnya": "91,7",
+   "konsensus": "92,5",
    "tren": "",
-   "tren_catatan": "",
+   "tren_catatan": "Konsensus menurut kalender Rio Times; pratinjau lain memperkirakan keyakinan tetap rendah.",
    "penting": "sedang",
    "pantau": "Gejolak bursa AS bisa menekan keyakinan konsumen menjelang musim belanja.",
    "aktual": "",
@@ -2544,6 +2544,15 @@
   {
    "id": "b01",
    "tanggal": "2026-11-22",
+   "ringkasan": "Analis memperkirakan rupiah masih rawan melemah sepekan ke depan setelah sempat menyentuh Rp18.319 di pasar NDF; sebagian analis lain melihat ruang penguatan terbatas dari perbaikan neraca eksternal.",
+   "sumber": "Investor Daily",
+   "url": "https://investor.id/market/462896/rupiah-terjebak-awan-gelap",
+   "lingkup": "Domestik",
+   "dampak": "negatif"
+  },
+  {
+   "id": "b02",
+   "tanggal": "2026-11-22",
    "ringkasan": "Nilai kapitalisasi pasar BEI menyusut sekitar Rp322 triliun dalam sepekan seiring penurunan IHSG 3,71%; rata-rata nilai transaksi harian juga merosot tajam.",
    "sumber": "Suara.com",
    "url": "https://www.suara.com/bisnis/2026/11/22/105827/investor-ihsg-nyesek-kapitalisasi-pasar-hilang-rp322-triliun-dalam-seminggu",
@@ -2551,7 +2560,16 @@
    "dampak": "negatif"
   },
   {
-   "id": "b02",
+   "id": "b03",
+   "tanggal": "2026-11-21",
+   "ringkasan": "Saham Nvidia memantul ±3,9% di perdagangan setelah jam bursa Jumat; penyelidikan SEC belum berarti ada pelanggaran, tetapi jaksa agung California juga meminta dokumen soal ekspor chip ke China.",
+   "sumber": "The Motley Fool",
+   "url": "https://www.fool.com/investing/2026/11/21/after-its-worst-week-in-18-years-nvidia-now-faces-an-sec-investigation-what-it-means-for-investors/",
+   "lingkup": "Global",
+   "dampak": "netral"
+  },
+  {
+   "id": "b04",
    "tanggal": "2026-11-21",
    "ringkasan": "Menurut data BEI, IHSG turun 3,71% sepekan dari 5.344 ke 5.146; jual bersih asing sepanjang 2026 sudah menembus Rp100 triliun.",
    "sumber": "Bisnis.com",
@@ -2560,7 +2578,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b03",
+   "id": "b05",
    "tanggal": "2026-11-21",
    "ringkasan": "Peluang kenaikan bunga The Fed 25 bps pada Desember di atas 97% menurut CME FedWatch, sehingga data PCE Oktober yang rilis Rabu menjadi sorotan utama pekan pendek Thanksgiving.",
    "sumber": "Kiplinger",
@@ -2569,7 +2587,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b04",
+   "id": "b06",
    "tanggal": "2026-11-20",
    "ringkasan": "Analis KISI menilai peluang koreksi lanjutan sedikit lebih besar (55:45); wacana setoran 70% sektor tambang ke negara ikut membebani saham tambang swasta.",
    "sumber": "Kontan",
@@ -2578,7 +2596,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b05",
+   "id": "b07",
    "tanggal": "2026-11-20",
    "ringkasan": "IHSG turun 0,92% ke 5.146 pada Jumat (terendah harian 5.094) dengan jual bersih asing Rp947 miliar; BBCA, TLKM, dan ASII jadi pemberat, MBMA dan EXCL menahan.",
    "sumber": "Katadata",
@@ -2587,7 +2605,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b06",
+   "id": "b08",
    "tanggal": "2026-11-20",
    "ringkasan": "Rupiah ditutup Rp18.270 per dolar AS, terlemah sepanjang sejarah, dan JISDOR Rp18.278, meski BI baru menaikkan suku bunga; tekanan datang dari dolar dan ekspektasi kenaikan bunga The Fed.",
    "sumber": "Topik.id",
@@ -2596,7 +2614,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b07",
+   "id": "b09",
    "tanggal": "2026-11-20",
    "ringkasan": "Wall Street ambruk Jumat: S&P 500 −3,7% (turun tujuh hari beruntun), Nasdaq −5,3%, Dow −1,9%; S&P 500 dan Dow masuk wilayah koreksi dan VIX ditutup tertinggi sejak April 2025.",
    "sumber": "Moneycontrol via TradingView",
@@ -2605,7 +2623,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b08",
+   "id": "b10",
    "tanggal": "2026-11-20",
    "ringkasan": "Saham Nvidia anjlok ±14% dalam sehari setelah Reuters melaporkan staf SEC memeriksa kemungkinan masalah akuntansinya; penurunan sepekan ±23%, terburuk sejak 2008. Probe belum dikonfirmasi.",
    "sumber": "The Motley Fool",
@@ -2614,7 +2632,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b09",
+   "id": "b11",
    "tanggal": "2026-11-19",
    "ringkasan": "Pertemuan Trump–Xi–Putin di Shenzhen tidak menghasilkan pemangkasan tarif baru maupun kesepakatan chip; AS dan China hanya menyebut kerangka pengurangan tarif atas ±US$30 miliar impor.",
    "sumber": "EconoTimes",
@@ -2623,29 +2641,11 @@
    "dampak": "netral"
   },
   {
-   "id": "b10",
+   "id": "b12",
    "tanggal": "2026-11-19",
    "ringkasan": "IHSG turun 1,02% ke 5.194 pada Kamis, melemah empat hari beruntun; asing jual bersih Rp563,56 miliar di seluruh pasar dengan BBCA paling banyak dilepas.",
    "sumber": "Investortrust",
    "url": "https://investortrust.id/market/123111/net-sell-berlanjut-rp-563-56-miliar-saham-bbca-diobral",
-   "lingkup": "Domestik",
-   "dampak": "negatif"
-  },
-  {
-   "id": "b11",
-   "tanggal": "2026-11-18",
-   "ringkasan": "BI menaikkan BI Rate 25 bps ke 6,00% di luar konsensus demi stabilitas rupiah; efek penopang ke pasar saham hanya bertahan beberapa jam.",
-   "sumber": "ANTARA News",
-   "url": "https://www.antaranews.com/berita/5862031/bi-naikkan-bunga-acuan-25-bps-ke-level-6-persen-pada-rdg-november",
-   "lingkup": "Domestik",
-   "dampak": "netral"
-  },
-  {
-   "id": "b12",
-   "tanggal": "2026-11-16",
-   "ringkasan": "FTSE Russell mengeluarkan 14 saham berkonsentrasi kepemilikan tinggi (antara lain BRIS, MTEL, TBIG, MAPI, TKIM) dari indeks globalnya mulai 21 Desember.",
-   "sumber": "Kompas.com",
-   "url": "https://money.kompas.com/read/2026/11/16/110410726/ihsg-terkoreksi-117-persen-imbas-ftse-russell-depak-14-saham-indonesia",
    "lingkup": "Domestik",
    "dampak": "negatif"
   }
@@ -2775,7 +2775,7 @@
    "id": "arah",
    "kategori": "IHSG",
    "butir": "Arah pekan ini",
-   "proyeksi": "Melemah (skor −1,67)",
+   "proyeksi": "Melemah (skor −1,66)",
    "aktual": "Belum ada penutupan",
    "status": "menunggu",
    "catatan": "",
@@ -2811,7 +2811,7 @@
    "id": "f-btc",
    "kategori": "Faktor",
    "butir": "Bitcoin",
-   "proyeksi": "menekan (skor −2,0)",
+   "proyeksi": "menekan (skor −1,8)",
    "aktual": "Belum ada data pekan ini",
    "status": "menunggu",
    "catatan": "",
@@ -2883,7 +2883,7 @@
    "id": "k-us-pcons",
    "kategori": "Kalender",
    "butir": "Keyakinan konsumen AS (Conf. Board)",
-   "proyeksi": "Tanpa konsensus angka",
+   "proyeksi": "Konsensus 92,5",
    "aktual": "Dijadwalkan 24 Nov, 22:00 WIB",
    "status": "menunggu",
    "catatan": "",
@@ -3056,7 +3056,7 @@
    "bawah": 5003,
    "atas": 5290,
    "bias": "Melemah",
-   "skor": -1.67,
+   "skor": -1.66,
    "tutup_akhir": null,
    "pct": null,
    "dalam_rentang": "berjalan",
@@ -3313,7 +3313,7 @@
    "label": "23–27 Nov 2026",
    "faktor": "Bitcoin",
    "bobot": 10.9,
-   "skor": -2.0,
+   "skor": -1.84,
    "arah": "menekan",
    "pekan_itu": null,
    "status": "menunggu"
@@ -3466,7 +3466,7 @@
    "geser": null,
    "rincian": "",
    "rincian_hari_ini": "",
-   "pemicu": "Skor −1,67 → saham −8; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1",
+   "pemicu": "Skor −1,66 → saham −8; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1",
    "pemicu_hari_ini": ""
   },
   {
@@ -3545,13 +3545,13 @@
    "nama": "Kas",
    "urut": 1,
    "acuan": 10,
-   "pekan_ini": 14,
-   "ubah": 4,
+   "pekan_ini": 15,
+   "ubah": 5,
    "hari_ini": null,
    "geser": null,
    "rincian": "",
    "rincian_hari_ini": "",
-   "pemicu": "Skor −1,67 → saham −13; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0",
+   "pemicu": "Skor −1,66 → saham −12; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0",
    "pemicu_hari_ini": ""
   },
   {
@@ -3562,8 +3562,8 @@
    "nama": "Obligasi pendek",
    "urut": 2,
    "acuan": 20,
-   "pekan_ini": 28,
-   "ubah": 8,
+   "pekan_ini": 27,
+   "ubah": 7,
    "hari_ini": null,
    "geser": null,
    "rincian": "",
@@ -3636,7 +3636,7 @@
    "geser": null,
    "rincian": "",
    "rincian_hari_ini": "",
-   "pemicu": "Skor −1,67 → saham −15; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0",
+   "pemicu": "Skor −1,66 → saham −15; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0",
    "pemicu_hari_ini": ""
   },
   {
@@ -3985,7 +3985,7 @@
    "label": "23–27 Nov 2026",
    "kategori": "IHSG",
    "butir": "Arah pekan ini",
-   "proyeksi": "Melemah (skor −1,67)",
+   "proyeksi": "Melemah (skor −1,66)",
    "aktual": "Belum ada penutupan",
    "status": "menunggu",
    "catatan": ""
@@ -4018,7 +4018,7 @@
    "label": "23–27 Nov 2026",
    "kategori": "Faktor",
    "butir": "Bitcoin",
-   "proyeksi": "menekan (skor −2,0)",
+   "proyeksi": "menekan (skor −1,8)",
    "aktual": "Belum ada data pekan ini",
    "status": "menunggu",
    "catatan": ""
@@ -4084,7 +4084,7 @@
    "label": "23–27 Nov 2026",
    "kategori": "Kalender",
    "butir": "Keyakinan konsumen AS (Conf. Board)",
-   "proyeksi": "Tanpa konsensus angka",
+   "proyeksi": "Konsensus 92,5",
    "aktual": "Dijadwalkan 24 Nov, 22:00 WIB",
    "status": "menunggu",
    "catatan": ""
@@ -4570,7 +4570,7 @@
    "label": "23–27 Nov 2026",
    "tanggal": "2026-11-24",
    "agenda": "Keyakinan konsumen AS (Conf. Board)",
-   "konsensus": "",
+   "konsensus": "92,5",
    "aktual": "",
    "hasil": "",
    "status": "menunggu"
