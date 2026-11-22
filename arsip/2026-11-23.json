@@ -16,7 +16,7 @@
   },
   {
    "label": "Data ditarik",
-   "value": "2026-11-22T16:25:10+07:00"
+   "value": "2026-11-22T16:36:30+07:00"
   }
  ],
  "ringkasan": [
@@ -24,11 +24,11 @@
    "pekan": "2026-11-23",
    "label_pekan": "23–27 Nov 2026",
    "data_per": "2026-11-20",
-   "dibuat": "2026-11-22T16:25:59+07:00",
-   "diperbarui": "2026-11-22T16:25:59+07:00",
+   "dibuat": "2026-11-22T16:37:38+07:00",
+   "diperbarui": "2026-11-22T16:37:38+07:00",
    "ihsg_dasar": 5146.33,
    "ihsg_w1": -3.71,
-   "diperbarui_label": "Minggu, 22 Nov 2026, 16.25 WIB",
+   "diperbarui_label": "Minggu, 22 Nov 2026, 16.37 WIB",
    "skor": -1.67,
    "bias": "Melemah",
    "bias_kode": "turun",
@@ -193,10 +193,10 @@
    "faktor": "Bitcoin",
    "bobot": 10.9,
    "ukuran": "Perubahan 7 hari (termasuk akhir pekan)",
-   "nilai": -8.32,
+   "nilai": -8.14,
    "tren": "di bawah MA20, MA20 menurun",
    "skor": -2.0,
-   "terakhir": 59872.66,
+   "terakhir": 59988.68,
    "kontribusi": -0.218,
    "arah": "menekan",
    "pantauan": 0,
@@ -1554,17 +1554,17 @@
    "id": "btc",
    "nama": "Bitcoin",
    "kelompok": "Faktor",
-   "terakhir": 59873.0,
+   "terakhir": 59989.0,
    "tanggal": "2026-11-22",
-   "w1": -8.32,
-   "m1": -23.48,
+   "w1": -8.14,
+   "m1": -23.34,
    "satuan": "%",
-   "vs_ma20": -13.55,
+   "vs_ma20": -13.39,
    "tren": "di bawah MA20",
    "kini": null,
    "wtd": null,
    "urut": 25,
-   "harga_terakhir": 59873.0,
+   "harga_terakhir": 59989.0,
    "tgl_terakhir": "2026-11-22",
    "sementara": 1
   },
@@ -2387,6 +2387,15 @@
  "berita": [
   {
    "id": "b01",
+   "tanggal": "2026-11-22",
+   "ringkasan": "Nilai kapitalisasi pasar BEI menyusut sekitar Rp322 triliun dalam sepekan seiring penurunan IHSG 3,71%; rata-rata nilai transaksi harian juga merosot tajam.",
+   "sumber": "Suara.com",
+   "url": "https://www.suara.com/bisnis/2026/11/22/105827/investor-ihsg-nyesek-kapitalisasi-pasar-hilang-rp322-triliun-dalam-seminggu",
+   "lingkup": "Domestik",
+   "dampak": "negatif"
+  },
+  {
+   "id": "b02",
    "tanggal": "2026-11-21",
    "ringkasan": "Menurut data BEI, IHSG turun 3,71% sepekan dari 5.344 ke 5.146; jual bersih asing sepanjang 2026 sudah menembus Rp100 triliun.",
    "sumber": "Bisnis.com",
@@ -2395,7 +2404,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b02",
+   "id": "b03",
    "tanggal": "2026-11-21",
    "ringkasan": "Peluang kenaikan bunga The Fed 25 bps pada Desember di atas 97% menurut CME FedWatch, sehingga data PCE Oktober yang rilis Rabu menjadi sorotan utama pekan pendek Thanksgiving.",
    "sumber": "Kiplinger",
@@ -2404,7 +2413,16 @@
    "dampak": "negatif"
   },
   {
-   "id": "b03",
+   "id": "b04",
+   "tanggal": "2026-11-20",
+   "ringkasan": "Analis KISI menilai peluang koreksi lanjutan sedikit lebih besar (55:45); wacana setoran 70% sektor tambang ke negara ikut membebani saham tambang swasta.",
+   "sumber": "Kontan",
+   "url": "https://investasi.kontan.co.id/news/ihsg-turun-371-sepekan-peluang-rebound-masih-terbatas",
+   "lingkup": "Domestik",
+   "dampak": "negatif"
+  },
+  {
+   "id": "b05",
    "tanggal": "2026-11-20",
    "ringkasan": "IHSG turun 0,92% ke 5.146 pada Jumat (terendah harian 5.094) dengan jual bersih asing Rp947 miliar; BBCA, TLKM, dan ASII jadi pemberat, MBMA dan EXCL menahan.",
    "sumber": "Katadata",
@@ -2413,7 +2431,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b04",
+   "id": "b06",
    "tanggal": "2026-11-20",
    "ringkasan": "Rupiah ditutup Rp18.270 per dolar AS, terlemah sepanjang sejarah, dan JISDOR Rp18.278, meski BI baru menaikkan suku bunga; tekanan datang dari dolar dan ekspektasi kenaikan bunga The Fed.",
    "sumber": "Topik.id",
@@ -2422,7 +2440,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b05",
+   "id": "b07",
    "tanggal": "2026-11-20",
    "ringkasan": "Wall Street ambruk Jumat: S&P 500 −3,7% (turun tujuh hari beruntun), Nasdaq −5,3%, Dow −1,9%; S&P 500 dan Dow masuk wilayah koreksi dan VIX ditutup tertinggi sejak April 2025.",
    "sumber": "Moneycontrol via TradingView",
@@ -2431,7 +2449,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b06",
+   "id": "b08",
    "tanggal": "2026-11-20",
    "ringkasan": "Saham Nvidia anjlok ±14% dalam sehari setelah Reuters melaporkan staf SEC memeriksa kemungkinan masalah akuntansinya; penurunan sepekan ±23%, terburuk sejak 2008. Probe belum dikonfirmasi.",
    "sumber": "The Motley Fool",
@@ -2440,7 +2458,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b07",
+   "id": "b09",
    "tanggal": "2026-11-19",
    "ringkasan": "Pertemuan Trump–Xi–Putin di Shenzhen tidak menghasilkan pemangkasan tarif baru maupun kesepakatan chip; AS dan China hanya menyebut kerangka pengurangan tarif atas ±US$30 miliar impor.",
    "sumber": "EconoTimes",
@@ -2449,7 +2467,7 @@
    "dampak": "netral"
   },
   {
-   "id": "b08",
+   "id": "b10",
    "tanggal": "2026-11-19",
    "ringkasan": "IHSG turun 1,02% ke 5.194 pada Kamis, melemah empat hari beruntun; asing jual bersih Rp563,56 miliar di seluruh pasar dengan BBCA paling banyak dilepas.",
    "sumber": "Investortrust",
@@ -2458,7 +2476,7 @@
    "dampak": "negatif"
   },
   {
-   "id": "b09",
+   "id": "b11",
    "tanggal": "2026-11-18",
    "ringkasan": "BI menaikkan BI Rate 25 bps ke 6,00% di luar konsensus demi stabilitas rupiah; efek penopang ke pasar saham hanya bertahan beberapa jam.",
    "sumber": "ANTARA News",
@@ -2467,7 +2485,7 @@
    "dampak": "netral"
   },
   {
-   "id": "b10",
+   "id": "b12",
    "tanggal": "2026-11-16",
    "ringkasan": "FTSE Russell mengeluarkan 14 saham berkonsentrasi kepemilikan tinggi (antara lain BRIS, MTEL, TBIG, MAPI, TKIM) dari indeks globalnya mulai 21 Desember.",
    "sumber": "Kompas.com",
@@ -2492,6 +2510,14 @@
    "resistance": "5.440",
    "sumber": "Investor Daily",
    "url": "https://investor.id/market/462777/proyeksi-ihsg-pekan-depan-peluang-ke-5440-intip-rekomendasi-sahamnya"
+  },
+  {
+   "sekuritas": "Korea Investment & Sekuritas Indonesia",
+   "pandangan": "Rebound teknikal terbatas di bawah 5.300; peluang koreksi lanjutan 55:45",
+   "support": "5.100 (lanjutan 5.000 dan 4.950)",
+   "resistance": "5.200 dan 5.320",
+   "sumber": "Kontan",
+   "url": "https://investasi.kontan.co.id/news/ihsg-turun-371-sepekan-peluang-rebound-masih-terbatas"
   }
  ],
  "pelacakan": [
