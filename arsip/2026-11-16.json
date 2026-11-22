@@ -16,7 +16,7 @@
   },
   {
    "label": "Data ditarik",
-   "value": "2026-11-22T16:19:29+07:00"
+   "value": "2026-11-22T16:36:30+07:00"
   }
  ],
  "ringkasan": [
@@ -84,7 +84,7 @@
    "lebar_luar_pct": null,
    "cakupan_lebar": null,
    "keyakinan": "rendah",
-   "keyakinan_ket": "Keyakinan rendah: dalam uji ulang Nov 2017–Nov 2026, arah skor tepat 56%, setara dengan menebak \"selalu naik\" (56%). Rentang lebih bisa diandalkan daripada arah.",
+   "keyakinan_ket": "Keyakinan rendah: dalam uji ulang Nov 2017–Nov 2026, arah skor tepat 56%, setara dengan menebak \"selalu naik\" (56%). Rentang lebih bisa diandalkan daripada arah. Pekan nyata: arah tepat 0 dari 1.",
    "sisa_hari": null,
    "sisa_dasar": null,
    "sisa_bawah": null,
@@ -1535,10 +1535,10 @@
    "satuan": "%",
    "vs_ma20": -12.99,
    "tren": "di bawah MA20",
-   "kini": 59740.0,
-   "wtd": -8.52,
+   "kini": 59989.0,
+   "wtd": -8.14,
    "urut": 25,
-   "harga_terakhir": 59740.0,
+   "harga_terakhir": 59989.0,
    "tgl_terakhir": "2026-11-22",
    "sementara": 1
   },
@@ -1635,6 +1635,9 @@
  ],
  "kalender": [
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "jp-pdb",
    "tanggal": "2026-11-16",
    "hari": "Senin",
@@ -1652,9 +1655,13 @@
    "hasil": "di bawah",
    "efek": "negatif",
    "status": "menyimpang",
-   "catatan": "Meleset dari perkiraan; konsumsi swasta turun 0,3%."
+   "catatan": "Meleset dari perkiraan; konsumsi swasta turun 0,3%.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "cn-aktivitas",
    "tanggal": "2026-11-16",
    "hari": "Senin",
@@ -1672,9 +1679,13 @@
    "hasil": "di bawah",
    "efek": "negatif",
    "status": "menyimpang",
-   "catatan": "Ketiga angka meleset; negatif untuk logam dan sentimen regional."
+   "catatan": "Ketiga angka meleset; negatif untuk logam dan sentimen regional.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-warsh",
    "tanggal": "2026-11-17",
    "hari": "Selasa",
@@ -1692,9 +1703,13 @@
    "hasil": "sesuai",
    "efek": "netral",
    "status": "sesuai",
-   "catatan": "Kenaikan 25 bps Desember tetap diperhitungkan penuh; UST 10 tahun ±5,14%."
+   "catatan": "Kenaikan 25 bps Desember tetap diperhitungkan penuh; UST 10 tahun ±5,14%.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-ritel",
    "tanggal": "2026-11-17",
    "hari": "Selasa",
@@ -1712,9 +1727,13 @@
    "hasil": "sesuai",
    "efek": "netral",
    "status": "sesuai",
-   "catatan": "Sesuai konsensus; inti lebih kuat, tetapi imbal hasil UST justru turun."
+   "catatan": "Sesuai konsensus; inti lebih kuat, tetapi imbal hasil UST justru turun.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-apec",
    "tanggal": "2026-11-18",
    "hari": "Rabu",
@@ -1732,9 +1751,13 @@
    "hasil": "sesuai",
    "efek": "netral",
    "status": "sesuai",
-   "catatan": "Nada hangat, tetapi belum ada kesepakatan soal tarif, chip, atau logam tanah jarang."
+   "catatan": "Nada hangat, tetapi belum ada kesepakatan soal tarif, chip, atau logam tanah jarang.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-nvda",
    "tanggal": "2026-11-18",
    "hari": "Rabu",
@@ -1752,9 +1775,13 @@
    "hasil": "di atas",
    "efek": "positif",
    "status": "menyimpang",
-   "catatan": "Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours."
+   "catatan": "Melampaui konsensus ±6%; panduan Q4 US$130 miliar; saham naik ±3–4% after hours.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "id-bi",
    "tanggal": "2026-11-18",
    "hari": "Rabu",
@@ -1772,9 +1799,13 @@
    "hasil": "di atas",
    "efek": "positif",
    "status": "menyimpang",
-   "catatan": "Di luar konsensus; rupiah menguat, tetapi IHSG berbalik turun 1,07% ke 5.247,88."
+   "catatan": "Di luar konsensus; rupiah menguat, tetapi IHSG berbalik turun 1,07% ke 5.247,88.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-fomc-risalah",
    "tanggal": "2026-11-19",
    "hari": "Kamis",
@@ -1792,9 +1823,13 @@
    "hasil": "sesuai",
    "efek": "negatif",
    "status": "sesuai",
-   "catatan": "Nada hawkish sesuai perkiraan; beberapa buka opsi naik lebih besar Desember."
+   "catatan": "Nada hawkish sesuai perkiraan; beberapa buka opsi naik lebih besar Desember.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-klaim",
    "tanggal": "2026-11-19",
    "hari": "Kamis",
@@ -1812,9 +1847,13 @@
    "hasil": "di atas",
    "efek": "netral",
    "status": "sesuai",
-   "catatan": "Naik tipis dari 202 ribu (revisi); klaim lanjutan 1,763 juta, tertinggi sejak Agustus."
+   "catatan": "Naik tipis dari 202 ribu (revisi); klaim lanjutan 1,763 juta, tertinggi sejak Agustus.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "jp-ihk",
    "tanggal": "2026-11-20",
    "hari": "Jumat",
@@ -1832,9 +1871,13 @@
    "hasil": "di bawah",
    "efek": "netral",
    "status": "sesuai",
-   "catatan": "Inti tercepat tahun ini karena subsidi energi berakhir; peluang BoJ naik Desember tetap."
+   "catatan": "Inti tercepat tahun ini karena subsidi energi berakhir; peluang BoJ naik Desember tetap.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "cn-lpr",
    "tanggal": "2026-11-20",
    "hari": "Jumat",
@@ -1852,9 +1895,13 @@
    "hasil": "sesuai",
    "efek": "netral",
    "status": "sesuai",
-   "catatan": "Tetap 18 bulan; PBOC kini memakai suku bunga overnight sebagai acuan utama."
+   "catatan": "Tetap 18 bulan; PBOC kini memakai suku bunga overnight sebagai acuan utama.",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "id-msci",
    "tanggal": "2026-11-30",
    "hari": "Senin",
@@ -1872,9 +1919,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": "arus pasif"
   },
   {
+   "konsensus_lama": "(belum ada)",
+   "tren_lama": null,
+   "berubah_tgl": "2026-11-22",
    "id": "id-bps",
    "tanggal": "2026-12-01",
    "hari": "Selasa",
@@ -1892,9 +1943,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": "Naik 25 bps (peluang >97%)",
+   "tren_lama": null,
+   "berubah_tgl": "2026-11-22",
    "id": "us-fomc",
    "tanggal": "2026-12-10",
    "hari": "Kamis",
@@ -1912,9 +1967,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "id-ftse",
    "tanggal": "2026-12-21",
    "hari": "Senin",
@@ -1932,7 +1991,8 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": "arus pasif"
   }
  ],
  "sektor": [
@@ -3758,6 +3818,94 @@
  ],
  "arsip_faktor": [
   {
+   "id": "2026-11-23-tren",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "Tren lintas pasar",
+   "bobot": 14.9,
+   "skor": -2.0,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-global",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "Indeks global",
+   "bobot": 13.4,
+   "skor": -2.0,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-btc",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "Bitcoin",
+   "bobot": 10.9,
+   "skor": -2.0,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-dxy",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "USD Index (DXY)",
+   "bobot": 16.4,
+   "skor": -1.27,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-eido",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "EIDO",
+   "bobot": 13.4,
+   "skor": -2.0,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-fid",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "FTSE Indonesia",
+   "bobot": 9.0,
+   "skor": -0.95,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-berita",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "Berita & sentimen",
+   "bobot": 21.9,
+   "skor": -1.5,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-usdidr",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "faktor": "Kurs rupiah (USD/IDR)",
+   "bobot": 0.0,
+   "skor": -0.7,
+   "arah": "menekan",
+   "pekan_itu": null,
+   "status": "menunggu"
+  },
+  {
    "id": "2026-11-16-regional",
    "pekan": "2026-11-16",
    "label": "16–20 Nov 2026",
@@ -4162,9 +4310,293 @@
    "periode_b": "1,72%",
    "keterangan": "Titik tengah = penutupan Jumat. Bila digeser skor (v1.0): 1,72%.",
    "urut": 7
+  },
+  {
+   "id": "n_arah",
+   "kelompok": "Pekan nyata yang sudah selesai",
+   "ukuran": "Arah tepat",
+   "nilai": "0 dari 1",
+   "periode_a": "",
+   "periode_b": "",
+   "keterangan": "Termasuk pekan model v1.0.",
+   "urut": 8
+  },
+  {
+   "id": "n_inti",
+   "kelompok": "Pekan nyata yang sudah selesai",
+   "ukuran": "Penutupan di dalam rentang (inti)",
+   "nilai": "0 dari 1",
+   "periode_a": "",
+   "periode_b": "",
+   "keterangan": "",
+   "urut": 9
   }
  ],
  "arsip_butir": [
+  {
+   "id": "2026-11-23-rentang",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "IHSG",
+   "butir": "Rentang pekan ini",
+   "proyeksi": "Inti 5.003 – 5.290; lebar 4.859 – 5.434",
+   "aktual": "Belum ada penutupan",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-arah",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "IHSG",
+   "butir": "Arah pekan ini",
+   "proyeksi": "Melemah (skor −1,67)",
+   "aktual": "Belum ada penutupan",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-f-tren",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Faktor",
+   "butir": "Tren lintas pasar",
+   "proyeksi": "menekan (skor −2,0)",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-f-global",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Faktor",
+   "butir": "Indeks global",
+   "proyeksi": "menekan (skor −2,0)",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-f-btc",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Faktor",
+   "butir": "Bitcoin",
+   "proyeksi": "menekan (skor −2,0)",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-f-dxy",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Faktor",
+   "butir": "USD Index (DXY)",
+   "proyeksi": "menekan (skor −1,3)",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-f-eido",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Faktor",
+   "butir": "EIDO",
+   "proyeksi": "menekan (skor −2,0)",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-f-fid",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Faktor",
+   "butir": "FTSE Indonesia",
+   "proyeksi": "menekan (skor −0,9)",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-f-berita",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Faktor",
+   "butir": "Berita & sentimen",
+   "proyeksi": "menekan (skor −1,5)",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-us-pmi",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "PMI flash AS manufaktur / jasa",
+   "proyeksi": "Konsensus 54,5 / 55,7",
+   "aktual": "Dijadwalkan 23 Nov, 21:45 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-us-pcons",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Keyakinan konsumen AS (Conf. Board)",
+   "proyeksi": "Tanpa konsensus angka",
+   "aktual": "Dijadwalkan 24 Nov, 22:00 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-us-pce",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Inflasi PCE AS (umum / inti, bln)",
+   "proyeksi": "Konsensus 0,3% / inti 0,3% (inti 3,2% thn)",
+   "aktual": "Dijadwalkan 25 Nov, 20:30 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-us-pdb",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "PDB AS kuartal III (estimasi kedua)",
+   "proyeksi": "Konsensus 3,5%",
+   "aktual": "Dijadwalkan 25 Nov, 20:30 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-us-durable",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Pesanan barang tahan lama AS",
+   "proyeksi": "Konsensus +0,5%",
+   "aktual": "Dijadwalkan 25 Nov, 20:30 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-us-beige",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Beige Book The Fed",
+   "proyeksi": "Tanpa konsensus angka",
+   "aktual": "Dijadwalkan 26 Nov, 02:00 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-kr-bok",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Keputusan suku bunga BoK",
+   "proyeksi": "Konsensus 3,25% (naik 25 bps)",
+   "aktual": "Dijadwalkan 26 Nov, 08:00 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-us-libur",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Libur Thanksgiving bursa AS",
+   "proyeksi": "Tanpa konsensus angka",
+   "aktual": "Dijadwalkan 26 Nov",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-jp-tokyo",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Inflasi Tokyo (IHK)",
+   "proyeksi": "Tanpa konsensus angka",
+   "aktual": "Dijadwalkan 27 Nov, 06:30 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-k-cn-laba",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Kalender",
+   "butir": "Laba industri China",
+   "proyeksi": "Tanpa konsensus angka",
+   "aktual": "Dijadwalkan 27 Nov, 08:30 WIB",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-s-IDXFINANCE",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Sektor",
+   "butir": "Keuangan",
+   "proyeksi": "Lebih kuat dari IHSG",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-s-IDXNONCYC",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Sektor",
+   "butir": "Konsumen Primer",
+   "proyeksi": "Lebih kuat dari IHSG",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-s-IDXHEALTH",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Sektor",
+   "butir": "Kesehatan",
+   "proyeksi": "Lebih kuat dari IHSG",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-i-AALI",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Ide trading",
+   "butir": "AALI – Koreksi ke MA20 dalam tren naik",
+   "proyeksi": "Target 10.275, batal < 9.475",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-23-i-ASII",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "kategori": "Ide trading",
+   "butir": "ASII – Tren naik di atas MA20 & MA50",
+   "proyeksi": "Target 5.800, batal < 5.000",
+   "aktual": "Belum ada data pekan ini",
+   "status": "menunggu",
+   "catatan": ""
+  },
   {
    "id": "2026-11-16-rentang",
    "pekan": "2026-11-16",
@@ -4486,6 +4918,116 @@
   }
  ],
  "arsip_kalender": [
+  {
+   "id": "2026-11-23-us-pmi",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-23",
+   "agenda": "PMI flash AS manufaktur / jasa",
+   "konsensus": "54,5 / 55,7",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-us-pcons",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-24",
+   "agenda": "Keyakinan konsumen AS (Conf. Board)",
+   "konsensus": "",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-us-pce",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-25",
+   "agenda": "Inflasi PCE AS (umum / inti, bln)",
+   "konsensus": "0,3% / inti 0,3% (inti 3,2% thn)",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-us-pdb",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-25",
+   "agenda": "PDB AS kuartal III (estimasi kedua)",
+   "konsensus": "3,5%",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-us-durable",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-25",
+   "agenda": "Pesanan barang tahan lama AS",
+   "konsensus": "+0,5%",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-us-beige",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-26",
+   "agenda": "Beige Book The Fed",
+   "konsensus": "",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-kr-bok",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-26",
+   "agenda": "Keputusan suku bunga BoK",
+   "konsensus": "3,25% (naik 25 bps)",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-us-libur",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-26",
+   "agenda": "Libur Thanksgiving bursa AS",
+   "konsensus": "",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-jp-tokyo",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-27",
+   "agenda": "Inflasi Tokyo (IHK)",
+   "konsensus": "",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
+  {
+   "id": "2026-11-23-cn-laba",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "tanggal": "2026-11-27",
+   "agenda": "Laba industri China",
+   "konsensus": "",
+   "aktual": "",
+   "hasil": "",
+   "status": "menunggu"
+  },
   {
    "id": "2026-11-16-jp-pdb",
    "pekan": "2026-11-16",

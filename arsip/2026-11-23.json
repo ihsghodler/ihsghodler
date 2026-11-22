@@ -1661,6 +1661,9 @@
  ],
  "kalender": [
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-pmi",
    "tanggal": "2026-11-23",
    "hari": "Senin",
@@ -1678,9 +1681,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-pcons",
    "tanggal": "2026-11-24",
    "hari": "Selasa",
@@ -1698,9 +1705,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-pce",
    "tanggal": "2026-11-25",
    "hari": "Rabu",
@@ -1718,9 +1729,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-pdb",
    "tanggal": "2026-11-25",
    "hari": "Rabu",
@@ -1738,9 +1753,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-durable",
    "tanggal": "2026-11-25",
    "hari": "Rabu",
@@ -1758,9 +1777,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-libur",
    "tanggal": "2026-11-26",
    "hari": "Kamis",
@@ -1778,9 +1801,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-beige",
    "tanggal": "2026-11-26",
    "hari": "Kamis",
@@ -1798,9 +1825,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "kr-bok",
    "tanggal": "2026-11-26",
    "hari": "Kamis",
@@ -1818,9 +1849,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "jp-tokyo",
    "tanggal": "2026-11-27",
    "hari": "Jumat",
@@ -1838,9 +1873,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "cn-laba",
    "tanggal": "2026-11-27",
    "hari": "Jumat",
@@ -1858,9 +1897,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "id-msci",
    "tanggal": "2026-11-30",
    "hari": "Senin",
@@ -1878,9 +1921,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": "arus pasif"
   },
   {
+   "konsensus_lama": "Belum tersedia",
+   "tren_lama": null,
+   "berubah_tgl": "2026-11-22",
    "id": "id-bps",
    "tanggal": "2026-12-01",
    "hari": "Selasa",
@@ -1898,9 +1945,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": "Naik 25 bps (peluang ±93–95%)",
+   "tren_lama": null,
+   "berubah_tgl": "2026-11-22",
    "id": "us-fomc",
    "tanggal": "2026-12-10",
    "hari": "Kamis",
@@ -1918,9 +1969,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "id-ftse",
    "tanggal": "2026-12-21",
    "hari": "Senin",
@@ -1938,9 +1993,13 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": "arus pasif"
   },
   {
+   "konsensus_lama": null,
+   "tren_lama": null,
+   "berubah_tgl": null,
    "id": "us-gencatan",
    "tanggal": "2027-01-10",
    "hari": "Minggu",
@@ -1958,7 +2017,8 @@
    "hasil": "",
    "efek": "",
    "status": "menunggu",
-   "catatan": ""
+   "catatan": "",
+   "jenis": ""
   }
  ],
  "sektor": [
