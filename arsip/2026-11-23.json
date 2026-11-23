@@ -25,10 +25,10 @@
    "label_pekan": "23–27 Nov 2026",
    "data_per": "2026-11-20",
    "dibuat": "2026-11-22T17:06:52+07:00",
-   "diperbarui": "2026-11-23T18:28:04+07:00",
+   "diperbarui": "2026-11-23T19:01:34+07:00",
    "ihsg_dasar": 5146.33,
    "ihsg_w1": -3.71,
-   "diperbarui_label": "Senin, 23 Nov 2026, 18.28 WIB",
+   "diperbarui_label": "Senin, 23 Nov 2026, 19.01 WIB",
    "skor": -1.66,
    "bias": "Melemah",
    "bias_kode": "turun",
@@ -63,16 +63,16 @@
    "status": "menyimpang",
    "status_label": "Ada penyimpangan",
    "kata_tutup": "ditutup di",
-   "jml_simpang": 5,
+   "jml_simpang": 2,
    "jml_pantau": 3,
    "hari_ke": 1,
-   "kalimat": "IHSG ditutup di 5.215,85 (+1,35% sejak penutupan Jumat), di dalam rentang inti (inti 5.003–5.290, lebar 4.859–5.434). 5 butir menyimpang dari proyeksi.",
+   "kalimat": "IHSG ditutup di 5.215,85 (+1,35% sejak penutupan Jumat), di dalam rentang inti (inti 5.003–5.290, lebar 4.859–5.434). Penggerak membaik dari proyeksi awal pekan; sudah priced in.",
    "narasi": "IHSG turun 3,71% pekan lalu ke 5.146 dan ditutup di bawah batas bawah rentang proyeksi, terseret aksi jual saham AI global dan jual asing yang membesar hingga Rp947 miliar pada Jumat. Pekan ini pendek bagi Wall Street (libur Thanksgiving Kamis); penentunya adalah apakah kepanikan di AS mereda, data PCE dan PDB AS pada Rabu, serta kemampuan rupiah bertahan di sekitar Rp18.270.",
    "skor_kini": -1.4,
    "bias_kini": "Melemah",
    "skor_ubah": 0.26,
-   "vonis": "Perbaikan: yang meleset justru menguntungkan IHSG",
-   "vonis_rincian": "Dari 5 butir yang meleset: 2 perbaikan, 3 dampak terbatas. IHSG +1,35% sejak Jumat, support terdekat 5.095.",
+   "vonis": "Perbaikan: yang berubah justru menguntungkan IHSG",
+   "vonis_rincian": "Dari 2 butir yang berubah: 2 perbaikan. IHSG +1,35% sejak Jumat, support terdekat 5.095.",
    "vonis_nada": "naik",
    "kalibrasi": "Model v2.0 berlaku mulai pekan 23 Nov 2026 berdasarkan uji ulang 10 tahun: faktor bursa Asia diganti tren lintas pasar, bobot DXY kembali 15%, USD/IDR dipantau tanpa bobot, titik tengah tidak lagi digeser skor, dan ada rentang lebar. Bobot faktor baru mulai dikoreksi setelah ada pekan selesai yang memakainya. Bobot diperbaiki dari rekam jejak 1 pekan: Indeks global 15% menjadi 13,4% (arah cocok 0 dari 1 pekan); Bitcoin 10% menjadi 10,9% (arah cocok 1 dari 1 pekan); USD Index (DXY) 15% menjadi 16,4% (arah cocok 1 dari 1 pekan); EIDO 15% menjadi 13,4% (arah cocok 0 dari 1 pekan); FTSE Indonesia 10% menjadi 9,0% (arah cocok 0 dari 1 pekan); Berita & sentimen 20% menjadi 21,9% (arah cocok 1 dari 1 pekan). Titik tengah dan lebar rentang baru dikoreksi setelah empat pekan selesai.",
    "pelajaran": "Faktor indeks global dan EIDO bernilai +2,0 berbalik total: skor momentum sepekan tidak menangkap risiko valuasi saham AI yang sudah terlihat sejak Senin, lalu Nasdaq jatuh 5,3% pada Jumat karena isu penyelidikan SEC atas Nvidia. Kenaikan BI Rate ke 6% di luar konsensus tidak menopang IHSG maupun rupiah; asing tetap jual bersih setiap hari (±Rp2,7 triliun sepekan) dan rupiah kembali ke rekor terlemah Rp18.270. Skor berita −0,5 terlalu ringan dibanding risiko yang sudah diketahui (risalah FOMC hawkish, pengeluaran saham dari FTSE, rupiah); saat jual asing konsisten, skor berita perlu lebih negatif. Support 5.300, 5.245, dan 5.200 jebol berurutan dan IHSG ditutup 5.146 di bawah batas bawah rentang 5.166; saat VIX melonjak, rentang inti terlalu sempit dan rentang lebar lebih relevan.",
@@ -92,6 +92,12 @@
    "sisa_bawah_lebar": 4956,
    "sisa_atas_lebar": 5476,
    "skor_berbalik": 0,
+   "arah_kode": "membaik",
+   "arah_label": "Membaik",
+   "arah_teks": "Skor penggerak −1,66 menjadi −1,40 sejak awal pekan.",
+   "priced_kode": "sudah",
+   "priced_teks": "Sudah priced in: IHSG sudah naik 1,35% sejak Jumat.",
+   "arah_kalimat": "Penggerak membaik dari proyeksi awal pekan; sudah priced in.",
    "asing_pekan": -673.1
   }
  ],
@@ -2135,7 +2141,7 @@
    "pilihan": 1,
    "wtd": 0.26,
    "rs_wtd": -1.09,
-   "status": "menyimpang"
+   "status": "pemburukan"
   },
   {
    "id": "IDXNONCYC",
@@ -2154,7 +2160,7 @@
    "pilihan": 1,
    "wtd": -0.41,
    "rs_wtd": -1.76,
-   "status": "menyimpang"
+   "status": "pemburukan"
   },
   {
    "id": "IDXHEALTH",
@@ -2173,7 +2179,7 @@
    "pilihan": 1,
    "wtd": 0.13,
    "rs_wtd": -1.22,
-   "status": "menyimpang"
+   "status": "pemburukan"
   },
   {
    "id": "IDXINDUST",
@@ -3023,11 +3029,11 @@
    "butir": "Keuangan",
    "proyeksi": "Lebih kuat dari IHSG",
    "aktual": "+0,26% vs IHSG +1,35%",
-   "status": "menyimpang",
+   "status": "pemburukan",
    "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG.",
    "urut": 20,
-   "dampak": "terbatas",
-   "dampak_alasan": "Menyangkut sektor atau saham itu saja, bukan arah IHSG."
+   "dampak": "",
+   "dampak_alasan": ""
   },
   {
    "id": "s-IDXNONCYC",
@@ -3035,11 +3041,11 @@
    "butir": "Konsumen Primer",
    "proyeksi": "Lebih kuat dari IHSG",
    "aktual": "−0,41% vs IHSG +1,35%",
-   "status": "menyimpang",
+   "status": "pemburukan",
    "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG.",
    "urut": 21,
-   "dampak": "terbatas",
-   "dampak_alasan": "Menyangkut sektor atau saham itu saja, bukan arah IHSG."
+   "dampak": "",
+   "dampak_alasan": ""
   },
   {
    "id": "s-IDXHEALTH",
@@ -3047,11 +3053,11 @@
    "butir": "Kesehatan",
    "proyeksi": "Lebih kuat dari IHSG",
    "aktual": "+0,13% vs IHSG +1,35%",
-   "status": "menyimpang",
+   "status": "pemburukan",
    "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG.",
    "urut": 22,
-   "dampak": "terbatas",
-   "dampak_alasan": "Menyangkut sektor atau saham itu saja, bukan arah IHSG."
+   "dampak": "",
+   "dampak_alasan": ""
   },
   {
    "id": "i-AALI",
@@ -3091,7 +3097,7 @@
    "pct": 1.35,
    "dalam_rentang": "berjalan",
    "arah_tepat": "berjalan",
-   "jml_simpang": 5,
+   "jml_simpang": 2,
    "pelajaran": "Pekan masih berjalan.",
    "dalam_lebar": "berjalan",
    "versi_model": "2.0"
@@ -3317,8 +3323,8 @@
    "id": "e02",
    "tanggal": "2026-11-23",
    "jenis": "Penilaian",
-   "butir": "Perbaikan: yang meleset justru menguntungkan IHSG",
-   "rincian": "Dari 5 butir yang meleset: 2 perbaikan, 3 dampak terbatas. IHSG +1,35% sejak Jumat, support terdekat 5.095.",
+   "butir": "Perbaikan: yang berubah justru menguntungkan IHSG",
+   "rincian": "Dari 2 butir yang berubah: 2 perbaikan. IHSG +1,35% sejak Jumat, support terdekat 5.095.",
    "nada": "naik",
    "urut": 2
   },
@@ -3361,7 +3367,7 @@
   {
    "id": "e07",
    "tanggal": "2026-11-23",
-   "jenis": "Benar",
+   "jenis": "Sejalan",
    "butir": "IHSG: Rentang pekan ini",
    "rincian": "Proyeksi Inti 5.003 – 5.290; lebar 4.859 – 5.434. Aktual Tutup 5.215,85 (+1,35% sejak Jumat).",
    "nada": "naik",
@@ -3370,16 +3376,16 @@
   {
    "id": "e08",
    "tanggal": "2026-11-23",
-   "jenis": "Salah",
+   "jenis": "Berubah",
    "butir": "IHSG: Arah pekan ini",
    "rincian": "Proyeksi Melemah (skor −1,66). Aktual +1,35% sejak penutupan Jumat. Toleransi arah ±0,93% (seperempat simpangan baku mingguan). Perbaikan: IHSG ikut menguat +1,35% sejak Jumat.",
-   "nada": "turun",
+   "nada": "naik",
    "urut": 8
   },
   {
    "id": "e09",
    "tanggal": "2026-11-23",
-   "jenis": "Benar",
+   "jenis": "Sejalan",
    "butir": "Faktor: Tren lintas pasar",
    "rincian": "Proyeksi menekan (skor −2,0). Aktual 6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +0,2.",
    "nada": "naik",
@@ -3388,16 +3394,16 @@
   {
    "id": "e10",
    "tanggal": "2026-11-23",
-   "jenis": "Salah",
+   "jenis": "Berubah",
    "butir": "Faktor: Indeks global",
    "rincian": "Proyeksi menekan (skor −2,0). Aktual +0,79% pekan ini. Berbalik mendukung IHSG. Perbaikan: IHSG ikut menguat +1,35% sejak Jumat.",
-   "nada": "turun",
+   "nada": "naik",
    "urut": 10
   },
   {
    "id": "e11",
    "tanggal": "2026-11-23",
-   "jenis": "Benar",
+   "jenis": "Sejalan",
    "butir": "Faktor: Bitcoin",
    "rincian": "Proyeksi menekan (skor −1,8). Aktual +0,56% pekan ini.",
    "nada": "naik",
@@ -3406,7 +3412,7 @@
   {
    "id": "e12",
    "tanggal": "2026-11-23",
-   "jenis": "Benar",
+   "jenis": "Sejalan",
    "butir": "Faktor: USD Index (DXY)",
    "rincian": "Proyeksi menekan (skor −1,3). Aktual +0,08% pekan ini.",
    "nada": "naik",
@@ -3433,74 +3439,47 @@
   {
    "id": "e15",
    "tanggal": "2026-11-23",
-   "jenis": "Salah",
-   "butir": "Sektor: Keuangan",
-   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual +0,26% vs IHSG +1,35%. Tertinggal lebih dari 1 poin persentase dari IHSG. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
-   "nada": "turun",
+   "jenis": "Dipantau",
+   "butir": "Ide trading: AALI – Koreksi ke MA20 dalam tren naik",
+   "rincian": "Proyeksi Target 10.275, batal < 9.475. Aktual 9.575 (−1,79%), pantau.",
+   "nada": "tetap",
    "urut": 15
   },
   {
    "id": "e16",
    "tanggal": "2026-11-23",
-   "jenis": "Salah",
-   "butir": "Sektor: Konsumen Primer",
-   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual −0,41% vs IHSG +1,35%. Tertinggal lebih dari 1 poin persentase dari IHSG. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
-   "nada": "turun",
+   "jenis": "Sejalan",
+   "butir": "Ide trading: ASII – Tren naik di atas MA20 & MA50",
+   "rincian": "Proyeksi Target 5.800, batal < 5.000. Aktual 5.400 (+1,89%), sesuai.",
+   "nada": "naik",
    "urut": 16
   },
   {
    "id": "e17",
    "tanggal": "2026-11-23",
-   "jenis": "Salah",
-   "butir": "Sektor: Kesehatan",
-   "rincian": "Proyeksi Lebih kuat dari IHSG. Aktual +0,13% vs IHSG +1,35%. Tertinggal lebih dari 1 poin persentase dari IHSG. Dampak terbatas: Menyangkut sektor atau saham itu saja, bukan arah IHSG.",
-   "nada": "turun",
+   "jenis": "Kaitan",
+   "butir": "Kenapa pasar bergerak",
+   "rincian": "IHSG memantul karena saham tambang dan energi grup Prajogo diburu, rupiah terkuat di Asia, dan ketegangan Iran mereda. Penggerak membaik: skor naik dari −1,66 ke −1,40 berkat FTSE Indonesia, rupiah, dan berita; kenaikan 1,35% sudah mencerminkannya. Support 5.095 bertahan, pivot 5.209 dan MA20 5.152 tertembus, tetapi asing masih jual bersih sehingga pemulihan belum terkonfirmasi.",
+   "nada": "tetap",
    "urut": 17
   },
   {
    "id": "e18",
    "tanggal": "2026-11-23",
-   "jenis": "Dipantau",
-   "butir": "Ide trading: AALI – Koreksi ke MA20 dalam tren naik",
-   "rincian": "Proyeksi Target 10.275, batal < 9.475. Aktual 9.575 (−1,79%), pantau.",
+   "jenis": "Berita",
+   "butir": "Penggerak berikutnya",
+   "rincian": "Rupiah terkuat di Asia (Rp18.203) dibantu dana asing lewat lelang SRBI >US$1 miliar; Trump menunda serangan baru ke Iran. Malam ini PMI flash AS; Rabu PCE dan PDB AS jadi penentu arah Fed dan rupiah.",
    "nada": "tetap",
    "urut": 18
   },
   {
    "id": "e19",
    "tanggal": "2026-11-23",
-   "jenis": "Benar",
-   "butir": "Ide trading: ASII – Tren naik di atas MA20 & MA50",
-   "rincian": "Proyeksi Target 5.800, batal < 5.000. Aktual 5.400 (+1,89%), sesuai.",
-   "nada": "naik",
-   "urut": 19
-  },
-  {
-   "id": "e20",
-   "tanggal": "2026-11-23",
-   "jenis": "Kaitan",
-   "butir": "Mengapa proyeksi bergeser",
-   "rincian": "Skor naik dari −1,66 ke −1,40 karena FTSE Indonesia, rupiah, dan berita membaik. Benar: rentang inti, support 5.095 bertahan (terendah 5.062). Salah: arah (IHSG +1,35%) dan sektor defensif tertinggal dari tambang/energi. Belum ada agenda yang rilis; penembusan pivot 5.209 dan MA20 5.152 adalah sinyal pembalikan naik awal, tetapi jual asing berlanjut sehingga perbaikan belum terkonfirmasi.",
-   "nada": "tetap",
-   "urut": 20
-  },
-  {
-   "id": "e21",
-   "tanggal": "2026-11-23",
-   "jenis": "Berita",
-   "butir": "Berita yang memengaruhi IHSG",
-   "rincian": "Rupiah terkuat di Asia (Rp18.203) dibantu dana asing lewat lelang SRBI >US$1 miliar; Trump menunda serangan baru ke Iran. Malam ini PMI flash AS; Rabu PCE dan PDB AS jadi penentu arah Fed dan rupiah.",
-   "nada": "tetap",
-   "urut": 21
-  },
-  {
-   "id": "e22",
-   "tanggal": "2026-11-23",
    "jenis": "Ide baru",
    "butir": "ITMG – Rebut kembali MA20 (pemulihan awal)",
    "rincian": "Harga kembali di atas MA20 (24.472) setelah tren turun; MA50 (24.986) jadi hambatan berikutnya. Batal bila ditutup di bawah 24.125. Area pantau 24.475–24.500, target 25.825.",
    "nada": "naik",
-   "urut": 22
+   "urut": 19
   }
  ],
  "arsip_faktor": [
@@ -4404,7 +4383,7 @@
    "butir": "Keuangan",
    "proyeksi": "Lebih kuat dari IHSG",
    "aktual": "+0,26% vs IHSG +1,35%",
-   "status": "menyimpang",
+   "status": "pemburukan",
    "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG."
   },
   {
@@ -4415,7 +4394,7 @@
    "butir": "Konsumen Primer",
    "proyeksi": "Lebih kuat dari IHSG",
    "aktual": "−0,41% vs IHSG +1,35%",
-   "status": "menyimpang",
+   "status": "pemburukan",
    "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG."
   },
   {
@@ -4426,7 +4405,7 @@
    "butir": "Kesehatan",
    "proyeksi": "Lebih kuat dari IHSG",
    "aktual": "+0,13% vs IHSG +1,35%",
-   "status": "menyimpang",
+   "status": "pemburukan",
    "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG."
   },
   {
@@ -5021,7 +5000,7 @@
    "atas_lebar": 5434,
    "asing": -673.1,
    "skor_kini": -1.4,
-   "jml_simpang": 5,
+   "jml_simpang": 2,
    "catatan": "IHSG memantul 1,35% ke 5.215,85 setelah lima hari turun, ditopang saham bahan baku (+4,4%) dan energi (+3,2%) grup Prajogo; asing tetap jual bersih Rp673 miliar (BMRI, BBRI, TLKM dilepas) dan rupiah menguat ke Rp18.203."
   },
   {
