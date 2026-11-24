@@ -98,7 +98,12 @@
    "priced_kode": "sudah",
    "priced_teks": "Sudah priced in: IHSG sudah naik 1,35% sejak Jumat.",
    "arah_kalimat": "Penggerak membaik dari proyeksi awal pekan; sudah priced in.",
-   "asing_pekan": -673.1
+   "asing_pekan": -673.1,
+   "skor_kemarin": -1.66,
+   "label_kemarin": "Jumat, 20 Nov",
+   "skor_ubah_harian": 0.56,
+   "label_awal": "Jumat, 20 Nov",
+   "label_terbaru": "Senin, 23 Nov"
   }
  ],
  "level": [
