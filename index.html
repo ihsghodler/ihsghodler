@@ -20,6 +20,15 @@ padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(
 .ix { container-type: inline-size; display: grid; gap: var(--cds-gap-lg); grid-template-columns: minmax(0, 1fr);
   font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); color: var(--color-fg); font-variant-numeric: tabular-nums; }
 .ix [hidden] { display: none !important; }
+.ix { position: relative; z-index: 1; }
+.ix-latar { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.ix-latar svg { position: absolute; left: 0; top: 18%; width: 200%; height: 64%; animation: ix-alir 120s linear infinite; }
+.ix-latar .is-tutup { fill: none; stroke: var(--color-ok); stroke-width: 2; opacity: .16; vector-effect: non-scaling-stroke; }
+.ix-latar .is-ma { fill: none; stroke: var(--cds-chart-muted); stroke-width: 1.5; stroke-dasharray: 6 6; opacity: .22; vector-effect: non-scaling-stroke; }
+.ix-latar .is-area { fill: var(--color-ok); opacity: .04; }
+.ix-latar.is-diam svg { animation-play-state: paused; }
+@keyframes ix-alir { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ix-latar svg { animation: none; } }
 .ix-head { display: grid; gap: var(--cds-gap-xs); }
 .ix-update { justify-self: start; display: inline-flex; align-items: center; gap: 8px; margin: 0 0 var(--cds-gap-sm); padding: 4px 12px;
   border: 1px solid var(--color-border-line); border-radius: 999px; background: var(--color-panel);
@@ -172,7 +181,8 @@ span.ix-ubah { display: inline; }
 .ix-alok-pemicu, .ix-alok-geser { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.55; max-width: 92ch; }
 .ix-alok-geser { padding: 8px 12px; border: 1px dashed var(--color-border-line); border-radius: 6px; color: var(--color-fg); }
 .ix-h3 { margin: var(--cds-gap-lg) 0 var(--cds-gap-xs); font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); letter-spacing: .04em; text-transform: uppercase; }
-</style><link rel="stylesheet" href="assets/menu-situs.css?v=ecea01ea"><link rel="stylesheet" href="assets/dashboard-hp.css?v=ec947b02"></head><body><script src="pengaturan.js?v=609b9a6d"></script><script src="assets/menu-situs.js?v=0d80a92d"></script><div id="dash-root"><div class="ix">
+</style><link rel="stylesheet" href="assets/menu-situs.css?v=ecea01ea"><link rel="stylesheet" href="assets/dashboard-hp.css?v=ec947b02"></head><body><script src="pengaturan.js?v=609b9a6d"></script><script src="assets/menu-situs.js?v=0d80a92d"></script><div id="dash-root"><div class="ix-latar" id="latar" aria-hidden="true" data-draw="latar" data-source="ihsg_harian"></div>
+<div class="ix">
   <header class="ix-head" id="kepala">
     <p class="ix-update" id="pembaruan-terakhir"><span class="ix-update-titik" aria-hidden="true"></span>Terakhir diperbarui <b data-draw="fig" data-source="ringkasan" data-field="diperbarui_label" data-row="0">—</b></p>
     <p class="ix-eyebrow">Pekan <span data-draw="fig" data-source="ringkasan" data-field="label_pekan" data-row="0">—</span></p>
@@ -795,6 +805,30 @@ dash.draw('c-regional', (el) => {
 });
 // bursa penting di luar Asia (AS dan Eropa), di bawah grafik bursa Asia
 const IDX_GLOBAL = ['spx', 'ndx', 'dji', 'stoxx', 'dax', 'ftse100'];
+// Latar: garis IHSG ~60 hari terakhir (tutup + MA50) yang mengalir pelan ke kiri.
+// Deret digambar maju lalu dicerminkan agar ujungnya bertemu, lalu diulang dua kali supaya geser -50% mulus.
+dash.draw('latar', (el) => {
+  const rows = (rowsOf('ihsg_harian') || []).filter((r) => ok(r.tutup)).slice(-60);
+  if (rows.length < 5) return el.replaceChildren();
+  const vals = rows.flatMap((r) => [+r.tutup, ok(r.ma50) ? +r.ma50 : +r.tutup]);
+  const lo = Math.min(...vals), hi = Math.max(...vals), span = hi - lo || 1;
+  const n = rows.length, seg = 600 / (n - 1), Y = (v) => (20 + (1 - (v - lo) / span) * 260).toFixed(1);
+  const jalur = (get) => {
+    const seri = rows.map(get), bolak = seri.concat(seri.slice(0, -1).reverse().slice(0, -1)).concat([seri[0]]);
+    const pts = []; for (let k = 0; k < 2; k++) bolak.forEach((v, i) => pts.push([(k * 1200 + i * seg).toFixed(1), Y(v)]));
+    return pts;
+  };
+  const tutup = jalur((r) => +r.tutup), ma = jalur((r) => (ok(r.ma50) ? +r.ma50 : +r.tutup));
+  const d = (p) => 'M' + p.map((q) => q.join(' ')).join('L');
+  const ns = 'http://www.w3.org/2000/svg', svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', '0 0 2400 300'); svg.setAttribute('preserveAspectRatio', 'none');
+  [['is-area', d(tutup) + 'L2400 300L0 300Z'], ['is-ma', d(ma)], ['is-tutup', d(tutup)]].forEach(([c, v]) => {
+    const p = document.createElementNS(ns, 'path'); p.setAttribute('class', c); p.setAttribute('d', v); svg.append(p);
+  });
+  el.replaceChildren(svg);
+  if (!el.dataset.ikat) { el.dataset.ikat = '1'; document.addEventListener('visibilitychange', () => el.classList.toggle('is-diam', document.hidden)); }
+});
+
 dash.draw('c-global', (el) => {
   const P = rowsOf('pasar'); if (!P) return dashMark(el);
   const xs = P.filter((d) => IDX_GLOBAL.includes(d.id) && ok(d.w1)).sort((a, b) => b.w1 - a.w1);
