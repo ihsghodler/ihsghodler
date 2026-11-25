@@ -25,10 +25,10 @@
    "label_pekan": "23–27 Nov 2026",
    "data_per": "2026-11-20",
    "dibuat": "2026-11-22T17:06:52+07:00",
-   "diperbarui": "2026-11-25T09:06:15+07:00",
+   "diperbarui": "2026-11-25T09:17:54+07:00",
    "ihsg_dasar": 5146.33,
    "ihsg_w1": -3.71,
-   "diperbarui_label": "Rabu, 25 Nov 2026, 09.06 WIB",
+   "diperbarui_label": "Rabu, 25 Nov 2026, 09.17 WIB",
    "skor": -1.66,
    "bias": "Melemah",
    "bias_kode": "turun",
@@ -99,9 +99,9 @@
    "priced_teks": "Sudah priced in: IHSG sudah naik 1,85% sejak Jumat.",
    "arah_kalimat": "Penggerak membaik dari proyeksi awal pekan; sudah priced in.",
    "asing_pekan": -529.6,
-   "skor_kemarin": -0.69,
+   "skor_kemarin": -1.1,
    "label_kemarin": "Senin, 23 Nov",
-   "skor_ubah_harian": 0.0,
+   "skor_ubah_harian": 0.41,
    "label_awal": "Jumat, 20 Nov",
    "label_terbaru": "Selasa, 24 Nov"
   }
@@ -2761,8 +2761,8 @@
    "sementara": 0,
    "catatan": "IHSG memantul 1,35% ke 5.215,85 setelah lima hari turun, ditopang saham bahan baku (+4,4%) dan energi (+3,2%) grup Prajogo; asing tetap jual bersih Rp673 miliar (BMRI, BBRI, TLKM dilepas) dan rupiah menguat ke Rp18.203.",
    "asing": -673.1,
-   "skor": -0.69,
-   "skor_ubah": 0.97
+   "skor": -1.1,
+   "skor_ubah": 0.56
   },
   {
    "tanggal": "2026-11-24",
@@ -2778,7 +2778,7 @@
    "catatan": "IHSG naik 0,49% ke 5.241,59 setelah sempat +1,8% ke 5.314; kenaikan terpangkas oleh penegasan MSCI bahwa proposal status Standalone Market tetap berlaku; asing beli bersih Rp143,5 miliar (BBCA diburu), rupiah melemah ke Rp18.224.",
    "asing": 143.5,
    "skor": -0.69,
-   "skor_ubah": 0.0
+   "skor_ubah": 0.41
   },
   {
    "tanggal": "2026-11-25",
@@ -5092,6 +5092,7 @@
    "atas_lebar": 5434,
    "asing": 143.5,
    "skor_kini": -0.69,
+   "skor_final": true,
    "jml_simpang": 5,
    "catatan": "IHSG naik 0,49% ke 5.241,59 setelah sempat +1,8% ke 5.314; kenaikan terpangkas oleh penegasan MSCI bahwa proposal status Standalone Market tetap berlaku; asing beli bersih Rp143,5 miliar (BBCA diburu), rupiah melemah ke Rp18.224."
   },
@@ -5110,7 +5111,8 @@
    "bawah_lebar": 4859,
    "atas_lebar": 5434,
    "asing": -673.1,
-   "skor_kini": -0.69,
+   "skor_kini": -1.1,
+   "skor_final": true,
    "jml_simpang": 5,
    "catatan": "IHSG memantul 1,35% ke 5.215,85 setelah lima hari turun, ditopang saham bahan baku (+4,4%) dan energi (+3,2%) grup Prajogo; asing tetap jual bersih Rp673 miliar (BMRI, BBRI, TLKM dilepas) dan rupiah menguat ke Rp18.203."
   },
