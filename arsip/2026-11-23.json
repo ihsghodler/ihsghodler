@@ -16,7 +16,7 @@
   },
   {
    "label": "Data ditarik",
-   "value": "2026-11-25T09:05:02+07:00"
+   "value": "2026-11-25T09:38:48+07:00"
   }
  ],
  "ringkasan": [
@@ -25,10 +25,10 @@
    "label_pekan": "23–27 Nov 2026",
    "data_per": "2026-11-20",
    "dibuat": "2026-11-22T17:06:52+07:00",
-   "diperbarui": "2026-11-25T09:17:54+07:00",
+   "diperbarui": "2026-11-25T09:39:20+07:00",
    "ihsg_dasar": 5146.33,
    "ihsg_w1": -3.71,
-   "diperbarui_label": "Rabu, 25 Nov 2026, 09.17 WIB",
+   "diperbarui_label": "Rabu, 25 Nov 2026, 09.39 WIB",
    "skor": -1.66,
    "bias": "Melemah",
    "bias_kode": "turun",
@@ -55,24 +55,24 @@
    "saham_disaring": 68,
    "lebar_pct": 2.79,
    "cakupan": "5 dari 12",
-   "ihsg_terakhir": 5241.59,
-   "ihsg_tanggal": "2026-11-24",
-   "wtd_pct": 1.85,
+   "ihsg_terakhir": 5216.88,
+   "ihsg_tanggal": "2026-11-25",
+   "wtd_pct": 1.37,
    "posisi": "di dalam rentang inti",
-   "sementara": 0,
+   "sementara": 1,
    "status": "menyimpang",
    "status_label": "Ada penyimpangan",
-   "kata_tutup": "ditutup di",
+   "kata_tutup": "sementara di",
    "jml_simpang": 5,
    "jml_pantau": 4,
-   "hari_ke": 2,
-   "kalimat": "IHSG ditutup di 5.241,59 (+1,85% sejak penutupan Jumat), di dalam rentang inti (inti 5.003–5.290, lebar 4.859–5.434). Penggerak membaik dari proyeksi awal pekan; sudah priced in.",
+   "hari_ke": 3,
+   "kalimat": "IHSG sementara di 5.216,88 (+1,37% sejak penutupan Jumat), di dalam rentang inti (inti 5.003–5.290, lebar 4.859–5.434). Penggerak membaik dari proyeksi awal pekan; sudah priced in.",
    "narasi": "IHSG turun 3,71% pekan lalu ke 5.146 dan ditutup di bawah batas bawah rentang proyeksi, terseret aksi jual saham AI global dan jual asing yang membesar hingga Rp947 miliar pada Jumat. Pekan ini pendek bagi Wall Street (libur Thanksgiving Kamis); penentunya adalah apakah kepanikan di AS mereda, data PCE dan PDB AS pada Rabu, serta kemampuan rupiah bertahan di sekitar Rp18.270.",
-   "skor_kini": -0.69,
+   "skor_kini": -0.66,
    "bias_kini": "Cenderung melemah",
-   "skor_ubah": 0.97,
+   "skor_ubah": 1.0,
    "vonis": "Perbaikan: yang berubah justru menguntungkan IHSG",
-   "vonis_rincian": "Dari 5 butir yang berubah: 4 perbaikan, 1 netral. IHSG +1,85% sejak Jumat, support terdekat 5.095.",
+   "vonis_rincian": "Dari 5 butir yang berubah: 4 perbaikan, 1 netral. IHSG +1,37% sejak Jumat, support terdekat 5.095.",
    "vonis_nada": "naik",
    "kalibrasi": "Model v2.0 berlaku mulai pekan 23 Nov 2026 berdasarkan uji ulang 10 tahun: faktor bursa Asia diganti tren lintas pasar, bobot DXY kembali 15%, USD/IDR dipantau tanpa bobot, titik tengah tidak lagi digeser skor, dan ada rentang lebar. Bobot faktor baru mulai dikoreksi setelah ada pekan selesai yang memakainya. Bobot diperbaiki dari rekam jejak 1 pekan: Indeks global 15% menjadi 13,4% (arah cocok 0 dari 1 pekan); Bitcoin 10% menjadi 10,9% (arah cocok 1 dari 1 pekan); USD Index (DXY) 15% menjadi 16,4% (arah cocok 1 dari 1 pekan); EIDO 15% menjadi 13,4% (arah cocok 0 dari 1 pekan); FTSE Indonesia 10% menjadi 9,0% (arah cocok 0 dari 1 pekan); Berita & sentimen 20% menjadi 21,9% (arah cocok 1 dari 1 pekan). Titik tengah dan lebar rentang baru dikoreksi setelah empat pekan selesai.",
    "pelajaran": "Faktor indeks global dan EIDO bernilai +2,0 berbalik total: skor momentum sepekan tidak menangkap risiko valuasi saham AI yang sudah terlihat sejak Senin, lalu Nasdaq jatuh 5,3% pada Jumat karena isu penyelidikan SEC atas Nvidia. Kenaikan BI Rate ke 6% di luar konsensus tidak menopang IHSG maupun rupiah; asing tetap jual bersih setiap hari (±Rp2,7 triliun sepekan) dan rupiah kembali ke rekor terlemah Rp18.270. Skor berita −0,5 terlalu ringan dibanding risiko yang sudah diketahui (risalah FOMC hawkish, pengeluaran saham dari FTSE, rupiah); saat jual asing konsisten, skor berita perlu lebih negatif. Support 5.300, 5.245, dan 5.200 jebol berurutan dan IHSG ditutup 5.146 di bawah batas bawah rentang 5.166; saat VIX melonjak, rentang inti terlalu sempit dan rentang lebar lebih relevan.",
@@ -85,25 +85,25 @@
    "cakupan_lebar": "9 dari 12",
    "keyakinan": "rendah",
    "keyakinan_ket": "Keyakinan rendah: dalam uji ulang Nov 2017–Nov 2026, arah skor tepat 56%, setara dengan menebak \"selalu naik\" (56%). Rentang lebih bisa diandalkan daripada arah. Pekan nyata: arah tepat 0 dari 1.",
-   "sisa_hari": 3,
-   "sisa_dasar": 5241.59,
-   "sisa_bawah": 5128,
-   "sisa_atas": 5355,
-   "sisa_bawah_lebar": 5015,
-   "sisa_atas_lebar": 5468,
+   "sisa_hari": 2,
+   "sisa_dasar": 5216.88,
+   "sisa_bawah": 5125,
+   "sisa_atas": 5309,
+   "sisa_bawah_lebar": 5033,
+   "sisa_atas_lebar": 5401,
    "skor_berbalik": 0,
    "arah_kode": "membaik",
    "arah_label": "Membaik",
-   "arah_teks": "Skor penggerak −1,66 menjadi −0,69 sejak awal pekan.",
+   "arah_teks": "Skor penggerak −1,66 menjadi −0,66 sejak awal pekan.",
    "priced_kode": "sudah",
-   "priced_teks": "Sudah priced in: IHSG sudah naik 1,85% sejak Jumat.",
+   "priced_teks": "Sudah priced in: IHSG sudah naik 1,37% sejak Jumat.",
    "arah_kalimat": "Penggerak membaik dari proyeksi awal pekan; sudah priced in.",
    "asing_pekan": -529.6,
-   "skor_kemarin": -1.1,
-   "label_kemarin": "Senin, 23 Nov",
-   "skor_ubah_harian": 0.41,
+   "skor_kemarin": -0.69,
+   "label_kemarin": "Selasa, 24 Nov",
+   "skor_ubah_harian": 0.03,
    "label_awal": "Jumat, 20 Nov",
-   "label_terbaru": "Selasa, 24 Nov"
+   "label_terbaru": "Rabu, 25 Nov"
   }
  ],
  "level": [
@@ -179,9 +179,9 @@
    "arah": "menekan",
    "pantauan": 0,
    "wtd": 0.0,
-   "poin_wtd": 0.38,
+   "poin_wtd": 0.58,
    "status": "pantau",
-   "aktual": "6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +3,8"
+   "aktual": "6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +5,8"
   },
   {
    "id": "global",
@@ -211,10 +211,10 @@
    "kontribusi": -0.201,
    "arah": "menekan",
    "pantauan": 0,
-   "wtd": -3.11,
-   "poin_wtd": -0.62,
+   "wtd": -2.9,
+   "poin_wtd": -0.58,
    "status": "sesuai",
-   "aktual": "−3,11% pekan ini"
+   "aktual": "−2,90% pekan ini"
   },
   {
    "id": "dxy",
@@ -228,10 +228,10 @@
    "kontribusi": -0.208,
    "arah": "menekan",
    "pantauan": 0,
-   "wtd": 0.06,
-   "poin_wtd": -0.12,
+   "wtd": 0.02,
+   "poin_wtd": -0.03,
    "status": "sesuai",
-   "aktual": "+0,06% pekan ini"
+   "aktual": "+0,02% pekan ini"
   },
   {
    "id": "eido",
@@ -262,10 +262,10 @@
    "kontribusi": -0.085,
    "arah": "menekan",
    "pantauan": 0,
-   "wtd": 1.28,
-   "poin_wtd": 0.64,
+   "wtd": 1.12,
+   "poin_wtd": 0.56,
    "status": "pantau",
-   "aktual": "+1,28% pekan ini"
+   "aktual": "+1,12% pekan ini"
   },
   {
    "id": "berita",
@@ -302,17 +302,6 @@
   }
  ],
  "ihsg_harian": [
-  {
-   "tanggal": "2026-08-10",
-   "buka": 6440.6,
-   "tinggi": 6462.74,
-   "rendah": 6362.76,
-   "tutup": 6365.37,
-   "ma20": 6231.87,
-   "ma50": 6049.46,
-   "ma200": null,
-   "pekan_ini": 0
-  },
   {
    "tanggal": "2026-08-11",
    "buka": 6383.81,
@@ -1118,13 +1107,24 @@
   },
   {
    "tanggal": "2026-11-24",
-   "buka": 5241.59,
+   "buka": 5283.29,
    "tinggi": 5314.74,
    "rendah": 5198.64,
    "tutup": 5241.59,
    "ma20": 5151.02,
    "ma50": 5616.66,
    "ma200": 6543.05,
+   "pekan_ini": 1
+  },
+  {
+   "tanggal": "2026-11-25",
+   "buka": 5235.83,
+   "tinggi": 5246.79,
+   "rendah": 5205.61,
+   "tutup": 5216.88,
+   "ma20": 5147.75,
+   "ma50": 5592.26,
+   "ma200": 6524.26,
    "pekan_ini": 1
   }
  ],
@@ -1140,12 +1140,15 @@
    "satuan": "%",
    "vs_ma20": -0.27,
    "tren": "di bawah MA20",
-   "kini": 5241.59,
-   "wtd": 1.85,
+   "kini": 5216.88,
+   "wtd": 1.37,
    "urut": 1,
-   "harga_terakhir": 5241.59,
-   "tgl_terakhir": "2026-11-24",
-   "sementara": 0
+   "harga_terakhir": 5216.88,
+   "tgl_terakhir": "2026-11-25",
+   "h1": 5241.59,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.47,
+   "sementara": 1
   },
   {
    "id": "lq45",
@@ -1158,12 +1161,15 @@
    "satuan": "%",
    "vs_ma20": 1.24,
    "tren": "di atas MA20",
-   "kini": 546.13,
-   "wtd": 1.94,
+   "kini": 543.35,
+   "wtd": 1.42,
    "urut": 2,
-   "harga_terakhir": 546.13,
-   "tgl_terakhir": "2026-11-24",
-   "sementara": 0
+   "harga_terakhir": 543.35,
+   "tgl_terakhir": "2026-11-25",
+   "h1": 546.13,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.51,
+   "sementara": 1
   },
   {
    "id": "idx30",
@@ -1176,12 +1182,57 @@
    "satuan": "%",
    "vs_ma20": 1.84,
    "tren": "di atas MA20",
-   "kini": 309.79,
-   "wtd": 1.87,
+   "kini": 308.29,
+   "wtd": 1.38,
    "urut": 3,
-   "harga_terakhir": 309.79,
-   "tgl_terakhir": "2026-11-24",
-   "sementara": 0
+   "harga_terakhir": 308.29,
+   "tgl_terakhir": "2026-11-25",
+   "h1": 309.79,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.48,
+   "sementara": 1
+  },
+  {
+   "id": "id03y",
+   "nama": "Imbal hasil SUN/FR 3 tahun (pendek)",
+   "kelompok": "Indonesia",
+   "terakhir": null,
+   "tanggal": null,
+   "w1": -0.8,
+   "m1": 16.6,
+   "satuan": "bps",
+   "vs_ma20": null,
+   "tren": "",
+   "kini": 7.3,
+   "wtd": null,
+   "harga_terakhir": 7.302,
+   "tgl_terakhir": "2026-11-25",
+   "h1": 7.303,
+   "tgl_h1": null,
+   "dod": -0.1,
+   "sementara": 0,
+   "urut": 4
+  },
+  {
+   "id": "id10y",
+   "nama": "Imbal hasil SUN/FR 10 tahun (panjang)",
+   "kelompok": "Indonesia",
+   "terakhir": null,
+   "tanggal": null,
+   "w1": 10.5,
+   "m1": 24.2,
+   "satuan": "bps",
+   "vs_ma20": null,
+   "tren": "",
+   "kini": 7.71,
+   "wtd": null,
+   "harga_terakhir": 7.712,
+   "tgl_terakhir": "2026-11-25",
+   "h1": 7.712,
+   "tgl_h1": null,
+   "dod": 0.0,
+   "sementara": 0,
+   "urut": 5
   },
   {
    "id": "n225",
@@ -1194,11 +1245,14 @@
    "satuan": "%",
    "vs_ma20": -7.46,
    "tren": "di bawah MA20",
-   "kini": 56919.0,
-   "wtd": 0.85,
-   "urut": 4,
-   "harga_terakhir": 56919.0,
+   "kini": 56561.0,
+   "wtd": 0.22,
+   "urut": 6,
+   "harga_terakhir": 56561.0,
    "tgl_terakhir": "2026-11-25",
+   "h1": 58645.0,
+   "tgl_h1": "2026-11-24",
+   "dod": -3.55,
    "sementara": 1
   },
   {
@@ -1212,11 +1266,14 @@
    "satuan": "%",
    "vs_ma20": -5.14,
    "tren": "di bawah MA20",
-   "kini": 22388.44,
-   "wtd": -0.1,
-   "urut": 5,
-   "harga_terakhir": 22388.44,
+   "kini": 22474.56,
+   "wtd": 0.28,
+   "urut": 7,
+   "harga_terakhir": 22474.56,
    "tgl_terakhir": "2026-11-25",
+   "h1": 22219.65,
+   "tgl_h1": "2026-11-24",
+   "dod": 1.15,
    "sementara": 1
   },
   {
@@ -1230,11 +1287,14 @@
    "satuan": "%",
    "vs_ma20": -2.83,
    "tren": "di bawah MA20",
-   "kini": 3520.45,
-   "wtd": -0.38,
-   "urut": 6,
-   "harga_terakhir": 3520.45,
+   "kini": 3513.66,
+   "wtd": -0.57,
+   "urut": 8,
+   "harga_terakhir": 3513.66,
    "tgl_terakhir": "2026-11-25",
+   "h1": 3548.37,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.98,
    "sementara": 1
   },
   {
@@ -1248,11 +1308,14 @@
    "satuan": "%",
    "vs_ma20": -9.68,
    "tren": "di bawah MA20",
-   "kini": 4781.82,
-   "wtd": -1.81,
-   "urut": 7,
-   "harga_terakhir": 4781.82,
+   "kini": 4728.81,
+   "wtd": -2.9,
+   "urut": 9,
+   "harga_terakhir": 4728.81,
    "tgl_terakhir": "2026-11-25",
+   "h1": 5006.03,
+   "tgl_h1": "2026-11-24",
+   "dod": -5.54,
    "sementara": 1
   },
   {
@@ -1266,11 +1329,14 @@
    "satuan": "%",
    "vs_ma20": -15.65,
    "tren": "di bawah MA20",
-   "kini": 37997.12,
-   "wtd": 5.45,
-   "urut": 8,
-   "harga_terakhir": 37997.12,
+   "kini": 36769.75,
+   "wtd": 2.04,
+   "urut": 10,
+   "harga_terakhir": 36769.75,
    "tgl_terakhir": "2026-11-25",
+   "h1": 40122.35,
+   "tgl_h1": "2026-11-24",
+   "dod": -8.36,
    "sementara": 1
   },
   {
@@ -1284,11 +1350,14 @@
    "satuan": "%",
    "vs_ma20": -5.4,
    "tren": "di bawah MA20",
-   "kini": 4927.16,
-   "wtd": -0.96,
-   "urut": 9,
-   "harga_terakhir": 4927.16,
+   "kini": 4937.37,
+   "wtd": -0.76,
+   "urut": 11,
+   "harga_terakhir": 4937.37,
    "tgl_terakhir": "2026-11-25",
+   "h1": 4958.87,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.43,
    "sementara": 1
   },
   {
@@ -1302,11 +1371,14 @@
    "satuan": "%",
    "vs_ma20": -2.72,
    "tren": "di bawah MA20",
-   "kini": 1557.3,
-   "wtd": 0.05,
-   "urut": 10,
-   "harga_terakhir": 1557.3,
+   "kini": 1560.45,
+   "wtd": 0.25,
+   "urut": 12,
+   "harga_terakhir": 1560.45,
    "tgl_terakhir": "2026-11-25",
+   "h1": 1561.68,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.08,
    "sementara": 1
   },
   {
@@ -1322,9 +1394,12 @@
    "tren": "di bawah MA20",
    "kini": 1451.65,
    "wtd": -0.11,
-   "urut": 11,
+   "urut": 13,
    "harga_terakhir": 1451.65,
    "tgl_terakhir": "2026-11-24",
+   "h1": 1458.15,
+   "tgl_h1": "2026-11-23",
+   "dod": -0.45,
    "sementara": 0
   },
   {
@@ -1338,11 +1413,14 @@
    "satuan": "%",
    "vs_ma20": -5.78,
    "tren": "di bawah MA20",
-   "kini": 5449.77,
-   "wtd": 2.69,
-   "urut": 12,
-   "harga_terakhir": 5449.77,
+   "kini": 5456.03,
+   "wtd": 2.81,
+   "urut": 14,
+   "harga_terakhir": 5456.03,
    "tgl_terakhir": "2026-11-25",
+   "h1": 5456.14,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.0,
    "sementara": 1
   },
   {
@@ -1358,9 +1436,12 @@
    "tren": "di atas MA20",
    "kini": 25349.65,
    "wtd": -1.75,
-   "urut": 13,
+   "urut": 15,
    "harga_terakhir": 25349.65,
    "tgl_terakhir": "2026-11-23",
+   "h1": 25800.6,
+   "tgl_h1": "2026-11-20",
+   "dod": -1.75,
    "sementara": 0
   },
   {
@@ -1374,11 +1455,14 @@
    "satuan": "%",
    "vs_ma20": -3.77,
    "tren": "di bawah MA20",
-   "kini": 8676.4,
-   "wtd": 0.98,
-   "urut": 14,
-   "harga_terakhir": 8676.4,
+   "kini": 8683.4,
+   "wtd": 1.06,
+   "urut": 16,
+   "harga_terakhir": 8683.4,
    "tgl_terakhir": "2026-11-25",
+   "h1": 8726.4,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.49,
    "sementara": 1
   },
   {
@@ -1394,9 +1478,12 @@
    "tren": "di bawah MA20",
    "kini": 7201.09,
    "wtd": 4.21,
-   "urut": 15,
+   "urut": 17,
    "harga_terakhir": 7201.09,
    "tgl_terakhir": "2026-11-24",
+   "h1": 7237.17,
+   "tgl_h1": "2026-11-23",
+   "dod": -0.5,
    "sementara": 0
   },
   {
@@ -1412,9 +1499,12 @@
    "tren": "di bawah MA20",
    "kini": 23733.54,
    "wtd": 4.93,
-   "urut": 16,
+   "urut": 18,
    "harga_terakhir": 23733.54,
    "tgl_terakhir": "2026-11-24",
+   "h1": 24089.56,
+   "tgl_h1": "2026-11-23",
+   "dod": -1.48,
    "sementara": 0
   },
   {
@@ -1430,9 +1520,12 @@
    "tren": "di bawah MA20",
    "kini": 50019.0,
    "wtd": 3.89,
-   "urut": 17,
+   "urut": 19,
    "harga_terakhir": 50019.0,
    "tgl_terakhir": "2026-11-24",
+   "h1": 49595.0,
+   "tgl_h1": "2026-11-23",
+   "dod": 0.85,
    "sementara": 0
   },
   {
@@ -1448,9 +1541,12 @@
    "tren": "di bawah MA20",
    "kini": 6003.76,
    "wtd": 1.04,
-   "urut": 18,
+   "urut": 20,
    "harga_terakhir": 6003.76,
    "tgl_terakhir": "2026-11-24",
+   "h1": 6074.47,
+   "tgl_h1": "2026-11-23",
+   "dod": -1.16,
    "sementara": 0
   },
   {
@@ -1466,9 +1562,12 @@
    "tren": "di bawah MA20",
    "kini": 25017.81,
    "wtd": 0.87,
-   "urut": 19,
+   "urut": 21,
    "harga_terakhir": 25017.81,
    "tgl_terakhir": "2026-11-24",
+   "h1": 25337.27,
+   "tgl_h1": "2026-11-23",
+   "dod": -1.26,
    "sementara": 0
   },
   {
@@ -1482,11 +1581,14 @@
    "satuan": "%",
    "vs_ma20": -3.46,
    "tren": "di bawah MA20",
-   "kini": 10467.07,
+   "kini": 10467.1,
    "wtd": 1.17,
-   "urut": 20,
-   "harga_terakhir": 10467.07,
+   "urut": 22,
+   "harga_terakhir": 10467.1,
    "tgl_terakhir": "2026-11-24",
+   "h1": 10480.8,
+   "tgl_h1": "2026-11-23",
+   "dod": -0.13,
    "sementara": 0
   },
   {
@@ -1502,9 +1604,12 @@
    "tren": "di atas MA20",
    "kini": 26.36,
    "wtd": -26.55,
-   "urut": 21,
+   "urut": 23,
    "harga_terakhir": 26.36,
    "tgl_terakhir": "2026-11-24",
+   "h1": 26.62,
+   "tgl_h1": "2026-11-23",
+   "dod": -0.98,
    "sementara": 0
   },
   {
@@ -1520,9 +1625,12 @@
    "tren": "di bawah MA20",
    "kini": 4.9,
    "wtd": -0.8,
-   "urut": 22,
+   "urut": 24,
    "harga_terakhir": 4.9,
    "tgl_terakhir": "2026-11-24",
+   "h1": 4.92,
+   "tgl_h1": "2026-11-23",
+   "dod": -1.4,
    "sementara": 0
   },
   {
@@ -1536,11 +1644,14 @@
    "satuan": "%",
    "vs_ma20": -7.78,
    "tren": "di bawah MA20",
-   "kini": 88.11,
-   "wtd": -2.05,
-   "urut": 23,
-   "harga_terakhir": 88.11,
+   "kini": 87.75,
+   "wtd": -2.45,
+   "urut": 25,
+   "harga_terakhir": 87.75,
    "tgl_terakhir": "2026-11-24",
+   "h1": 89.37,
+   "tgl_h1": "2026-11-23",
+   "dod": -1.81,
    "sementara": 0
   },
   {
@@ -1554,11 +1665,14 @@
    "satuan": "%",
    "vs_ma20": -10.83,
    "tren": "di bawah MA20",
-   "kini": 3553.2,
-   "wtd": 1.08,
-   "urut": 24,
-   "harga_terakhir": 3553.2,
+   "kini": 3564.3,
+   "wtd": 1.39,
+   "urut": 26,
+   "harga_terakhir": 3564.3,
    "tgl_terakhir": "2026-11-24",
+   "h1": 3651.4,
+   "tgl_h1": "2026-11-23",
+   "dod": -2.39,
    "sementara": 0
   },
   {
@@ -1572,11 +1686,14 @@
    "satuan": "%",
    "vs_ma20": -11.77,
    "tren": "di bawah MA20",
-   "kini": 59040.0,
-   "wtd": -3.11,
-   "urut": 25,
-   "harga_terakhir": 59040.0,
+   "kini": 59171.0,
+   "wtd": -2.9,
+   "urut": 27,
+   "harga_terakhir": 59171.0,
    "tgl_terakhir": "2026-11-25",
+   "h1": 61211.0,
+   "tgl_h1": "2026-11-23",
+   "dod": -3.33,
    "sementara": 1
   },
   {
@@ -1590,11 +1707,14 @@
    "satuan": "%",
    "vs_ma20": 1.21,
    "tren": "di atas MA20",
-   "kini": 103.87,
-   "wtd": 0.06,
-   "urut": 26,
-   "harga_terakhir": 103.87,
+   "kini": 103.83,
+   "wtd": 0.02,
+   "urut": 28,
+   "harga_terakhir": 103.83,
    "tgl_terakhir": "2026-11-24",
+   "h1": 104.32,
+   "tgl_h1": "2026-11-23",
+   "dod": -0.47,
    "sementara": 0
   },
   {
@@ -1610,9 +1730,12 @@
    "tren": "di bawah MA20",
    "kini": 10.61,
    "wtd": 4.95,
-   "urut": 27,
+   "urut": 29,
    "harga_terakhir": 10.61,
    "tgl_terakhir": "2026-11-24",
+   "h1": 10.62,
+   "tgl_h1": "2026-11-23",
+   "dod": -0.09,
    "sementara": 0
   },
   {
@@ -1626,11 +1749,14 @@
    "satuan": "%",
    "vs_ma20": 2.73,
    "tren": "di atas MA20",
-   "kini": 1983.0,
-   "wtd": 1.28,
-   "urut": 28,
-   "harga_terakhir": 1983.0,
+   "kini": 1980.0,
+   "wtd": 1.12,
+   "urut": 30,
+   "harga_terakhir": 1980.0,
    "tgl_terakhir": "2026-11-25",
+   "h1": 2013.0,
+   "tgl_h1": "2026-11-24",
+   "dod": -1.64,
    "sementara": 1
   },
   {
@@ -1646,9 +1772,12 @@
    "tren": "di atas MA20",
    "kini": 18131.0,
    "wtd": -0.72,
-   "urut": 29,
+   "urut": 31,
    "harga_terakhir": 18131.0,
    "tgl_terakhir": "2026-11-25",
+   "h1": 18229.0,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.54,
    "sementara": 1
   },
   {
@@ -1662,11 +1791,14 @@
    "satuan": "%",
    "vs_ma20": null,
    "tren": "",
-   "kini": 2006.94,
-   "wtd": 2.21,
-   "urut": 30,
-   "harga_terakhir": 2006.94,
-   "tgl_terakhir": "2026-11-24",
+   "kini": 1996.1,
+   "wtd": 1.65,
+   "urut": 32,
+   "harga_terakhir": 1996.1,
+   "tgl_terakhir": "2026-11-25",
+   "h1": 2006.94,
+   "tgl_h1": "2026-11-24",
+   "dod": -0.54,
    "sementara": 0
   }
  ],
@@ -2144,8 +2276,8 @@
    "katalis": "BBCA pemberat terbesar dan bank besar terus dilepas asing meski BI Rate naik ke 6%.",
    "peringkat": 1,
    "pilihan": 1,
-   "wtd": 1.15,
-   "rs_wtd": -0.7,
+   "wtd": 0.94,
+   "rs_wtd": -0.43,
    "status": "konsisten"
   },
   {
@@ -2163,9 +2295,9 @@
    "katalis": "MYOR menahan IHSG Jumat; defensif saat volatilitas tinggi.",
    "peringkat": 2,
    "pilihan": 1,
-   "wtd": 0.27,
-   "rs_wtd": -1.58,
-   "status": "pemburukan"
+   "wtd": 0.46,
+   "rs_wtd": -0.91,
+   "status": "konsisten"
   },
   {
    "id": "IDXHEALTH",
@@ -2182,9 +2314,9 @@
    "katalis": "",
    "peringkat": 3,
    "pilihan": 1,
-   "wtd": 0.67,
-   "rs_wtd": -1.18,
-   "status": "pemburukan"
+   "wtd": 0.83,
+   "rs_wtd": -0.54,
+   "status": "konsisten"
   },
   {
    "id": "IDXINDUST",
@@ -2201,8 +2333,8 @@
    "katalis": "",
    "peringkat": 4,
    "pilihan": 0,
-   "wtd": 0.91,
-   "rs_wtd": -0.94,
+   "wtd": 1.24,
+   "rs_wtd": -0.13,
    "status": ""
   },
   {
@@ -2220,8 +2352,8 @@
    "katalis": "",
    "peringkat": 5,
    "pilihan": 0,
-   "wtd": 2.07,
-   "rs_wtd": 0.22,
+   "wtd": 1.88,
+   "rs_wtd": 0.51,
    "status": ""
   },
   {
@@ -2239,8 +2371,8 @@
    "katalis": "Tertekan bunga lebih tinggi; CTRA keluar dari MSCI Small Cap.",
    "peringkat": 6,
    "pilihan": 0,
-   "wtd": 0.96,
-   "rs_wtd": -0.89,
+   "wtd": 0.81,
+   "rs_wtd": -0.56,
    "status": ""
   },
   {
@@ -2258,8 +2390,8 @@
    "katalis": "",
    "peringkat": 7,
    "pilihan": 0,
-   "wtd": 0.94,
-   "rs_wtd": -0.91,
+   "wtd": 1.09,
+   "rs_wtd": -0.28,
    "status": ""
   },
   {
@@ -2277,8 +2409,8 @@
    "katalis": "TLKM pemberat kedua Jumat; MTEL dan TBIG keluar dari indeks FTSE.",
    "peringkat": 8,
    "pilihan": 0,
-   "wtd": 2.14,
-   "rs_wtd": 0.29,
+   "wtd": 1.01,
+   "rs_wtd": -0.36,
    "status": ""
   },
   {
@@ -2296,8 +2428,8 @@
    "katalis": "Aksi jual saham AI global (Nasdaq −5,3% Jumat, Nvidia diselidiki SEC) menekan sentimen teknologi.",
    "peringkat": 9,
    "pilihan": 0,
-   "wtd": -0.03,
-   "rs_wtd": -1.88,
+   "wtd": -0.23,
+   "rs_wtd": -1.6,
    "status": ""
   },
   {
@@ -2315,8 +2447,8 @@
    "katalis": "Anjlok 7,5% pekan lalu; Brent turun ke ±US$90.",
    "peringkat": 10,
    "pilihan": 0,
-   "wtd": 3.57,
-   "rs_wtd": 1.72,
+   "wtd": 2.96,
+   "rs_wtd": 1.59,
    "status": ""
   },
   {
@@ -2334,8 +2466,8 @@
    "katalis": "MBMA dan TINS menahan IHSG Jumat; BRPT keluar dari MSCI Global Standard per 30 November.",
    "peringkat": 11,
    "pilihan": 0,
-   "wtd": 2.68,
-   "rs_wtd": 0.83,
+   "wtd": 1.53,
+   "rs_wtd": 0.16,
    "status": ""
   }
  ],
@@ -2425,8 +2557,8 @@
    "risiko_pct": null,
    "catatan": "Dalam tren turun, harga membuat lower high (5.950 pada 18 Nov di bawah 6.125 pada 15 Okt) sementara RSI membuat higher high (45 ke 60): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 5.950.",
    "divergensi": -1,
-   "terakhir": 5800.0,
-   "ubah_pct": 4.5,
+   "terakhir": 5775.0,
+   "ubah_pct": 4.05,
    "status": "berbalik naik",
    "sejak": ""
   },
@@ -2455,8 +2587,8 @@
    "risiko_pct": null,
    "catatan": "Dalam tren turun, harga membuat lower high (4.000 pada 17 Nov di bawah 4.150 pada 6 Okt) sementara RSI membuat higher high (44 ke 58): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 4.000.",
    "divergensi": -1,
-   "terakhir": 3990.0,
-   "ubah_pct": 2.57,
+   "terakhir": 3960.0,
+   "ubah_pct": 1.8,
    "status": "berbalik naik",
    "sejak": ""
   },
@@ -2485,9 +2617,9 @@
    "risiko_pct": null,
    "catatan": "Dalam tren turun, harga membuat lower high (2.250 pada 18 Nov di bawah 2.340 pada 12 Okt) sementara RSI membuat higher high (35 ke 52): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 2.250.",
    "divergensi": -1,
-   "terakhir": 2080.0,
-   "ubah_pct": 0.48,
-   "status": "berbalik naik",
+   "terakhir": 2050.0,
+   "ubah_pct": -0.97,
+   "status": "sesuai",
    "sejak": ""
   },
   {
@@ -2515,8 +2647,8 @@
    "risiko_pct": null,
    "catatan": "Dalam tren turun, harga membuat lower high (140 pada 16 Nov di bawah 146 pada 22 Okt) sementara RSI membuat higher high (34 ke 46): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 140.",
    "divergensi": -1,
-   "terakhir": 129.0,
-   "ubah_pct": 8.4,
+   "terakhir": 128.0,
+   "ubah_pct": 7.56,
    "status": "berbalik naik",
    "sejak": ""
   },
@@ -2545,40 +2677,40 @@
    "risiko_pct": null,
    "catatan": "Dalam tren turun, harga membuat lower high (2.830 pada 13 Nov di bawah 2.890 pada 23 Okt) sementara RSI membuat higher high (44 ke 51): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 2.830.",
    "divergensi": -1,
-   "terakhir": 2670.0,
-   "ubah_pct": 2.3,
+   "terakhir": 2650.0,
+   "ubah_pct": 1.53,
    "status": "pantau",
    "sejak": ""
   },
   {
-   "kode": "UNVR",
-   "nama": "Unilever Indonesia",
-   "sektor": "Konsumen primer",
-   "setup": "tembus50",
-   "setup_label": "Tembus ke atas MA50",
-   "harga": 1555.0,
-   "ma20": 1488.0,
-   "ma50": 1526.0,
-   "ma200": 1753.0,
-   "vs_ma20": 4.5,
-   "vs_ma50": 1.9,
-   "vs_ma200": -11.3,
+   "kode": "ITMG",
+   "nama": "Indo Tambangraya Megah",
+   "sektor": "Energi",
+   "setup": "rebut20",
+   "setup_label": "Rebut kembali MA20 (pemulihan awal)",
+   "harga": 24650.0,
+   "ma20": 24446.0,
+   "ma50": 24920.0,
+   "ma200": 24655.0,
+   "vs_ma20": 0.8,
+   "vs_ma50": -1.1,
+   "vs_ma200": -0.0,
    "bendera": "",
-   "tgl_acuan": "2026-11-24",
+   "tgl_acuan": "2026-11-25",
    "divergensi": 0,
    "jenis": "baru",
-   "area_bawah": 1525,
-   "area_atas": 1555,
-   "target": 1665,
-   "batal": 1500,
-   "rr": 2.0,
-   "potensi_pct": 7.1,
-   "risiko_pct": -3.5,
-   "catatan": "Harga baru ditutup di atas MA50 (1.526). Batal bila ditutup di bawah 1.500.",
-   "sejak": "2026-11-24",
-   "terakhir": 1555.0,
+   "area_bawah": 24450,
+   "area_atas": 24650,
+   "target": 25800,
+   "batal": 24150,
+   "rr": 2.3,
+   "potensi_pct": 4.7,
+   "risiko_pct": -2.0,
+   "catatan": "Harga kembali di atas MA20 (24.446) setelah tren turun; MA50 (24.920) jadi hambatan berikutnya. Batal bila ditutup di bawah 24.150.",
+   "sejak": "2026-11-23",
+   "terakhir": 24650.0,
    "ubah_pct": null,
-   "status": "baru"
+   "status": "masih lolos"
   },
   {
    "kode": "AMRT",
@@ -2587,14 +2719,14 @@
    "setup": "hbdiv",
    "setup_label": "Hidden bearish divergence (RSI)",
    "harga": 1030.0,
-   "ma20": 988.0,
-   "ma50": 1126.0,
-   "ma200": 1378.0,
+   "ma20": 989.0,
+   "ma50": 1121.0,
+   "ma200": 1374.0,
    "vs_ma20": 4.2,
-   "vs_ma50": -8.5,
-   "vs_ma200": -25.3,
+   "vs_ma50": -8.1,
+   "vs_ma200": -25.0,
    "bendera": "",
-   "tgl_acuan": "2026-11-24",
+   "tgl_acuan": "2026-11-25",
    "jenis": "waspada",
    "area_bawah": null,
    "area_atas": null,
@@ -2608,7 +2740,7 @@
    "sejak": "2026-11-24",
    "terakhir": 1030.0,
    "ubah_pct": null,
-   "status": "baru"
+   "status": "masih berlaku"
   }
  ],
  "berita": [
@@ -2767,7 +2899,7 @@
   {
    "tanggal": "2026-11-24",
    "hari": "Selasa",
-   "buka": 5241.59,
+   "buka": 5283.29,
    "tinggi": 5314.74,
    "rendah": 5198.64,
    "tutup": 5241.59,
@@ -2783,18 +2915,18 @@
   {
    "tanggal": "2026-11-25",
    "hari": "Rabu",
-   "buka": null,
-   "tinggi": null,
-   "rendah": null,
-   "tutup": null,
-   "harian_pct": null,
-   "wtd_pct": null,
-   "posisi": "",
-   "sementara": 0,
+   "buka": 5235.83,
+   "tinggi": 5246.79,
+   "rendah": 5205.61,
+   "tutup": 5216.88,
+   "harian_pct": -0.47,
+   "wtd_pct": 1.37,
+   "posisi": "di dalam rentang inti",
+   "sementara": 1,
    "catatan": "",
    "asing": null,
-   "skor": null,
-   "skor_ubah": null
+   "skor": -0.66,
+   "skor_ubah": 0.03
   },
   {
    "tanggal": "2026-11-26",
@@ -2835,10 +2967,12 @@
    "kategori": "IHSG",
    "butir": "Rentang pekan ini",
    "proyeksi": "Inti 5.003 – 5.290; lebar 4.859 – 5.434",
-   "aktual": "Tutup 5.241,59 (+1,85% sejak Jumat)",
+   "aktual": "Tutup 5.216,88 (+1,37% sejak Jumat)",
    "status": "sesuai",
    "catatan": "",
    "urut": 1,
+   "implikasi": "Dalam rentang inti",
+   "implikasi_kode": "tetap",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2847,22 +2981,26 @@
    "kategori": "IHSG",
    "butir": "Arah pekan ini",
    "proyeksi": "Melemah (skor −1,66)",
-   "aktual": "+1,85% sejak penutupan Jumat",
+   "aktual": "+1,37% sejak penutupan Jumat",
    "status": "menyimpang",
    "catatan": "Toleransi arah ±0,93% (seperempat simpangan baku mingguan).",
    "urut": 2,
+   "implikasi": "IHSG berbalik menguat",
+   "implikasi_kode": "naik",
    "dampak": "perbaikan",
-   "dampak_alasan": "IHSG ikut menguat +1,85% sejak Jumat."
+   "dampak_alasan": "IHSG ikut menguat +1,37% sejak Jumat."
   },
   {
    "id": "f-tren",
    "kategori": "Faktor",
    "butir": "Tren lintas pasar",
    "proyeksi": "menekan (skor −2,0)",
-   "aktual": "6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +3,8",
+   "aktual": "6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +5,8",
    "status": "pantau",
    "catatan": "",
    "urut": 3,
+   "implikasi": "Berubah mendukung",
+   "implikasi_kode": "naik",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2875,18 +3013,22 @@
    "status": "menyimpang",
    "catatan": "Berbalik mendukung IHSG.",
    "urut": 4,
+   "implikasi": "Berubah mendukung",
+   "implikasi_kode": "naik",
    "dampak": "perbaikan",
-   "dampak_alasan": "IHSG ikut menguat +1,85% sejak Jumat."
+   "dampak_alasan": "IHSG ikut menguat +1,37% sejak Jumat."
   },
   {
    "id": "f-btc",
    "kategori": "Faktor",
    "butir": "Bitcoin",
    "proyeksi": "menekan (skor −1,8)",
-   "aktual": "−3,11% pekan ini",
+   "aktual": "−2,90% pekan ini",
    "status": "sesuai",
    "catatan": "",
    "urut": 5,
+   "implikasi": "Tetap menekan",
+   "implikasi_kode": "turun",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2895,10 +3037,12 @@
    "kategori": "Faktor",
    "butir": "USD Index (DXY)",
    "proyeksi": "menekan (skor −1,3)",
-   "aktual": "+0,06% pekan ini",
+   "aktual": "+0,02% pekan ini",
    "status": "sesuai",
    "catatan": "",
    "urut": 6,
+   "implikasi": "Tekanan mereda",
+   "implikasi_kode": "naik",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2911,18 +3055,22 @@
    "status": "menyimpang",
    "catatan": "Berbalik mendukung IHSG.",
    "urut": 7,
+   "implikasi": "Berubah mendukung",
+   "implikasi_kode": "naik",
    "dampak": "perbaikan",
-   "dampak_alasan": "IHSG ikut menguat +1,85% sejak Jumat."
+   "dampak_alasan": "IHSG ikut menguat +1,37% sejak Jumat."
   },
   {
    "id": "f-fid",
    "kategori": "Faktor",
    "butir": "FTSE Indonesia",
    "proyeksi": "menekan (skor −0,9)",
-   "aktual": "+1,28% pekan ini",
+   "aktual": "+1,12% pekan ini",
    "status": "pantau",
    "catatan": "",
    "urut": 8,
+   "implikasi": "Berubah mendukung",
+   "implikasi_kode": "naik",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2935,6 +3083,8 @@
    "status": "pantau",
    "catatan": "",
    "urut": 9,
+   "implikasi": "Tekanan mereda",
+   "implikasi_kode": "naik",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2947,8 +3097,10 @@
    "status": "menyimpang",
    "catatan": "Manufaktur sesuai, jasa di bawah perkiraan; komposit 54,6 terendah 4 bulan",
    "urut": 10,
+   "implikasi": "Hasil mendukung",
+   "implikasi_kode": "naik",
    "dampak": "perbaikan",
-   "dampak_alasan": "IHSG ikut menguat +1,85% sejak Jumat."
+   "dampak_alasan": "IHSG ikut menguat +1,37% sejak Jumat."
   },
   {
    "id": "k-us-pcons",
@@ -2959,6 +3111,8 @@
    "status": "menyimpang",
    "catatan": "Tertinggi sejak Jan 2025; topang Dow, tetapi jaga peluang Fed naik",
    "urut": 11,
+   "implikasi": "Hasil netral",
+   "implikasi_kode": "tetap",
    "dampak": "netral",
    "dampak_alasan": "Arah dampaknya bagi IHSG belum jelas."
   },
@@ -2971,6 +3125,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 12,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2983,6 +3139,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 13,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -2995,6 +3153,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 14,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3007,6 +3167,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 15,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3019,6 +3181,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 16,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3031,6 +3195,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 17,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3043,6 +3209,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 18,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3055,6 +3223,8 @@
    "status": "menunggu",
    "catatan": "",
    "urut": 19,
+   "implikasi": "Menunggu rilis",
+   "implikasi_kode": "tunggu",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3063,10 +3233,12 @@
    "kategori": "Sektor",
    "butir": "Keuangan",
    "proyeksi": "Lebih kuat dari IHSG",
-   "aktual": "+1,15% vs IHSG +1,85%",
+   "aktual": "+0,94% vs IHSG +1,37%",
    "status": "konsisten",
    "catatan": "Bergerak seiring IHSG (selisih kurang dari 1 poin persentase).",
    "urut": 20,
+   "implikasi": "Seiring IHSG",
+   "implikasi_kode": "tetap",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3075,10 +3247,12 @@
    "kategori": "Sektor",
    "butir": "Konsumen Primer",
    "proyeksi": "Lebih kuat dari IHSG",
-   "aktual": "+0,27% vs IHSG +1,85%",
-   "status": "pemburukan",
-   "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG.",
+   "aktual": "+0,46% vs IHSG +1,37%",
+   "status": "konsisten",
+   "catatan": "Bergerak seiring IHSG (selisih kurang dari 1 poin persentase).",
    "urut": 21,
+   "implikasi": "Seiring IHSG",
+   "implikasi_kode": "tetap",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3087,10 +3261,12 @@
    "kategori": "Sektor",
    "butir": "Kesehatan",
    "proyeksi": "Lebih kuat dari IHSG",
-   "aktual": "+0,67% vs IHSG +1,85%",
-   "status": "pemburukan",
-   "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG.",
+   "aktual": "+0,83% vs IHSG +1,37%",
+   "status": "konsisten",
+   "catatan": "Bergerak seiring IHSG (selisih kurang dari 1 poin persentase).",
    "urut": 22,
+   "implikasi": "Seiring IHSG",
+   "implikasi_kode": "tetap",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3103,6 +3279,8 @@
    "status": "pantau",
    "catatan": "",
    "urut": 23,
+   "implikasi": "Dekat batas",
+   "implikasi_kode": "tetap",
    "dampak": "",
    "dampak_alasan": ""
   },
@@ -3115,6 +3293,8 @@
    "status": "sesuai",
    "catatan": "",
    "urut": 24,
+   "implikasi": "Masih valid",
+   "implikasi_kode": "naik",
    "dampak": "",
    "dampak_alasan": ""
   }
@@ -3128,8 +3308,8 @@
    "atas": 5290,
    "bias": "Melemah",
    "skor": -1.66,
-   "tutup_akhir": 5241.59,
-   "pct": 1.85,
+   "tutup_akhir": 5216.88,
+   "pct": 1.37,
    "dalam_rentang": "berjalan",
    "arah_tepat": "berjalan",
    "jml_simpang": 5,
@@ -3161,42 +3341,42 @@
    "id": "rsi",
    "indikator": "RSI 14",
    "awal": 40.2,
-   "kini": 45.9,
+   "kini": 44.6,
    "bacaan": "netral"
   },
   {
    "id": "macd",
    "indikator": "Histogram MACD (12, 26, 9)",
    "awal": 47.4,
-   "kini": 43.9,
+   "kini": 40.6,
    "bacaan": "momentum naik"
   },
   {
    "id": "bb",
    "indikator": "Posisi di pita Bollinger (0 = bawah, 100 = atas)",
    "awal": 47.0,
-   "kini": 68.0,
+   "kini": 64.0,
    "bacaan": "di tengah pita"
   },
   {
    "id": "bb_atas",
    "indikator": "Pita atas Bollinger",
    "awal": 5425.0,
-   "kini": 5396.92,
+   "kini": 5388.25,
    "bacaan": "resistance dinamis"
   },
   {
    "id": "bb_bawah",
    "indikator": "Pita bawah Bollinger",
    "awal": 4895.21,
-   "kini": 4905.12,
+   "kini": 4907.24,
    "bacaan": "support dinamis"
   },
   {
    "id": "atr",
    "indikator": "ATR 14 (rata-rata rentang harian, poin)",
    "awal": 118.8,
-   "kini": 115.4,
+   "kini": 107.5,
    "bacaan": "ukuran volatilitas"
   },
   {
@@ -3347,43 +3527,43 @@
  "evaluasi": [
   {
    "id": "e01",
-   "tanggal": "2026-11-24",
+   "tanggal": "2026-11-25",
    "jenis": "Perubahan proyeksi",
-   "butir": "Skor komposit −1,66 menjadi −0,69",
-   "rincian": "Bias awal pekan melemah, bias berjalan cenderung melemah. Pergeseran terbesar: EIDO −2,0 menjadi +0,6; Kurs rupiah (USD/IDR) −0,7 menjadi +1,4; Tren lintas pasar −2,0 menjadi −0,5; Berita & sentimen −1,5 menjadi −0,5.",
+   "butir": "Skor komposit −1,66 menjadi −0,66",
+   "rincian": "Bias awal pekan melemah, bias berjalan cenderung melemah. Pergeseran terbesar: EIDO −2,0 menjadi +0,6; Kurs rupiah (USD/IDR) −0,7 menjadi +1,4; Tren lintas pasar −2,0 menjadi −0,4; Berita & sentimen −1,5 menjadi −0,5.",
    "nada": "naik",
    "urut": 1
   },
   {
    "id": "e02",
-   "tanggal": "2026-11-24",
+   "tanggal": "2026-11-25",
    "jenis": "Penilaian",
    "butir": "Perbaikan: yang berubah justru menguntungkan IHSG",
-   "rincian": "Dari 5 butir yang berubah: 4 perbaikan, 1 netral. IHSG +1,85% sejak Jumat, support terdekat 5.095.",
+   "rincian": "Dari 5 butir yang berubah: 4 perbaikan, 1 netral. IHSG +1,37% sejak Jumat, support terdekat 5.095.",
    "nada": "naik",
    "urut": 2
   },
   {
    "id": "e03",
-   "tanggal": "2026-11-24",
+   "tanggal": "2026-11-25",
    "jenis": "Level",
    "butir": "Resistance 5.209 terlampaui",
-   "rincian": "Pivot mingguan P. Penutupan 5.241,59 berada di atasnya; level ini berubah menjadi support terdekat.",
+   "rincian": "Pivot mingguan P. Penutupan 5.216,88 berada di atasnya; level ini berubah menjadi support terdekat.",
    "nada": "naik",
    "urut": 3
   },
   {
    "id": "e04",
-   "tanggal": "2026-11-24",
+   "tanggal": "2026-11-25",
    "jenis": "Level",
    "butir": "Support 5.095 diuji",
-   "rincian": "Terendah pekan lalu. Terendah pekan ini 5.062,09, tetapi penutupan 5.241,59 bertahan di atasnya.",
+   "rincian": "Terendah pekan lalu. Terendah pekan ini 5.062,09, tetapi penutupan 5.216,88 bertahan di atasnya.",
    "nada": "tetap",
    "urut": 4
   },
   {
    "id": "e05",
-   "tanggal": "2026-11-24",
+   "tanggal": "2026-11-25",
    "jenis": "Sinyal pembalikan",
    "butir": "Arah berlawanan dengan bias dan harga di atas MA20",
    "rincian": "Risiko pembalikan naik terhadap proyeksi pekan ini.",
@@ -3392,156 +3572,138 @@
   },
   {
    "id": "e06",
-   "tanggal": "2026-11-24",
-   "jenis": "Sejalan",
+   "tanggal": "2026-11-25",
+   "jenis": "Dalam rentang inti",
    "butir": "IHSG: Rentang pekan ini",
-   "rincian": "Proyeksi Inti 5.003 – 5.290; lebar 4.859 – 5.434. Aktual Tutup 5.241,59 (+1,85% sejak Jumat).",
-   "nada": "naik",
+   "rincian": "Awal pekan Inti 5.003 – 5.290; lebar 4.859 – 5.434. Sekarang Tutup 5.216,88 (+1,37% sejak Jumat).",
+   "nada": "tetap",
    "urut": 6
   },
   {
    "id": "e07",
-   "tanggal": "2026-11-24",
-   "jenis": "Berubah",
+   "tanggal": "2026-11-25",
+   "jenis": "IHSG berbalik menguat",
    "butir": "IHSG: Arah pekan ini",
-   "rincian": "Proyeksi Melemah (skor −1,66). Aktual +1,85% sejak penutupan Jumat. Toleransi arah ±0,93% (seperempat simpangan baku mingguan). Perbaikan: IHSG ikut menguat +1,85% sejak Jumat.",
+   "rincian": "Awal pekan Melemah (skor −1,66). Sekarang +1,37% sejak penutupan Jumat. Toleransi arah ±0,93% (seperempat simpangan baku mingguan). Perbaikan: IHSG ikut menguat +1,37% sejak Jumat.",
    "nada": "naik",
    "urut": 7
   },
   {
    "id": "e08",
-   "tanggal": "2026-11-24",
-   "jenis": "Dipantau",
+   "tanggal": "2026-11-25",
+   "jenis": "Berubah mendukung",
    "butir": "Faktor: Tren lintas pasar",
-   "rincian": "Proyeksi menekan (skor −2,0). Aktual 6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +3,8.",
-   "nada": "tetap",
+   "rincian": "Awal pekan menekan (skor −2,0). Sekarang 6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +5,8.",
+   "nada": "naik",
    "urut": 8
   },
   {
    "id": "e09",
-   "tanggal": "2026-11-24",
-   "jenis": "Berubah",
+   "tanggal": "2026-11-25",
+   "jenis": "Berubah mendukung",
    "butir": "Faktor: Indeks global",
-   "rincian": "Proyeksi menekan (skor −2,0). Aktual +2,68% pekan ini. Berbalik mendukung IHSG. Perbaikan: IHSG ikut menguat +1,85% sejak Jumat.",
+   "rincian": "Awal pekan menekan (skor −2,0). Sekarang +2,68% pekan ini. Berbalik mendukung IHSG. Perbaikan: IHSG ikut menguat +1,37% sejak Jumat.",
    "nada": "naik",
    "urut": 9
   },
   {
    "id": "e10",
-   "tanggal": "2026-11-24",
-   "jenis": "Sejalan",
+   "tanggal": "2026-11-25",
+   "jenis": "Tetap menekan",
    "butir": "Faktor: Bitcoin",
-   "rincian": "Proyeksi menekan (skor −1,8). Aktual −3,11% pekan ini.",
-   "nada": "naik",
+   "rincian": "Awal pekan menekan (skor −1,8). Sekarang −2,90% pekan ini.",
+   "nada": "turun",
    "urut": 10
   },
   {
    "id": "e11",
-   "tanggal": "2026-11-24",
-   "jenis": "Sejalan",
+   "tanggal": "2026-11-25",
+   "jenis": "Tekanan mereda",
    "butir": "Faktor: USD Index (DXY)",
-   "rincian": "Proyeksi menekan (skor −1,3). Aktual +0,06% pekan ini.",
+   "rincian": "Awal pekan menekan (skor −1,3). Sekarang +0,02% pekan ini.",
    "nada": "naik",
    "urut": 11
   },
   {
    "id": "e12",
-   "tanggal": "2026-11-24",
-   "jenis": "Berubah",
+   "tanggal": "2026-11-25",
+   "jenis": "Berubah mendukung",
    "butir": "Faktor: EIDO",
-   "rincian": "Proyeksi menekan (skor −2,0). Aktual +4,95% pekan ini. Berbalik mendukung IHSG. Perbaikan: IHSG ikut menguat +1,85% sejak Jumat.",
+   "rincian": "Awal pekan menekan (skor −2,0). Sekarang +4,95% pekan ini. Berbalik mendukung IHSG. Perbaikan: IHSG ikut menguat +1,37% sejak Jumat.",
    "nada": "naik",
    "urut": 12
   },
   {
    "id": "e13",
-   "tanggal": "2026-11-24",
-   "jenis": "Dipantau",
+   "tanggal": "2026-11-25",
+   "jenis": "Berubah mendukung",
    "butir": "Faktor: FTSE Indonesia",
-   "rincian": "Proyeksi menekan (skor −0,9). Aktual +1,28% pekan ini.",
-   "nada": "tetap",
+   "rincian": "Awal pekan menekan (skor −0,9). Sekarang +1,12% pekan ini.",
+   "nada": "naik",
    "urut": 13
   },
   {
    "id": "e14",
-   "tanggal": "2026-11-24",
-   "jenis": "Dipantau",
+   "tanggal": "2026-11-25",
+   "jenis": "Tekanan mereda",
    "butir": "Faktor: Berita & sentimen",
-   "rincian": "Proyeksi menekan (skor −1,5). Aktual Asing mulai beli bersih, tetapi penegasan MSCI soal Standalone Market dan Nasdaq −1,5% menahan reli; PCE dan PDB AS Rabu malam jadi ujian berikutnya..",
-   "nada": "tetap",
+   "rincian": "Awal pekan menekan (skor −1,5). Sekarang Asing mulai beli bersih, tetapi penegasan MSCI soal Standalone Market dan Nasdaq −1,5% menahan reli; PCE dan PDB AS Rabu malam jadi ujian berikutnya..",
+   "nada": "naik",
    "urut": 14
   },
   {
    "id": "e15",
-   "tanggal": "2026-11-24",
-   "jenis": "Berubah",
+   "tanggal": "2026-11-25",
+   "jenis": "Hasil mendukung",
    "butir": "Kalender: PMI flash AS manufaktur / jasa",
-   "rincian": "Proyeksi Konsensus 54,5 / 55,7. Aktual 54,5 / 54,7 (di bawah konsensus). Manufaktur sesuai, jasa di bawah perkiraan; komposit 54,6 terendah 4 bulan Perbaikan: IHSG ikut menguat +1,85% sejak Jumat.",
+   "rincian": "Awal pekan Konsensus 54,5 / 55,7. Sekarang 54,5 / 54,7 (di bawah konsensus). Manufaktur sesuai, jasa di bawah perkiraan; komposit 54,6 terendah 4 bulan Perbaikan: IHSG ikut menguat +1,37% sejak Jumat.",
    "nada": "naik",
    "urut": 15
   },
   {
    "id": "e16",
-   "tanggal": "2026-11-24",
-   "jenis": "Berubah",
+   "tanggal": "2026-11-25",
+   "jenis": "Hasil netral",
    "butir": "Kalender: Keyakinan konsumen AS (Conf. Board)",
-   "rincian": "Proyeksi Konsensus 92,5. Aktual 103,3 (di atas konsensus). Tertinggi sejak Jan 2025; topang Dow, tetapi jaga peluang Fed naik Netral: Arah dampaknya bagi IHSG belum jelas.",
+   "rincian": "Awal pekan Konsensus 92,5. Sekarang 103,3 (di atas konsensus). Tertinggi sejak Jan 2025; topang Dow, tetapi jaga peluang Fed naik Netral: Arah dampaknya bagi IHSG belum jelas.",
    "nada": "tetap",
    "urut": 16
   },
   {
    "id": "e17",
-   "tanggal": "2026-11-24",
-   "jenis": "Dipantau",
+   "tanggal": "2026-11-25",
+   "jenis": "Dekat batas",
    "butir": "Ide trading: AALI – Koreksi ke MA20 dalam tren naik",
-   "rincian": "Proyeksi Target 10.275, batal < 9.475. Aktual 9.500 (−2,56%), pantau.",
+   "rincian": "Awal pekan Target 10.275, batal < 9.475. Sekarang 9.500 (−2,56%), pantau.",
    "nada": "tetap",
    "urut": 17
   },
   {
    "id": "e18",
-   "tanggal": "2026-11-24",
-   "jenis": "Sejalan",
+   "tanggal": "2026-11-25",
+   "jenis": "Masih valid",
    "butir": "Ide trading: ASII – Tren naik di atas MA20 & MA50",
-   "rincian": "Proyeksi Target 5.800, batal < 5.000. Aktual 5.450 (+2,83%), sesuai.",
+   "rincian": "Awal pekan Target 5.800, batal < 5.000. Sekarang 5.450 (+2,83%), sesuai.",
    "nada": "naik",
    "urut": 18
   },
   {
    "id": "e19",
-   "tanggal": "2026-11-24",
-   "jenis": "Kaitan",
-   "butir": "Kenapa pasar bergerak",
-   "rincian": "IHSG naik 0,49% ke 5.241,59 dan asing berbalik beli bersih Rp143,5 miliar (BBCA diburu), melanjutkan efek lonjakan Nasdaq Senin. Kenaikan terpangkas dari puncak 5.314 setelah MSCI menegaskan proposal Standalone Market tetap berlaku. Penggerak membaik: skor naik dari −1,66 ke −0,69; dengan IHSG +1,85% sejak Jumat, perbaikan itu sebagian besar sudah tercermin di harga.",
-   "nada": "tetap",
-   "urut": 19
-  },
-  {
-   "id": "e20",
-   "tanggal": "2026-11-24",
-   "jenis": "Berita",
-   "butir": "Penggerak berikutnya",
-   "rincian": "Semalam Nasdaq −1,5% (Nvidia −5,9%) meski keyakinan konsumen AS melonjak; IHSG berpeluang tertahan di 5.290–5.300. Rabu malam PCE dan PDB AS: inflasi di atas konsensus menekan rupiah dan IHSG, di bawahnya meredakan tekanan Fed. Kamis BoK; Senin 30/11 rebalancing MSCI (BRPT).",
-   "nada": "tetap",
-   "urut": 20
-  },
-  {
-   "id": "e21",
-   "tanggal": "2026-11-24",
+   "tanggal": "2026-11-25",
    "jenis": "Waspada baru",
    "butir": "AMRT – Hidden bearish divergence (RSI)",
    "rincian": "Dalam tren turun, harga membuat lower high (1.145 pada 20 Nov di bawah 1.280 pada 14 Okt) sementara RSI membuat higher high (47 ke 56): tren turun berpeluang berlanjut. Membaik bila ditutup di atas 1.145.",
    "nada": "turun",
-   "urut": 21
+   "urut": 19
   },
   {
-   "id": "e22",
-   "tanggal": "2026-11-24",
+   "id": "e20",
+   "tanggal": "2026-11-25",
    "jenis": "Ide baru",
-   "butir": "UNVR – Tembus ke atas MA50",
-   "rincian": "Harga baru ditutup di atas MA50 (1.526). Batal bila ditutup di bawah 1.500. Area pantau 1.525–1.555, target 1.665.",
+   "butir": "ITMG – Rebut kembali MA20 (pemulihan awal)",
+   "rincian": "Harga kembali di atas MA20 (24.446) setelah tren turun; MA50 (24.920) jadi hambatan berikutnya. Batal bila ditutup di bawah 24.150. Area pantau 24.450–24.650, target 25.800.",
    "nada": "naik",
-   "urut": 22
+   "urut": 20
   }
  ],
  "arsip_faktor": [
@@ -3575,7 +3737,7 @@
    "bobot": 10.9,
    "skor": -1.84,
    "arah": "menekan",
-   "pekan_itu": -3.11,
+   "pekan_itu": -2.9,
    "status": "sesuai"
   },
   {
@@ -3586,7 +3748,7 @@
    "bobot": 16.4,
    "skor": -1.27,
    "arah": "menekan",
-   "pekan_itu": 0.06,
+   "pekan_itu": 0.02,
    "status": "sesuai"
   },
   {
@@ -3608,7 +3770,7 @@
    "bobot": 9.0,
    "skor": -0.95,
    "arah": "menekan",
-   "pekan_itu": 1.28,
+   "pekan_itu": 1.12,
    "status": "pantau"
   },
   {
@@ -3731,7 +3893,7 @@
    "rincian": "",
    "rincian_hari_ini": "",
    "pemicu": "Skor −1,66 → saham −8; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1",
-   "pemicu_hari_ini": "Skor −0,69 → saham −3; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1"
+   "pemicu_hari_ini": "Skor −0,66 → saham −3; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1"
   },
   {
    "id": "konservatif-pendek",
@@ -3836,7 +3998,7 @@
    "rincian": "",
    "rincian_hari_ini": "",
    "pemicu": "Skor −1,66 → saham −12; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0",
-   "pemicu_hari_ini": "Skor −0,69 → saham −5; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0"
+   "pemicu_hari_ini": "Skor −0,66 → saham −5; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0"
   },
   {
    "id": "moderat-pendek",
@@ -3941,7 +4103,7 @@
    "rincian": "",
    "rincian_hari_ini": "",
    "pemicu": "Skor −1,66 → saham −15; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0",
-   "pemicu_hari_ini": "Skor −0,69 → saham −7; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0"
+   "pemicu_hari_ini": "Skor −0,66 → saham −7; Emas di bawah MA20 → emas −1; Bitcoin melemah → kripto −1; Bias belum menguat → waran 0"
   },
   {
    "id": "agresif-pendek",
@@ -4265,7 +4427,7 @@
    "kategori": "IHSG",
    "butir": "Rentang pekan ini",
    "proyeksi": "Inti 5.003 – 5.290; lebar 4.859 – 5.434",
-   "aktual": "Tutup 5.241,59 (+1,85% sejak Jumat)",
+   "aktual": "Tutup 5.216,88 (+1,37% sejak Jumat)",
    "status": "sesuai",
    "catatan": ""
   },
@@ -4276,7 +4438,7 @@
    "kategori": "IHSG",
    "butir": "Arah pekan ini",
    "proyeksi": "Melemah (skor −1,66)",
-   "aktual": "+1,85% sejak penutupan Jumat",
+   "aktual": "+1,37% sejak penutupan Jumat",
    "status": "menyimpang",
    "catatan": "Toleransi arah ±0,93% (seperempat simpangan baku mingguan)."
   },
@@ -4287,7 +4449,7 @@
    "kategori": "Faktor",
    "butir": "Tren lintas pasar",
    "proyeksi": "menekan (skor −2,0)",
-   "aktual": "6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +3,8",
+   "aktual": "6% bursa di atas MA20 (+0 poin sejak Jumat), RSI rata-rata +5,8",
    "status": "pantau",
    "catatan": ""
   },
@@ -4309,7 +4471,7 @@
    "kategori": "Faktor",
    "butir": "Bitcoin",
    "proyeksi": "menekan (skor −1,8)",
-   "aktual": "−3,11% pekan ini",
+   "aktual": "−2,90% pekan ini",
    "status": "sesuai",
    "catatan": ""
   },
@@ -4320,7 +4482,7 @@
    "kategori": "Faktor",
    "butir": "USD Index (DXY)",
    "proyeksi": "menekan (skor −1,3)",
-   "aktual": "+0,06% pekan ini",
+   "aktual": "+0,02% pekan ini",
    "status": "sesuai",
    "catatan": ""
   },
@@ -4342,7 +4504,7 @@
    "kategori": "Faktor",
    "butir": "FTSE Indonesia",
    "proyeksi": "menekan (skor −0,9)",
-   "aktual": "+1,28% pekan ini",
+   "aktual": "+1,12% pekan ini",
    "status": "pantau",
    "catatan": ""
   },
@@ -4474,7 +4636,7 @@
    "kategori": "Sektor",
    "butir": "Keuangan",
    "proyeksi": "Lebih kuat dari IHSG",
-   "aktual": "+1,15% vs IHSG +1,85%",
+   "aktual": "+0,94% vs IHSG +1,37%",
    "status": "konsisten",
    "catatan": "Bergerak seiring IHSG (selisih kurang dari 1 poin persentase)."
   },
@@ -4485,9 +4647,9 @@
    "kategori": "Sektor",
    "butir": "Konsumen Primer",
    "proyeksi": "Lebih kuat dari IHSG",
-   "aktual": "+0,27% vs IHSG +1,85%",
-   "status": "pemburukan",
-   "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG."
+   "aktual": "+0,46% vs IHSG +1,37%",
+   "status": "konsisten",
+   "catatan": "Bergerak seiring IHSG (selisih kurang dari 1 poin persentase)."
   },
   {
    "id": "2026-11-23-s-IDXHEALTH",
@@ -4496,9 +4658,9 @@
    "kategori": "Sektor",
    "butir": "Kesehatan",
    "proyeksi": "Lebih kuat dari IHSG",
-   "aktual": "+0,67% vs IHSG +1,85%",
-   "status": "pemburukan",
-   "catatan": "Tertinggal lebih dari 1 poin persentase dari IHSG."
+   "aktual": "+0,83% vs IHSG +1,37%",
+   "status": "konsisten",
+   "catatan": "Bergerak seiring IHSG (selisih kurang dari 1 poin persentase)."
   },
   {
    "id": "2026-11-23-i-AALI",
@@ -5076,6 +5238,26 @@
   }
  ],
  "arsip_harian": [
+  {
+   "tanggal": "2026-11-25",
+   "pekan": "2026-11-23",
+   "label": "23–27 Nov 2026",
+   "hari": "Rabu",
+   "tutup": 5216.88,
+   "harian_pct": -0.47,
+   "wtd_pct": 1.37,
+   "posisi": "di dalam rentang inti",
+   "bawah": 5003,
+   "atas": 5290,
+   "skor_awal": -1.66,
+   "bawah_lebar": 4859,
+   "atas_lebar": 5434,
+   "asing": null,
+   "skor_kini": -0.66,
+   "skor_final": false,
+   "jml_simpang": 5,
+   "catatan": ""
+  },
   {
    "tanggal": "2026-11-24",
    "pekan": "2026-11-23",
